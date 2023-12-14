@@ -9,35 +9,66 @@
     <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
   </head>
 
-  <!-- HEADER -->
-  <header class="nav-main">
-    <p>
-    <a class="logo" href="#">
-      <img src="#" width="175px" height="50px" alt="Logo of the Device">
-    </a>
-
-    <!-- ALT+L+ALT+O = liveserver preview  -->
-      <!-- Add form address -->
-      <form action="https://echo.htmlacademy.ru/" class="nav-search"></form>
-      <label for=""></label>
-      <input type="text" placeholder="Текст поиска">
-      <input type="submit" value="Найти">
-      <ol class="nav-main-menu">
-        <li>
-          <a href="">Войти</a>
-        </li>
-        <li>
-          <a href="">Сравнить</a>
-        </li>
-        <li>
-          <a href="">Корзина</a>
-        </li>
-      </ol>
-</p>
-  </header>
 
   <!-- BODY -->
   <body>
+
+
+  <!-- HEADER -->
+  <header class="nav-main">
+    <a class="logo-device" href="#">
+      <img src="#" width="175" height="50" alt="Logo of the Device">
+    </a>
+
+
+ <!-- NAV-SEARCH -->
+      <form class="nav-search" action="https://echo.htmlacademy.ru/"
+      method="post" target="_blank">
+      <input type="text" id="search-input" name="search-input"
+      placeholder="Текст поиска">
+      <input type="submit" value="Найти">
+    </form>
+
+    <!-- NAV-SIDEMENU -->
+      <ol class="nav-main-sidemenu">
+        <li class="nav-main-sidemenu-item">
+          <a href="#">Войти</a>
+        </li>
+        <li class="nav-main-sidemenu-item">
+          <a href="#">Сравнить</a>
+        </li>
+        <li class="nav-main-sidemenu-item">
+          <a href="#">Корзина</a>
+        </li>
+      </ol>
+
+      <!-- NAV-SUB -->
+      <div class="nav-menu-sub-container">
+        <!-- form? -->
+<label for="nav-menu-sub-button">Каталог товаров</label>
+          <button class="nav-menu-sub-button" type="button"
+          id="nav-menu-sub-button" name="nav-menu-sub-button"></button>
+
+
+        <!-- NAV-SUB-SIDEMENU -->
+        <div class="nav-menu-sub-sidemenu-container">
+          <ol class="nav-menu-sub-sidemenu">
+            <li class="nav-menu-sub-sidemenu-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="nav-menu-sub-sidemenu-item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="nav-menu-sub-sidemenu-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+    </header>
+
+
 
 
 
