@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- HEAD -->
+<!-- xxx: HEAD -->
 
 <head>
   <meta charset="utf-8" />
@@ -13,60 +13,61 @@
 <!-- BODY -->
 
 <body>
-  <!-- HEADER -->
-  <header class="nav-main">
-    <!-- [x] забыл <nav> -->
-    <nav header-nav>
+  <!-- xxx:  HEADER -->
+  <header class="header-main">
+    <nav class="header-nav">
     <a class="logo" href="#">
       <img src="#" width="175" height="50" alt="Logo of the Device" />
     </a>
 
-    <!-- NAV-SEARCH -->
+    <!-- xxx: NAV-SEARCH -->
     <form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-      <input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+      <input type="text" id="search-input" name="search-input" placehulder="Текст поиска" />
       <input type="submit" value="Найти" />
     </form>
 
-    <!-- NAV-SIDEMENU -->
-    <ol class="nav-menu">
+    <!-- xxx: NAV-SIDEMENU -->
+    <ul class="nav-menu">
       <li class="nav-menu-item">
-        <!-- [x] иконки размечены но скрыты -->
+        <!-- hack иконки размечены, но скрыты -->
         <span class="nav-icon-login visually-hidden">
         </span>
-        <a href="#">Войти</a>
+        <a class="nav-menu-link" href="#">Войти</a>
       </li>
       <li class="nav-menu-item">
         <span class="nav-icon-analize visually-hidden">
         </span>
-        <a href="#">Сравнить</a>
+        <a class="nav-menu-link" href="#">Сравнить</a>
       </li>
       <li class="nav-menu-item">
         <span class="nav-icon-bucket visually-hidden">
         </span>
-        <a href="#">Корзина</a>
+        <a class="nav-menu-link" href="#">Корзина</a>
       </li>
-    </ol>
+    </ul>
 
-    <!-- NAV-SUB -->
-    <div class="nav-menu-sub-container">
-      <!-- fixme: form? -->
-      <!-- класс у лейбла как у поднавигации, тк стиль одинаковый -->
-      <label for="nav-menu-sub-button" class="nav-menu-sub-sidemenu-item">Каталог товаров</label>
-      <button class="nav-menu-sub-button" type="button" id="nav-menu-sub-button" name="nav-menu-sub-button"></button>
+    <!-- xxx: NAV-SUBMENU -->
+    <div class="nav-submenu">
+      <!-- todo:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
+      <span class="nav-submenu-item">
+        <a class="nav-submenu-link" href="#">Каталог товаров</a>
+      </span>
+      <!-- <label for="nav-submenu-button" class="nav-submenu-side-item">Каталог товаров</label> -->
+      <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button" name="nav-menu-submenu-button"></button>
 
-      <!-- NAV-SUB-SIDEMENU -->
-      <div class="nav-menu-sub-sidemenu-container">
-        <ol class="nav-menu-sub-sidemenu">
-          <li class="nav-menu-sub-sidemenu-item">
-            <a href="#">Доставка</a>
+      <!-- NAV-SUBMENU-SIDEMENU -->
+      <div class="nav-submenu-side-container">
+        <ul class="nav-submenu-side">
+          <li class="nav-submenu-side-item">
+            <a class="nav-submenu-side-link" href="#">Доставка</a>
           </li>
-          <li class="nav-menu-sub-sidemenu-item">
-            <a href="#">Гарантия</a>
+          <li class="nav-submenu-side-item">
+            <a class="nav-submenu-side-link" href="#">Гарантия</a>
           </li>
-          <li class="nav-menu-sub-sidemenu-item">
-            <a href="#">Контакты</a>
+          <li class="nav-submenu-side-item">
+            <a class="nav-submenu-side-link" href="#">Контакты</a>
           </li>
-        </ol>
+        </ul>
       </div>
     </div>
   </nav>
