@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- HEAD -->
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Device</title>
-    <link rel="stylesheet" href="./styles/styles.css" >
-    <!-- ADD SLIDER-->
-    <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
-  </head>
+<!-- HEAD -->
 
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Device</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <!-- TODO: ADD SLIDER-->
+  <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
+</head>
 
-  <!-- BODY -->
-  <body>
+<!-- BODY -->
 
-
+<body>
   <!-- HEADER -->
   <header class="nav-main">
-    <a class="logo-device" href="#">
-      <img src="#" width="175" height="50" alt="Logo of the Device">
+    <!-- [x] забыл <nav> -->
+    <nav header-nav>
+    <a class="logo" href="#">
+      <img src="#" width="175" height="50" alt="Logo of the Device" />
     </a>
 
-
- <!-- NAV-SEARCH -->
-      <form class="nav-search" action="https://echo.htmlacademy.ru/"
-      method="post" target="_blank">
-      <input type="text" id="search-input" name="search-input"
-      placeholder="Текст поиска">
-      <input type="submit" value="Найти">
+    <!-- NAV-SEARCH -->
+    <form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+      <input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+      <input type="submit" value="Найти" />
     </form>
 
     <!-- NAV-SIDEMENU -->
-      <ol class="nav-main-sidemenu">
-        <li class="nav-main-sidemenu-item">
-          <a href="#">Войти</a>
-        </li>
-        <li class="nav-main-sidemenu-item">
-          <a href="#">Сравнить</a>
-        </li>
-        <li class="nav-main-sidemenu-item">
-          <a href="#">Корзина</a>
-        </li>
-      </ol>
+    <ol class="nav-menu">
+      <li class="nav-menu-item">
+        <!-- [x] иконки размечены но скрыты -->
+        <span class="nav-icon-login visually-hidden">
+        </span>
+        <a href="#">Войти</a>
+      </li>
+      <li class="nav-menu-item">
+        <span class="nav-icon-analize visually-hidden">
+        </span>
+        <a href="#">Сравнить</a>
+      </li>
+      <li class="nav-menu-item">
+        <span class="nav-icon-bucket visually-hidden">
+        </span>
+        <a href="#">Корзина</a>
+      </li>
+    </ol>
 
-      <!-- NAV-SUB -->
-      <div class="nav-menu-sub-container">
-        <!-- form? -->
-<label for="nav-menu-sub-button">Каталог товаров</label>
-          <button class="nav-menu-sub-button" type="button"
-          id="nav-menu-sub-button" name="nav-menu-sub-button"></button>
+    <!-- NAV-SUB -->
+    <div class="nav-menu-sub-container">
+      <!-- fixme: form? -->
+      <!-- класс у лейбла как у поднавигации, тк стиль одинаковый -->
+      <label for="nav-menu-sub-button" class="nav-menu-sub-sidemenu-item">Каталог товаров</label>
+      <button class="nav-menu-sub-button" type="button" id="nav-menu-sub-button" name="nav-menu-sub-button"></button>
 
-
-        <!-- NAV-SUB-SIDEMENU -->
-        <div class="nav-menu-sub-sidemenu-container">
-          <ol class="nav-menu-sub-sidemenu">
-            <li class="nav-menu-sub-sidemenu-item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="nav-menu-sub-sidemenu-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="nav-menu-sub-sidemenu-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ol>
-        </div>
+      <!-- NAV-SUB-SIDEMENU -->
+      <div class="nav-menu-sub-sidemenu-container">
+        <ol class="nav-menu-sub-sidemenu">
+          <li class="nav-menu-sub-sidemenu-item">
+            <a href="#">Доставка</a>
+          </li>
+          <li class="nav-menu-sub-sidemenu-item">
+            <a href="#">Гарантия</a>
+          </li>
+          <li class="nav-menu-sub-sidemenu-item">
+            <a href="#">Контакты</a>
+          </li>
+        </ol>
       </div>
+    </div>
+  </nav>
+  </header>
+</body>
 
-    </header>
+<!-- FOOTER -->
 
+<!-- END -->
 
-
-
-
-  </body>
-
-  <!-- FOOTER -->
-
-  <!-- END -->
 </html>
