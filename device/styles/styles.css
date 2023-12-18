@@ -2,4 +2,7 @@ body {
   background-color: rgb(157, 157, 157);
 }
 
+.visually-hidden {
+  display: none;
+}
 

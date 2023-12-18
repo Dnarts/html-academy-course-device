@@ -29,19 +29,16 @@
     <!-- xxx: NAV-SIDEMENU -->
     <ul class="nav-menu">
       <li class="nav-menu-item">
-        <!-- hack иконки размечены, но скрыты -->
-        <span class="nav-icon-login visually-hidden">
-        </span>
+        <!-- hack: иконки размечены, но скрыты -->
+        <span class="nav-icon-login visually-hidden">login-icon</span>
         <a class="nav-menu-link" href="#">Войти</a>
       </li>
       <li class="nav-menu-item">
-        <span class="nav-icon-analize visually-hidden">
-        </span>
+        <span class="nav-icon-analyze visually-hidden">analyze-icon</span>
         <a class="nav-menu-link" href="#">Сравнить</a>
       </li>
       <li class="nav-menu-item">
-        <span class="nav-icon-bucket visually-hidden">
-        </span>
+        <span class="nav-icon-bucket visually-hidden">bucket-icon</span>
         <a class="nav-menu-link" href="#">Корзина</a>
       </li>
     </ul>
@@ -50,7 +47,7 @@
     <div class="nav-submenu">
       <!-- todo:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
       <span class="nav-submenu-item">
-        <a class="nav-submenu-link" href="#">Каталог товаров</a>
+        <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
       </span>
       <!-- <label for="nav-submenu-button" class="nav-submenu-side-item">Каталог товаров</label> -->
       <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button" name="nav-menu-submenu-button"></button>
@@ -72,6 +69,28 @@
     </div>
   </nav>
   </header>
+
+<!-- xxx: SLIDER SECTION-->
+  <section>
+<dl class="slider-and-lead">
+  <dt class="slider"><img src="#" alt="Изображение товара"></dt>
+  <dd class="slider-describe">
+    <h2>Порхает как бабочка,<br>жалит как пчела!</h2>
+    <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
+  </dd>
+</dl>
+<span class="button-link"><a href="#">Подробнее</a></span>
+<!-- TODO: проверить классы и спаны, возможно заменить все на table ячейки -->
+<div class="describe-details">
+<span class="range">800 м</span>
+<span class="range radius">50 м</span>
+<span class="range-info">Дальность полета</span>
+<span class="range-info radius">Радиус поражения</span>
+</div>
+
+  </section>
+
+
 </body>
 
 <!-- FOOTER -->
