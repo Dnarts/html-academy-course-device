@@ -16,138 +16,155 @@
   <!-- xxx:  HEADER -->
   <header class="header-main">
     <nav class="header-nav">
-    <a class="logo" href="#">
-      <img src="#" width="175" height="50" alt=" интернет-магазина Device" />
-    </a>
-<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
-    <!-- xxx: NAV-SEARCH -->
-    <form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-      <input type="text" id="search-input" name="search-input" placehulder="Текст поиска" />
-      <input type="submit" value="Найти" />
-    </form>
+      <a class="logo" href="#">
+        <img src="#" width="175" height="50" alt=" интернет-магазина Device" />
+      </a>
+      <h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
+      <!-- xxx: NAV-SEARCH -->
+      <form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+        <input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+        <input type="submit" value="Найти" />
+      </form>
 
-    <!-- xxx: NAV-SIDEMENU -->
-    <ul class="nav-menu">
-      <li class="nav-menu-item">
-        <!-- hack: иконки размечены, но скрыты -->
-        <span class="nav-icon-login hidden">login-icon</span>
-        <a class="nav-menu-link" href="#">Войти</a>
-      </li>
-      <li class="nav-menu-item">
-        <span class="nav-icon-analyze hidden">analyze-icon</span>
-        <a class="nav-menu-link" href="#">Сравнить</a>
-      </li>
-      <li class="nav-menu-item">
-        <span class="nav-icon-bucket hidden">bucket-icon</span>
-        <a class="nav-menu-link" href="#">Корзина</a>
-      </li>
-    </ul>
+      <!-- xxx: NAV-SIDEMENU -->
+      <ul class="nav-menu">
+        <li class="nav-menu-item">
+          <!-- hack: иконки размечены, но скрыты -->
+          <span class="nav-icon-login hidden">login-icon</span>
+          <a class="nav-menu-link" href="#">Войти</a>
+        </li>
+        <li class="nav-menu-item">
+          <span class="nav-icon-analyze hidden">analyze-icon</span>
+          <a class="nav-menu-link" href="#">Сравнить</a>
+        </li>
+        <li class="nav-menu-item">
+          <span class="nav-icon-bucket hidden">bucket-icon</span>
+          <a class="nav-menu-link" href="#">Корзина</a>
+        </li>
+      </ul>
 
-    <!-- xxx: NAV-SUBMENU -->
-    <div class="nav-submenu">
-      <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
-      <span class="nav-submenu-item">
-        <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
-      </span>
-      <!-- [?]: нужен ли лейбл вместо спана, для кнопки <label for="nav-submenu-button" class="nav-submenu-item">Каталог товаров</label> -->
-      <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button" name="nav-menu-submenu-button"></button>
+      <!-- xxx: NAV-SUBMENU -->
+      <div class="nav-submenu">
+        <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <span class="nav-submenu-item">
+          <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
+        </span>
+        <!-- [?]: нужен ли лейбл вместо спана, для кнопки <label for="nav-submenu-button" class="nav-submenu-item">Каталог товаров</label> -->
+        <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button"
+          name="nav-menu-submenu-button"></button>
 
-      <!-- NAV-SUBMENU-SIDEMENU -->
-      <div class="nav-submenu-side-container">
-        <ul class="nav-submenu-side">
-          <li class="nav-submenu-side-item">
-            <a class="nav-submenu-side-link" href="#">Доставка</a>
-          </li>
-          <li class="nav-submenu-side-item">
-            <a class="nav-submenu-side-link" href="#">Гарантия</a>
-          </li>
-          <li class="nav-submenu-side-item">
-            <a class="nav-submenu-side-link" href="#">Контакты</a>
-          </li>
-        </ul>
+        <!-- NAV-SUBMENU-SIDEMENU -->
+        <div class="nav-submenu-side-container">
+          <ul class="nav-submenu-side">
+            <li class="nav-submenu-side-item">
+              <a class="nav-submenu-side-link" href="#">Доставка</a>
+            </li>
+            <li class="nav-submenu-side-item">
+              <a class="nav-submenu-side-link" href="#">Гарантия</a>
+            </li>
+            <li class="nav-submenu-side-item">
+              <a class="nav-submenu-side-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   </header>
 
-<!-- xxx: SLIDER SECTION-->
+  <!-- xxx: SLIDER SECTION-->
   <section class="lead-product">
-<dl class="product-item">
-  <dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
-  <dd class="desc">
-    <h2 class="tagline">Порхает как бабочка,<br>жалит как пчела!</h2>
-    <p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
-    <a class="product-info-link" href="#"><span>Подробнее</span></a>
-  </dd>
-</dl>
-<ul class="slider-dot-list">
-  <li class="slider-dot-chosen"></li>
-  <li class="slider-dot-empty"></li>
-  <li class="slider-dot-empty"></li>
-</ul>
-<table>
-<tr>
-  <th class="product-details-data">800 м</th>
-  <th class="product-details-data">50 м</th>
-</tr>
-<tr>
-    <td class="product-details-data-text">Радиус поражения</td>
-    <td class="product-details-data-text">Дальность полета</td>
-</tr>
-</table>
+    <h3 class="visually-hidden">Самый популярный продукт</h3>
+    <dl class="product-item">
+      <dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
+      <dd class="desc">
+        <span class="tagline">Порхает как бабочка,<br>жалит как пчела!</span>
+        <p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под
+          стандартную камеру.</p>
+        <a class="product-info-link" href="#"><span>Подробнее</span></a>
+      </dd>
+    </dl>
+    <ul class="slider-dot-list">
+      <li class="slider-dot-chosen"></li>
+      <li class="slider-dot-empty"></li>
+      <li class="slider-dot-empty"></li>
+    </ul>
+    <table>
+      <tr>
+        <th class="product-details-data">800 м</th>
+        <th class="product-details-data">50 м</th>
+      </tr>
+      <tr>
+        <td class="product-details-data-text">Радиус поражения</td>
+        <td class="product-details-data-text">Дальность полета</td>
+      </tr>
+    </table>
   </section>
 
   <!-- xxx: PRODUCT-CATEGORIES -->
 
-<section class="product-categories">
-  <ul>
-    <li class="product-category-item">
-      <a href="#">
-        <img src="#" class="product-category-img" alt="Изображение очков для виртуальной реальности">
-        <h3 class="product-category-title">Виртуальная реальность</h3>
-      </a>
-    </li>
-    <li class="product-category-item">
-      <a href="#">
-        <img src="#" class="product-category-img" aria-hidden="true" alt="">
-        <h3 class="product-category-title">Моноподы для селфи</h3>
-      </a>
-    </li>
-    <li class="product-category-item">
-         <!-- TODO: DL/DT  -->
-            <!-- TODO: snippet todo  -->
+  <section class="product-categories">
+    <ul>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" alt="Изображение очков для виртуальной реальности">
+          <h3 class="product-category-title">Виртуальная реальность</h3>
+        </a>
+      </li>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" aria-hidden="true" alt="">
+          <h3 class="product-category-title">Моноподы для селфи</h3>
+        </a>
+      </li>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" aria-hidden="true" alt="">
+          <h3 class="product-category-title">Экшн-камеры</h3>
+        </a>
+      </li>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" aria-hidden="true" alt="">
+          <h3 class="product-category-title">Фитнес-браслеты</h3>
+        </a>
+      </li>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" aria-hidden="true" alt="">
+          <h3 class="product-category-title">Умные часы</h3>
+        </a>
+      </li>
+      <li class="product-category-item">
+        <a href="#">
+          <img src="#" class="product-category-img" aria-hidden="true" alt="">
+          <h3 class="product-category-title">Квадрокоптеры</h3>
+        </a>
+      </li>
+    </ul>
+  </section>
 
+  <!-- xxx: SHIPPING -->
+  <section class="shipping">
+    <h2 class="visually-hidden">Доставка и гарантия</h2>
+    <div class="shipping-options">
+      <dl class="shipping-options-list">
+        <dt class="shipping-options-listitem">Доставка</dt>
+        <dd><span class="shipping-options-listitem-h">Доставка</span>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно! Ведь<br>
+            мы неплохо заработаем, поднимая его на ваш этаж.
+          </p>
+        </dd>
+        <dt class="shipping-options-listitem">Гарантия</dt>
+        <dd class="visually-hidden"></dd>
+        <dt class="shipping-options-listitem">Кредит</dt>
+        <dd class="visually-hidden"></dd>
+      </dl>
+    </div>
 
-      <a href="#">
-        <img src="#" class="product-category-img" aria-hidden="true" alt="">
-        <h3 class="product-category-title">Экшн-камеры</h3>
-      </a>
-    </li>
-    <li class="product-category-item">
-      <a href="#">
-        <img src="#" class="product-category-img" aria-hidden="true" alt="">
-        <h3 class="product-category-title">Фитнес-браслеты</h3>
-      </a>
-    </li>
-    <li class="product-category-item">
-      <a href="#">
-        <img src="#" class="product-category-img" aria-hidden="true" alt="">
-        <h3 class="product-category-title">Умные часы</h3>
-      </a>
-    </li>
-    <li class="product-category-item">
-      <a href="#">
-        <img src="#" class="product-category-img" aria-hidden="true" alt="">
-        <h3 class="product-category-title">Квадрокоптеры</h3>
-      </a>
-    </li>
-  </ul>
-</section>
-
-<!-- xxx: SHIPPING -->
-<section class="shipping">
-  <!-- TODO: Add list -->
-</section>
+  </section>
 </body>
 
 <!-- FOOTER -->
