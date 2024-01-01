@@ -3,9 +3,10 @@
 <!-- xxx: HEAD -->
 
 <head>
+  <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>HTML Academy: Device</title>
-  <link rel="stylesheet" href="./styles/styles.css" />
   <!-- TODO: ADD SLIDER-->
   <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
 </head>
@@ -46,8 +47,7 @@
       <!-- xxx: NAV-SUBMENU -->
       <div class="nav-submenu">
         <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
-        <h2 class="visually-hidden">Каталог товаров</h2>
-        <span class="nav-submenu-item">
+                <span class="nav-submenu-item">
           <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
         </span>
         <!-- [?]: нужен ли лейбл вместо спана, для кнопки <label for="nav-submenu-button" class="nav-submenu-item">Каталог товаров</label> -->
@@ -74,7 +74,7 @@
 
   <!-- xxx: SLIDER SECTION-->
   <section class="lead-product">
-    <h3 class="visually-hidden">Самый популярный продукт</h3>
+    <h2 class="visually-hidden">Самый популярный продукт</h2>
     <dl class="product-item">
       <dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
       <dd class="desc">
@@ -104,6 +104,7 @@
   <!-- xxx: PRODUCT-CATEGORIES -->
 
   <section class="product-categories">
+    <h2 class="visually-hidden">Каталог товаров</h2>
     <ul>
       <li class="product-category-item">
         <a href="#">
@@ -164,17 +165,72 @@
       </dl>
     </div>
   </section>
+<!-- xxx:SHIPPING MODAL BUTTON -->
+  <div class="shipping-modal-button">
+    <ul class="shipping-modal-button-list">
+      <li class="shipping-modal-button-listitem"><img src="#" alt="Картинка грузовичка"></li>
+      <li class="shipping-modal-button-listitem"><p>Доставим редкий товар под заказ</p></li>
+      <li class="shipping-modal-button-listitem"><img src="#" alt="Информация"></li>
+    </ul>
+    </div>
 
+    <!-- xxx:ABOUT -->
   <section class="about">
-<div class="shipping-modal-button">
-<ul class="shipping-modal-button-list">
-  <li class="shipping-modal-button-listitem"><img src="#" alt="Картинка грузовичка"></li>
-  <li class="shipping-modal-button-listitem"><p>Доставим редкий товар под заказ</p></li>
-  <li class="shipping-modal-button-listitem"><img src="#" alt="Информация"></li>
-</ul>
+<!-- TODO: О нас, Контакты. Подумать как сделать в два столбца -->
+<div class="about-item">
+  <h2 class="visually-hidden">О нашем магазине</h2>
+  <span class="about-item-title">О нас</span>
+  <p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
+  <p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
+  <ul class="transport-companies">
+    <li>
+      <strong>Меловые линии</strong>
+    </li>
+    <li>
+      <strong>СДИК</strong>
+    </li>
+    <li>
+      <strong>ТоксБерри</strong>
+    </li>
+  </ul>
+  <a href="#" class="button-link"><span>Подробнее о нас</span></a>
 </div>
 
+<div class="about-item">
+  <h2 class="visually-hidden">Контактная информация</h2>
+  <span class="about-item-title">Контакты</span>
+  <p>
+    Вы можете забрать товар сами, заехав в наш офис.<br>
+    Заодно сможете проверить работоспособность покупки.
+  </p>
+  <address>
+    <span class="about-item-subtitle">Интернет-магазин «Девайс»</span>
+    <p class="about-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+    <a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
+  </address>
+  <span class="about-item-subtitle"><strong>Время работы</strong></span>
+  <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+  <a href="#" class="button-link"><span>Напишите нам</span></a>
+</div>
   </section>
+
+  <!-- TODO: Добавить блок подписки -->
+  Подпишитесь
+на рассылку
+Еженедельный дайджест с обзорами новинок,
+длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+
+Ваш e-mail
+Подписаться
+Это бесплатно
+
+<!-- TODO: Добавить футер -->
+Санкт-Петербург, набережная
+реки Карповки, 5, литера П.
+Доставка
+Гарантия
+Контакты
+Тел.: +7 (812) 812-12-12
 </body>
 
 <!-- FOOTER -->
