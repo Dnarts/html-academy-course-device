@@ -17,8 +17,8 @@
   <!-- xxx:  HEADER -->
   <header class="header-main">
     <nav class="header-nav">
-      <a class="logo" href="#">
-        <img src="#" width="175" height="50" alt=" интернет-магазина Device" />
+      <a class="logo" id="top" href="#">
+        <img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
       </a>
       <h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
       <!-- xxx: NAV-SEARCH -->
@@ -46,7 +46,9 @@
 
       <!-- xxx: NAV-SUBMENU -->
       <div class="nav-submenu">
-        <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link -->
+        <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link
+        Это указывает на потенциальную необходимость рефакторинга классов для уменьшения
+        дублирования и упрощения CSS.-->
                 <span class="nav-submenu-item">
           <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
         </span>
@@ -146,19 +148,22 @@
   </section>
 
   <!-- xxx: SHIPPING -->
-  <section class="shipping">
+  <section class="shipping" id="shipping">
     <h2 class="visually-hidden">Доставка и гарантия</h2>
     <div class="shipping-options">
       <dl class="shipping-options-list">
         <dt class="shipping-options-listitem">Доставка</dt>
-        <dd><span class="shipping-options-listitem-h">Доставка</span>
+        <dd class=""><span class="pseudo-title">Доставка</span>
           <p>
             Мы с удовольствием доставим ваш товар прямо<br>
             к вашему подъезду совершенно бесплатно! Ведь<br>
             мы неплохо заработаем, поднимая его на ваш этаж.
           </p>
         </dd>
-        <dt class="shipping-options-listitem">Гарантия</dt>
+        <dt class="shipping-options-listitem" id="warranty">Гарантия</dt>
+        <!-- TODO: при нажатии на href#warranty в футере
+           должен быть выбран элемент <dt>Гарантия</dt> чтобы обновилось описание термина
+          [?] подумать над реализацией в JS или HTML/CSS? -->
         <dd class="visually-hidden"></dd>
         <dt class="shipping-options-listitem">Кредит</dt>
         <dd class="visually-hidden"></dd>
@@ -179,7 +184,7 @@
 <!-- TODO: О нас, Контакты. Подумать как сделать в два столбца -->
 <div class="about-item">
   <h2 class="visually-hidden">О нашем магазине</h2>
-  <span class="about-item-title">О нас</span>
+  <span class="pseudo-title">О нас</span>
   <p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
   <p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
   <ul class="transport-companies">
@@ -196,9 +201,9 @@
   <a href="#" class="button-link"><span>Подробнее о нас</span></a>
 </div>
 
-<div class="about-item">
+<div class="about-item" id="contacts">
   <h2 class="visually-hidden">Контактная информация</h2>
-  <span class="about-item-title">Контакты</span>
+  <span class="pseudo-title">Контакты</span>
   <p>
     Вы можете забрать товар сами, заехав в наш офис.<br>
     Заодно сможете проверить работоспособность покупки.
@@ -215,31 +220,73 @@
   </section>
 
 <!-- xxx: SUBSCRIBE -->
-  <!-- TODO: Добавить блок подписки -->
-  Подпишитесь
-на рассылку
-Еженедельный дайджест с обзорами новинок,
-длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+  <section class="subscribe-block">
+        <div class="subscribe-desc">
+          <h2 class="pseudo-title">
+              Подпишитесь<br>
+              на рассылку
+          </h2>
+          <p>
+            Еженедельный дайджест с обзорами новинок,
+            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+          </p>
+        </div>
 
-Ваш e-mail
-Подписаться
-Это бесплатно
+        <div class="subscribe-wrapper">
+          <form action="https://echo.htmlacademy.ru/" class="subscribe-form">
+            <input id="subscribe-input" name="subscribe-input" type="email" placeholder="Ваш e-mail"/>
+              <button type="submit" class="subscribe-submit">Подписаться</button>
+          </form>
+          <p class="subscribe-free">Это бесплатно</p>
+        </div>
+  </section>
+
 
 <!-- xxx: FOOTER -->
-<!-- TODO: Добавить футер -->
-Санкт-Петербург, набережная
-реки Карповки, 5, литера П.
-Доставка
-Гарантия
-Контакты
-Тел.: +7 (812) 812-12-12
 
+<footer>
 
-<!-- TODO: Соцести
-Facebook — https://www.facebook.com/htmlacademy
-Instagram — https://www.instagram.com/htmlacademy/
-Twitter — https://twitter.com/htmlacademy_ru
-Логотип .html academy ведёт на главную страницу сайта разработчика — https://htmlacademy.ru/  -->
+  <a href="#top" class="logo-footer"><img src="#" width="175" height="50" alt="Логотип Device, прокрутить вверх" /></a>
+<ul class="footer-nav">
+  <li>
+    <address class="footer-address">
+      <p>
+        Санкт-Петербург, набережная<br>
+        реки Карповки, 5, литера П.
+      </p>
+    </address>
+  </li>
+  <li>
+    <ul class="footer-nav-list">
+      <li class="footer-nav-list-item"><a href="#shipping">Доставка</a></li>
+      <li class="footer-nav-list-item"><a href="#warranty">Гарантия</a></li>
+      <li class="footer-nav-list-item"><a href="#contacts">Контакты</a></li>
+    </ul>
+  </li>
+  <li><a href="tel:+78128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a></li>
+</ul>
+
+<ul class="footer-bottom-list">
+  <!-- [?] Добавить желтую полосу через CSS или svg элемент в icon-divider  -->
+  <li class="icon-divider"></li>
+  <li class="socials">
+<ul class="socials-list">
+  <li class="socials-list-item">
+<a href="https://www.facebook.com/htmlacademy" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Фейсбук"></a>
+  </li>
+  <li class="socials-list-item">
+<a href="https://www.instagram.com/htmlacademy/" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Инстаграм"></a>
+  </li>
+  <li class="socials-list-item">
+<a href="https://twitter.com/htmlacademy_ru" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Твиттер"></a>
+  </li>
+</ul>
+  </li>
+  <li class="icon-htmlacademy"><a href="https://htmlacademy.ru/">
+    <p>.html<br>&nbsp&nbsp&nbspacademy</p>
+  </a></li>
+</ul>
+</footer>
 
 
 <!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов в промо-слайдере и в блоке «Сервисы» обязательна. -->
