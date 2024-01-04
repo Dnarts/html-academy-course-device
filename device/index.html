@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- xxx: HEAD -->
 
 <head>
   <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
@@ -9,6 +8,10 @@
   <title>HTML Academy: Device</title>
   <!-- TODO: ADD SLIDER-->
   <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
+
+<!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов
+  в промо-слайдере и в блоке «Сервисы» обязательна. -->
+
 </head>
 
 <!-- BODY -->
@@ -46,27 +49,24 @@
 
       <!-- xxx: NAV-SUBMENU -->
       <div class="nav-submenu">
-        <!-- TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link
-        Это указывает на потенциальную необходимость рефакторинга классов для уменьшения
-        дублирования и упрощения CSS.-->
-                <span class="nav-submenu-item">
-          <a class="nav-submenu-link" href="./catalog.html">Каталог товаров</a>
-        </span>
-        <!-- [?]: нужен ли лейбл вместо спана, для кнопки <label for="nav-submenu-button" class="nav-submenu-item">Каталог товаров</label> -->
+
         <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button"
-          name="nav-menu-submenu-button"></button>
+          name="nav-menu-submenu-button">
+          <span class="nav-submenu-title nav-submenu-side-item">Каталог товаров</span>
+          <span class="nav-submenu-icon">+</span>
+        </button>
 
         <!-- NAV-SUBMENU-SIDEMENU -->
         <div class="nav-submenu-side-container">
           <ul class="nav-submenu-side">
             <li class="nav-submenu-side-item">
-              <a class="nav-submenu-side-link" href="#">Доставка</a>
+              <a href="#">Доставка</a>
             </li>
             <li class="nav-submenu-side-item">
-              <a class="nav-submenu-side-link" href="#">Гарантия</a>
+              <a href="#">Гарантия</a>
             </li>
             <li class="nav-submenu-side-item">
-              <a class="nav-submenu-side-link" href="#">Контакты</a>
+              <a href="#">Контакты</a>
             </li>
           </ul>
         </div>
@@ -181,7 +181,6 @@
 
     <!-- xxx:ABOUT -->
   <section class="about">
-<!-- TODO: О нас, Контакты. Подумать как сделать в два столбца -->
 <div class="about-item">
   <h2 class="visually-hidden">О нашем магазине</h2>
   <span class="pseudo-title">О нас</span>
@@ -198,7 +197,7 @@
       <strong>ТоксБерри</strong>
     </li>
   </ul>
-  <a href="#" class="button-link"><span>Подробнее о нас</span></a>
+  <a href="#" class="button-main-link"><span>Подробнее о нас</span></a>
 </div>
 
 <div class="about-item" id="contacts">
@@ -215,7 +214,7 @@
   </address>
   <span class="about-item-subtitle"><strong>Время работы</strong></span>
   <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-  <a href="#" class="button-link"><span>Напишите нам</span></a>
+  <a href="#" class="button-main-link"><span>Напишите нам</span></a>
 </div>
   </section>
 
@@ -267,7 +266,6 @@
 </ul>
 
 <ul class="footer-bottom-list">
-  <!-- [?] Добавить желтую полосу через CSS или svg элемент в icon-divider  -->
   <li class="icon-divider"></li>
   <li class="socials">
 <ul class="socials-list">
@@ -288,8 +286,6 @@
 </ul>
 </footer>
 
-
-<!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов в промо-слайдере и в блоке «Сервисы» обязательна. -->
 
 </body>
 
