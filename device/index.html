@@ -14,11 +14,12 @@
 
 </head>
 
-<!-- BODY -->
+<!--  -->
+ <!-- BODY -->
 
 <body>
 	<!--   HEADER -->
-	<header class="main_header">
+	<header class="main-header">
 		<nav class="header-nav">
 			<a class="logo" id="top" href="#">
 				<img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
@@ -30,41 +31,37 @@
 				<input type="submit" value="Найти" />
 			</form>
 
-			<!--  NAV-SIDEMENU -->
 			<ul class="main-nav-menu">
 				<li class="menu-item">
 					<!-- hack: иконки размечены, но скрыты -->
-					<span class="nav-icon-login hidden">login-icon</span>
+					<span class="icon-login hidden">icon-login</span>
 					<a class="menu-link" href="#">Войти</a>
 				</li>
 				<li class="menu-item">
-					<span class="nav-icon-analyze hidden">analyze-icon</span>
+					<span class="icon-analyze hidden">icon-analyze</span>
 					<a class="menu-link" href="#">Сравнить</a>
 				</li>
 				<li class="menu-item">
-					<span class="nav-icon-bucket hidden">bucket-icon</span>
+					<span class="nav-icon-bucket hidden">icon-bucket</span>
 					<a class="menu-link" href="#">Корзина</a>
 				</li>
 			</ul>
 
-			<!--  NAV-SUBMENU -->
 			<div class="nav-submenu">
-
-				<button class="nav-submenu-button" type="button" id="nav-menu-submenu-button" name="nav-menu-submenu-button">
-					<span class="nav-submenu-title nav-submenu-side-item">Каталог товаров</span>
-					<span class="nav-submenu-icon">+</span>
+				<button class="nav-submenu-button" type="button" id="nav-submenu-button" name="nav-menu-submenu-button">
+					<span class="nav-submenu-button-title">Каталог товаров</span>
+					<span class="nav-submenu-button-icon">+</span>
 				</button>
 
-				<!-- NAV-SUBMENU-SIDEMENU -->
-				<div class="nav-submenu-side-container">
-					<ul class="nav-submenu-side">
-						<li class="nav-submenu-side-item">
+				<div class="nav-submenu-r-container">
+					<ul class="nav-submenu-r-list">
+						<li class="nav-submenu-r-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="nav-submenu-side-item">
+						<li class="nav-submenu-r-item">
 							<a href="#">Гарантия</a>
 						</li>
-						<li class="nav-submenu-side-item">
+						<li class="nav-submenu-r-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -73,16 +70,15 @@
 		</nav>
 	</header>
 
-	<!--  SLIDER SECTION-->
 	<section class="lead-product">
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
-		<dl class="product-item">
-			<dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
-			<dd class="desc">
+		<dl class="lead-product-slider">
+			<dt class="product-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
+			<dd class="product-info">
 				<span class="tagline">Порхает как бабочка,<br>жалит как пчела!</span>
 				<p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под
 					стандартную камеру.</p>
-				<a class="product-info-link" href="#"><span>Подробнее</span></a>
+				<a class="learnmore-link" href="#"><span>Подробнее</span></a>
 			</dd>
 		</dl>
 		<ul class="slider-dot-list">
@@ -92,18 +88,17 @@
 		</ul>
 		<table>
 			<tr>
-				<th class="product-details-data">800 м</th>
-				<th class="product-details-data">50 м</th>
+				<th class="product-data-value">800 м</th>
+				<th class="product-data-value">50 м</th>
 			</tr>
 			<tr>
-				<td class="product-details-data-text">Радиус поражения</td>
-				<td class="product-details-data-text">Дальность полета</td>
+				<td class="product-data-desc">Радиус поражения</td>
+				<td class="product-data-desc">Дальность полета</td>
 			</tr>
 		</table>
 	</section>
 
-	<!--  PRODUCT-CATEGORIES -->
-
+	<!-- TODO проверить классы ниже -->
 	<section class="product-categories">
 		<h2 class="visually-hidden">Каталог товаров</h2>
 		<ul>
