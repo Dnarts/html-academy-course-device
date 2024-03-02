@@ -2,14 +2,14 @@
 <html lang="ru">
 
 <head>
-  <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <title>HTML Academy: Device</title>
-  <!-- TODO: ADD SLIDER-->
-  <!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
+	<link rel="stylesheet" href="./styles/styles.css" type="text/css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>HTML Academy: Device</title>
+	<!-- TODO: ADD SLIDER-->
+	<!-- <link rel="stylesheet" href="/device/styles/slider.css" > -->
 
-<!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов
+	<!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов
   в промо-слайдере и в блоке «Сервисы» обязательна. -->
 
 </head>
@@ -17,274 +17,279 @@
 <!-- BODY -->
 
 <body>
-  <!-- xxx:  HEADER -->
-  <header class="header-main">
-    <nav class="header-nav">
-      <a class="logo" id="top" href="#">
-        <img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
-      </a>
-      <h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
-      <!-- xxx: NAV-SEARCH -->
-      <form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-        <input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
-        <input type="submit" value="Найти" />
-      </form>
+	<!--   HEADER -->
+	<header class="header-main">
+		<nav class="header-nav">
+			<a class="logo" id="top" href="#">
+				<img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
+			</a>
+			<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
+			<!--  NAV-SEARCH -->
+			<form class="nav-search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+				<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+				<input type="submit" value="Найти" />
+			</form>
 
-      <!-- xxx: NAV-SIDEMENU -->
-      <ul class="nav-menu">
-        <li class="nav-menu-item">
-          <!-- hack: иконки размечены, но скрыты -->
-          <span class="nav-icon-login hidden">login-icon</span>
-          <a class="nav-menu-link" href="#">Войти</a>
-        </li>
-        <li class="nav-menu-item">
-          <span class="nav-icon-analyze hidden">analyze-icon</span>
-          <a class="nav-menu-link" href="#">Сравнить</a>
-        </li>
-        <li class="nav-menu-item">
-          <span class="nav-icon-bucket hidden">bucket-icon</span>
-          <a class="nav-menu-link" href="#">Корзина</a>
-        </li>
-      </ul>
+			<!--  NAV-SIDEMENU -->
+			<ul class="nav-menu">
+				<li class="nav-menu-item">
+					<!-- hack: иконки размечены, но скрыты -->
+					<span class="nav-icon-login hidden">login-icon</span>
+					<a class="nav-menu-link" href="#">Войти</a>
+				</li>
+				<li class="nav-menu-item">
+					<span class="nav-icon-analyze hidden">analyze-icon</span>
+					<a class="nav-menu-link" href="#">Сравнить</a>
+				</li>
+				<li class="nav-menu-item">
+					<span class="nav-icon-bucket hidden">bucket-icon</span>
+					<a class="nav-menu-link" href="#">Корзина</a>
+				</li>
+			</ul>
 
-      <!-- xxx: NAV-SUBMENU -->
-      <div class="nav-submenu">
+			<!--  NAV-SUBMENU -->
+			<div class="nav-submenu">
 
-        <button class="nav-submenu-button" type="button" id="nav-menu-submenu-button"
-          name="nav-menu-submenu-button">
-          <span class="nav-submenu-title nav-submenu-side-item">Каталог товаров</span>
-          <span class="nav-submenu-icon">+</span>
-        </button>
+				<button class="nav-submenu-button" type="button" id="nav-menu-submenu-button" name="nav-menu-submenu-button">
+					<span class="nav-submenu-title nav-submenu-side-item">Каталог товаров</span>
+					<span class="nav-submenu-icon">+</span>
+				</button>
 
-        <!-- NAV-SUBMENU-SIDEMENU -->
-        <div class="nav-submenu-side-container">
-          <ul class="nav-submenu-side">
-            <li class="nav-submenu-side-item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="nav-submenu-side-item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="nav-submenu-side-item">
-              <a href="#">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+				<!-- NAV-SUBMENU-SIDEMENU -->
+				<div class="nav-submenu-side-container">
+					<ul class="nav-submenu-side">
+						<li class="nav-submenu-side-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="nav-submenu-side-item">
+							<a href="#">Гарантия</a>
+						</li>
+						<li class="nav-submenu-side-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 
-  <!-- xxx: SLIDER SECTION-->
-  <section class="lead-product">
-    <h2 class="visually-hidden">Самый популярный продукт</h2>
-    <dl class="product-item">
-      <dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
-      <dd class="desc">
-        <span class="tagline">Порхает как бабочка,<br>жалит как пчела!</span>
-        <p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под
-          стандартную камеру.</p>
-        <a class="product-info-link" href="#"><span>Подробнее</span></a>
-      </dd>
-    </dl>
-    <ul class="slider-dot-list">
-      <li class="slider-dot-chosen"></li>
-      <li class="slider-dot-empty"></li>
-      <li class="slider-dot-empty"></li>
-    </ul>
-    <table>
-      <tr>
-        <th class="product-details-data">800 м</th>
-        <th class="product-details-data">50 м</th>
-      </tr>
-      <tr>
-        <td class="product-details-data-text">Радиус поражения</td>
-        <td class="product-details-data-text">Дальность полета</td>
-      </tr>
-    </table>
-  </section>
+	<!--  SLIDER SECTION-->
+	<section class="lead-product">
+		<h2 class="visually-hidden">Самый популярный продукт</h2>
+		<dl class="product-item">
+			<dt class="slider-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
+			<dd class="desc">
+				<span class="tagline">Порхает как бабочка,<br>жалит как пчела!</span>
+				<p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под
+					стандартную камеру.</p>
+				<a class="product-info-link" href="#"><span>Подробнее</span></a>
+			</dd>
+		</dl>
+		<ul class="slider-dot-list">
+			<li class="slider-dot-chosen"></li>
+			<li class="slider-dot-empty"></li>
+			<li class="slider-dot-empty"></li>
+		</ul>
+		<table>
+			<tr>
+				<th class="product-details-data">800 м</th>
+				<th class="product-details-data">50 м</th>
+			</tr>
+			<tr>
+				<td class="product-details-data-text">Радиус поражения</td>
+				<td class="product-details-data-text">Дальность полета</td>
+			</tr>
+		</table>
+	</section>
 
-  <!-- xxx: PRODUCT-CATEGORIES -->
+	<!--  PRODUCT-CATEGORIES -->
 
-  <section class="product-categories">
-    <h2 class="visually-hidden">Каталог товаров</h2>
-    <ul>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" alt="Изображение очков для виртуальной реальности">
-          <h3 class="product-category-title">Виртуальная реальность</h3>
-        </a>
-      </li>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" aria-hidden="true" alt="">
-          <h3 class="product-category-title">Моноподы для селфи</h3>
-        </a>
-      </li>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" aria-hidden="true" alt="">
-          <h3 class="product-category-title">Экшн-камеры</h3>
-        </a>
-      </li>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" aria-hidden="true" alt="">
-          <h3 class="product-category-title">Фитнес-браслеты</h3>
-        </a>
-      </li>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" aria-hidden="true" alt="">
-          <h3 class="product-category-title">Умные часы</h3>
-        </a>
-      </li>
-      <li class="product-category-item">
-        <a href="#">
-          <img src="#" class="product-category-img" aria-hidden="true" alt="">
-          <h3 class="product-category-title">Квадрокоптеры</h3>
-        </a>
-      </li>
-    </ul>
-  </section>
+	<section class="product-categories">
+		<h2 class="visually-hidden">Каталог товаров</h2>
+		<ul>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" alt="Изображение очков для виртуальной реальности">
+					<h3 class="product-category-title">Виртуальная реальность</h3>
+				</a>
+			</li>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" aria-hidden="true" alt="">
+					<h3 class="product-category-title">Моноподы для селфи</h3>
+				</a>
+			</li>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" aria-hidden="true" alt="">
+					<h3 class="product-category-title">Экшн-камеры</h3>
+				</a>
+			</li>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" aria-hidden="true" alt="">
+					<h3 class="product-category-title">Фитнес-браслеты</h3>
+				</a>
+			</li>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" aria-hidden="true" alt="">
+					<h3 class="product-category-title">Умные часы</h3>
+				</a>
+			</li>
+			<li class="product-category-item">
+				<a href="#">
+					<img src="#" class="product-category-img" aria-hidden="true" alt="">
+					<h3 class="product-category-title">Квадрокоптеры</h3>
+				</a>
+			</li>
+		</ul>
+	</section>
 
-  <!-- xxx: SHIPPING -->
-  <section class="shipping" id="shipping">
-    <h2 class="visually-hidden">Доставка и гарантия</h2>
-    <div class="shipping-options">
-      <dl class="shipping-options-list">
-        <dt class="shipping-options-listitem">Доставка</dt>
-        <dd class=""><span class="pseudo-title">Доставка</span>
-          <p>
-            Мы с удовольствием доставим ваш товар прямо<br>
-            к вашему подъезду совершенно бесплатно! Ведь<br>
-            мы неплохо заработаем, поднимая его на ваш этаж.
-          </p>
-        </dd>
-        <dt class="shipping-options-listitem" id="warranty">Гарантия</dt>
-        <!-- TODO: при нажатии на href#warranty в футере
+	<!--  SHIPPING -->
+	<section class="shipping" id="shipping">
+		<h2 class="visually-hidden">Доставка и гарантия</h2>
+		<div class="shipping-options">
+			<dl class="shipping-options-list">
+				<dt class="shipping-options-listitem">Доставка</dt>
+				<dd class=""><span class="pseudo-title">Доставка</span>
+					<p>
+						Мы с удовольствием доставим ваш товар прямо<br>
+						к вашему подъезду совершенно бесплатно! Ведь<br>
+						мы неплохо заработаем, поднимая его на ваш этаж.
+					</p>
+				</dd>
+				<dt class="shipping-options-listitem" id="warranty">Гарантия</dt>
+				<!-- TODO: при нажатии на href#warranty в футере
            должен быть выбран элемент <dt>Гарантия</dt> чтобы обновилось описание термина
           [?] подумать над реализацией в JS или HTML/CSS? -->
-        <dd class="visually-hidden"></dd>
-        <dt class="shipping-options-listitem">Кредит</dt>
-        <dd class="visually-hidden"></dd>
-      </dl>
-    </div>
-  </section>
-<!-- xxx:SHIPPING MODAL BUTTON -->
-  <div class="shipping-modal-button">
-    <ul class="shipping-modal-button-list">
-      <li class="shipping-modal-button-listitem"><img src="#" alt="Картинка грузовичка"></li>
-      <li class="shipping-modal-button-listitem"><p>Доставим редкий товар под заказ</p></li>
-      <li class="shipping-modal-button-listitem"><img src="#" alt="Информация"></li>
-    </ul>
-    </div>
+				<dd class="visually-hidden"></dd>
+				<dt class="shipping-options-listitem">Кредит</dt>
+				<dd class="visually-hidden"></dd>
+			</dl>
+		</div>
+	</section>
+	<!-- SHIPPING MODAL BUTTON -->
+	<div class="shipping-modal-button">
+		<ul class="shipping-modal-button-list">
+			<li class="shipping-modal-button-listitem"><img src="#" alt="Картинка грузовичка"></li>
+			<li class="shipping-modal-button-listitem">
+				<p>Доставим редкий товар под заказ</p>
+			</li>
+			<li class="shipping-modal-button-listitem"><img src="#" alt="Информация"></li>
+		</ul>
+	</div>
 
-    <!-- xxx:ABOUT -->
-  <section class="about">
-<div class="about-item">
-  <h2 class="visually-hidden">О нашем магазине</h2>
-  <span class="pseudo-title">О нас</span>
-  <p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
-  <p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
-  <ul class="transport-companies">
-    <li>
-      <strong>Меловые линии</strong>
-    </li>
-    <li>
-      <strong>СДИК</strong>
-    </li>
-    <li>
-      <strong>ТоксБерри</strong>
-    </li>
-  </ul>
-  <a href="#" class="button-main-link"><span>Подробнее о нас</span></a>
-</div>
+	<!-- ABOUT -->
+	<section class="about">
+		<div class="about-item">
+			<h2 class="visually-hidden">О нашем магазине</h2>
+			<span class="pseudo-title">О нас</span>
+			<p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
+			<p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
+			<ul class="transport-companies">
+				<li>
+					<strong>Меловые линии</strong>
+				</li>
+				<li>
+					<strong>СДИК</strong>
+				</li>
+				<li>
+					<strong>ТоксБерри</strong>
+				</li>
+			</ul>
+			<a href="#" class="button-main-link"><span>Подробнее о нас</span></a>
+		</div>
 
-<div class="about-item" id="contacts">
-  <h2 class="visually-hidden">Контактная информация</h2>
-  <span class="pseudo-title">Контакты</span>
-  <p>
-    Вы можете забрать товар сами, заехав в наш офис.<br>
-    Заодно сможете проверить работоспособность покупки.
-  </p>
-  <address>
-    <span class="about-item-subtitle"><strong>Интернет-магазин «Девайс»</strong></span>
-    <p class="about-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-    <a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
-  </address>
-  <span class="about-item-subtitle"><strong>Время работы</strong></span>
-  <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-  <a href="#" class="button-main-link"><span>Напишите нам</span></a>
-</div>
-  </section>
+		<div class="about-item" id="contacts">
+			<h2 class="visually-hidden">Контактная информация</h2>
+			<span class="pseudo-title">Контакты</span>
+			<p>
+				Вы можете забрать товар сами, заехав в наш офис.<br>
+				Заодно сможете проверить работоспособность покупки.
+			</p>
+			<address>
+				<span class="about-item-subtitle"><strong>Интернет-магазин «Девайс»</strong></span>
+				<p class="about-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+				<a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
+			</address>
+			<span class="about-item-subtitle"><strong>Время работы</strong></span>
+			<p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+			<a href="#" class="button-main-link"><span>Напишите нам</span></a>
+		</div>
+	</section>
 
-<!-- xxx: SUBSCRIBE -->
-  <section class="subscribe-block">
-        <div class="subscribe-desc">
-          <h2 class="pseudo-title">
-              Подпишитесь<br>
-              на рассылку
-          </h2>
-          <p>
-            Еженедельный дайджест с обзорами новинок,
-            длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
-          </p>
-        </div>
+	<!--  SUBSCRIBE -->
+	<section class="subscribe-block">
+		<div class="subscribe-desc">
+			<h2 class="pseudo-title">
+				Подпишитесь<br>
+				на рассылку
+			</h2>
+			<p>
+				Еженедельный дайджест с обзорами новинок,
+				длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+			</p>
+		</div>
 
-        <div class="subscribe-wrapper">
-          <form action="https://echo.htmlacademy.ru/" class="subscribe-form">
-            <input id="subscribe-input" name="subscribe-input" type="email" placeholder="Ваш e-mail"/>
-              <button type="submit" class="subscribe-submit">Подписаться</button>
-          </form>
-          <p class="subscribe-free">Это бесплатно</p>
-        </div>
-  </section>
+		<div class="subscribe-wrapper">
+			<form action="https://echo.htmlacademy.ru/" class="subscribe-form">
+				<input id="subscribe-input" name="subscribe-input" type="email" placeholder="Ваш e-mail" />
+				<button type="submit" class="subscribe-submit">Подписаться</button>
+			</form>
+			<p class="subscribe-free">Это бесплатно</p>
+		</div>
+	</section>
 
 
-<!-- xxx: FOOTER -->
+	<!--  FOOTER -->
 
-<footer>
+	<footer>
 
-  <a href="#top" class="logo-footer"><img src="#" width="175" height="50" alt="Логотип Device, прокрутить вверх" /></a>
-<ul class="footer-nav">
-  <li>
-    <address class="footer-address">
-      <p>
-        Санкт-Петербург, набережная<br>
-        реки Карповки, 5, литера П.
-      </p>
-    </address>
-  </li>
-  <li>
-    <ul class="footer-nav-list">
-      <li class="footer-nav-list-item"><a href="#shipping">Доставка</a></li>
-      <li class="footer-nav-list-item"><a href="#warranty">Гарантия</a></li>
-      <li class="footer-nav-list-item"><a href="#contacts">Контакты</a></li>
-    </ul>
-  </li>
-  <li><a href="tel:+78128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a></li>
-</ul>
+		<a href="#top" class="logo-footer"><img src="#" width="175" height="50"
+				alt="Логотип Device, прокрутить вверх" /></a>
+		<ul class="footer-nav">
+			<li>
+				<address class="footer-address">
+					<p>
+						Санкт-Петербург, набережная<br>
+						реки Карповки, 5, литера П.
+					</p>
+				</address>
+			</li>
+			<li>
+				<ul class="footer-nav-list">
+					<li class="footer-nav-list-item"><a href="#shipping">Доставка</a></li>
+					<li class="footer-nav-list-item"><a href="#warranty">Гарантия</a></li>
+					<li class="footer-nav-list-item"><a href="#contacts">Контакты</a></li>
+				</ul>
+			</li>
+			<li><a href="tel:+78128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a></li>
+		</ul>
 
-<ul class="footer-bottom-list">
-  <li class="icon-divider"></li>
-  <li class="socials">
-<ul class="socials-list">
-  <li class="socials-list-item">
-<a href="https://www.facebook.com/htmlacademy" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Фейсбук"></a>
-  </li>
-  <li class="socials-list-item">
-<a href="https://www.instagram.com/htmlacademy/" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Инстаграм"></a>
-  </li>
-  <li class="socials-list-item">
-<a href="https://twitter.com/htmlacademy_ru" class="socials-list-item-link"><img src="#" alt="Иконка соцсети Твиттер"></a>
-  </li>
-</ul>
-  </li>
-  <li class="icon-htmlacademy"><a href="https://htmlacademy.ru/">
-    <p>.html<br>&nbsp&nbsp&nbspacademy</p>
-  </a></li>
-</ul>
-</footer>
+		<ul class="footer-bottom-list">
+			<li class="icon-divider"></li>
+			<li class="socials">
+				<ul class="socials-list">
+					<li class="socials-list-item">
+						<a href="https://www.facebook.com/htmlacademy" class="socials-list-item-link"><img src="#"
+								alt="Иконка соцсети Фейсбук"></a>
+					</li>
+					<li class="socials-list-item">
+						<a href="https://www.instagram.com/htmlacademy/" class="socials-list-item-link"><img src="#"
+								alt="Иконка соцсети Инстаграм"></a>
+					</li>
+					<li class="socials-list-item">
+						<a href="https://twitter.com/htmlacademy_ru" class="socials-list-item-link"><img src="#"
+								alt="Иконка соцсети Твиттер"></a>
+					</li>
+				</ul>
+			</li>
+			<li class="icon-htmlacademy"><a href="https://htmlacademy.ru/">
+					<p>.html<br>&nbsp&nbsp&nbspacademy</p>
+				</a></li>
+		</ul>
+	</footer>
 
 
 </body>

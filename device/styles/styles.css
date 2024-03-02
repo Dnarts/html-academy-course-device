@@ -8,74 +8,41 @@ TODO:  При нехватке контента страницы подвал п
         дублирования и упрощения CSS.--> */
 /*  [?] определить скрытие заголовков и иконок от поиска и скринридеров
 и обычных посетителей - определить разницу visually-hidden и hidden*/
-body {
-  background-color: rgb(157, 157, 157);
+/* TODO:
+button#nav-menu-submenu-button.nav-submenu-button {
+  span.nav-submenu-title.nav-submenu-side-item {
 
-}
-
-.nav-submenu-side-item {
-  font-weight: bold;
-  font-size: 1.1em;
-  list-style: none;
-  font-family: 'Courier New', Courier, monospace;
-}
-.nav-submenu-side-item a {
-  text-decoration: inherit;
-  color: inherit; /* To ensure the links use the same color as the list item */
-}
-
-
-.nav-submenu {
-display: inline-flex;
-}
-
-.nav-submenu li {
-  display: inline;
   }
 
-.nav-submenu-button {
-  display: flex;
-  align-items: center;
-  background-color: transparent; /* Пример фона */
-  border: none; /* Пример границы */
-  padding: 10px; /* Пример внутренних отступов */
+  span.nav-submenu-icon {
+
+  }
+} */
+
+body {
+	background-color: rgb(157, 157, 157);
+
 }
 
-.nav-submenu-icon {
-  margin-left: 1em;
-}
-
-.nav-submenu-icon {
-  display: inline-block; /* or 'flex' to use 'align-items' and 'justify-content' */
-  width: 30px; /* Circle size */
-  height: 30px; /* Circle size */
-  line-height: 30px; /* Vertically center the content */
-  text-align: center; /* Horizontally center the content */
-  border-radius: 50%; /* Makes the element circular */
-  border: 2px solid #000; /* Border color */
-  font-size: 20px; /* Icon size */
-  margin-left: 10px; /* Space between the text and the circle */
-  /* Additional styles for color, background, etc., as needed */
-}
 
 
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-  white-space: nowrap; /* added for ensuring text doesn't wrap */
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
+	/* added for ensuring text doesn't wrap */
 }
 
 .hidden {
-  visibility: hidden;
-  position: absolute;
-  height: 0;
-  width: 0;
-  overflow: hidden;
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
 }
-
