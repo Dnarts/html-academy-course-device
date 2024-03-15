@@ -2,27 +2,77 @@
 <html lang="en">
 
 <!-- Выполните разметку внутренней страницы в файле catalog.html.
-TODO: — Нужен только HTML-код, стили делать не нужно.
-TODO: — На этом этапе не нужно размечать содержимое
-всплывающих окон и выпадающих блоков.
-TODO: — Также не нужно указывать пути и размеры для
-изображений. Достаточно разметки такого вида — <img src="" alt="Описание картинки">.
-TODO: — Для скрытых элементов используйте класс class="visually-hidden".
-TODO: — Если страница существует в макете, то на неё
-должна вести соответствующая ссылка, например, <a href="catalog.html">.
-TODO: — Если страницы нет в макете, то ссылка на неё
-должна быть следующего вида — <a href="#"></a>.
 TODO: — Для тестирования правильности работы форм можно использовать адрес https://echo.htmlacademy.ru/.
 TODO: СТРАНИЦА КАТАЛОГА У любого товара в каталоге может быть метка «NEW».
 -->
 
 <head>
+	<link rel="stylesheet" href="./styles/catalog-styles.css" type="text/css" />
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Каталог</title>
 </head>
 
 <body>
+	<header class="main-header">
+		<nav class="header-nav">
+			<a class="logo" id="top" href="#">
+				<img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
+			</a>
+			<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
+			<!--  NAV-SEARCH -->
+			<form class="search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+				<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+				<input type="submit" value="Найти" />
+			</form>
+
+			<ul class="main-nav-menu">
+				<li class="menu-item">
+					<a href="#">User Name</a>
+				</li>
+				<li class="menu-item">
+					<a class="menu-link" href="#">Выйти</a>
+				</li>
+				<li class="menu-item">
+					<span class="icon-analyze hidden">icon-analyze</span>
+					<a class="menu-link" href="#">Сравнить</a>
+				</li>
+				<li class="menu-item">
+					<span class="icon-bucket hidden">icon-bucket</span>
+					<a class="menu-link" href="#">Корзина</a>
+				</li>
+			</ul>
+
+			<div class="nav-submenu">
+				<button class="submenu-button" type="button" id="submenu-button" name="menu-submenu-button">
+					<span class="submenu-button-title">Каталог товаров</span>
+					<span class="submenu-button-icon">+</span>
+				</button>
+
+				<div class="submenu-r-container">
+					<ul class="submenu-r-list">
+						<li class="submenu-r-item">
+							<a href="#">Доставка</a>
+						</li>
+						<li class="submenu-r-item">
+							<a href="#">Гарантия</a>
+						</li>
+						<li class="submenu-r-item">
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<header class="in-header" id="in-header">
+		<h1 class="in-header-title">Моноподы для селфи</h1>
+		<ol class="breadcrumbs">
+	<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Главная</a></li>
+	<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог товаров</a></li>
+	<li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Моноподы для селфи</a></li>
+</ol>
+	</header>
 
 </body>
 

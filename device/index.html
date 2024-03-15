@@ -11,11 +11,10 @@
 
 	<!-- TODO: ГЛАВНАЯ СТРАНИЦА - Вёрстка всех слайдов
   в промо-слайдере и в блоке «Сервисы» обязательна. -->
-
 </head>
 
 <!--  -->
- <!-- BODY -->
+<!-- BODY -->
 
 <body>
 	<!--   HEADER -->
@@ -42,26 +41,26 @@
 					<a class="menu-link" href="#">Сравнить</a>
 				</li>
 				<li class="menu-item">
-					<span class="nav-icon-bucket hidden">icon-bucket</span>
+					<span class="icon-bucket hidden">icon-bucket</span>
 					<a class="menu-link" href="#">Корзина</a>
 				</li>
 			</ul>
 
 			<div class="nav-submenu">
-				<button class="nav-submenu-button" type="button" id="nav-submenu-button" name="nav-menu-submenu-button">
-					<span class="nav-submenu-button-title">Каталог товаров</span>
-					<span class="nav-submenu-button-icon">+</span>
+				<button class="submenu-button" type="button" id="submenu-button" name="menu-submenu-button">
+					<span class="submenu-button-title">Каталог товаров</span>
+					<span class="submenu-button-icon">+</span>
 				</button>
 
-				<div class="nav-submenu-r-container">
-					<ul class="nav-submenu-r-list">
-						<li class="nav-submenu-r-item">
+				<div class="submenu-r-container">
+					<ul class="submenu-r-list">
+						<li class="submenu-r-item">
 							<a href="#">Доставка</a>
 						</li>
-						<li class="nav-submenu-r-item">
+						<li class="submenu-r-item">
 							<a href="#">Гарантия</a>
 						</li>
-						<li class="nav-submenu-r-item">
+						<li class="submenu-r-item">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
@@ -73,11 +72,15 @@
 	<section class="lead-product">
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
 		<dl class="lead-product-slider">
-			<dt class="product-image"><img src="#" alt="Изображение Квадрокоптера, лидера продаж"></dt>
+			<dt class="product-image">
+				<img src="#" alt="Изображение Квадрокоптера, лидера продаж" />
+			</dt>
 			<dd class="product-info">
-				<span class="tagline">Порхает как бабочка,<br>жалит как пчела!</span>
-				<p class="desc">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под
-					стандартную камеру.</p>
+				<span class="tagline">Порхает как бабочка,<br />жалит как пчела!</span>
+				<p class="desc">
+					Этот обычный, на первый взгляд, квадрокоптер оснащен<br />мощным
+					лазером, замаскированным под стандартную камеру.
+				</p>
 				<a class="learnmore-link" href="#"><span>Подробнее</span></a>
 			</dd>
 		</dl>
@@ -99,79 +102,84 @@
 	</section>
 
 	<!-- TODO проверить классы ниже -->
-	<section class="product-categories">
+	<section class="catalog">
 		<h2 class="visually-hidden">Каталог товаров</h2>
 		<ul>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" alt="Изображение очков для виртуальной реальности">
-					<h3 class="product-category-title">Виртуальная реальность</h3>
+					<img src="#" class="catalog-img" alt="Изображение очков для виртуальной реальности" />
+					<h3 class="catalog-title">Виртуальная реальность</h3>
 				</a>
 			</li>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" aria-hidden="true" alt="">
-					<h3 class="product-category-title">Моноподы для селфи</h3>
+					<img src="#" class="catalog-img" aria-hidden="true" alt="" />
+					<h3 class="catalog-title">Моноподы для селфи</h3>
 				</a>
 			</li>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" aria-hidden="true" alt="">
-					<h3 class="product-category-title">Экшн-камеры</h3>
+					<img src="#" class="catalog-img" aria-hidden="true" alt="" />
+					<h3 class="catalog-title">Экшн-камеры</h3>
 				</a>
 			</li>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" aria-hidden="true" alt="">
-					<h3 class="product-category-title">Фитнес-браслеты</h3>
+					<img src="#" class="catalog-img" aria-hidden="true" alt="" />
+					<h3 class="catalog-title">Фитнес-браслеты</h3>
 				</a>
 			</li>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" aria-hidden="true" alt="">
-					<h3 class="product-category-title">Умные часы</h3>
+					<img src="#" class="catalog-img" aria-hidden="true" alt="" />
+					<h3 class="catalog-title">Умные часы</h3>
 				</a>
 			</li>
-			<li class="product-category-item">
+			<li class="catalog-item">
 				<a href="#">
-					<img src="#" class="product-category-img" aria-hidden="true" alt="">
-					<h3 class="product-category-title">Квадрокоптеры</h3>
+					<img src="#" class="catalog-img" aria-hidden="true" alt="" />
+					<h3 class="catalog-title">Квадрокоптеры</h3>
 				</a>
 			</li>
 		</ul>
 	</section>
 
-	<!--  SHIPPING -->
 	<section class="shipping" id="shipping">
 		<h2 class="visually-hidden">Доставка и гарантия</h2>
 		<div class="shipping-options">
 			<dl class="shipping-options-list">
-				<dt class="shipping-options-listitem">Доставка</dt>
-				<dd class=""><span class="pseudo-title">Доставка</span>
+				<dt class="shipping-options-list-item">Доставка</dt>
+				<!-- [?] что это -->
+				<dd class="">
+					<span class="pseudo-title">Доставка</span>
 					<p>
-						Мы с удовольствием доставим ваш товар прямо<br>
-						к вашему подъезду совершенно бесплатно! Ведь<br>
+						Мы с удовольствием доставим ваш товар прямо<br />
+						к вашему подъезду совершенно бесплатно! Ведь<br />
 						мы неплохо заработаем, поднимая его на ваш этаж.
 					</p>
 				</dd>
-				<dt class="shipping-options-listitem" id="warranty">Гарантия</dt>
+				<dt class="shipping-options-list-item" id="warranty">Гарантия</dt>
 				<!-- TODO: при нажатии на href#warranty в футере
            должен быть выбран элемент <dt>Гарантия</dt> чтобы обновилось описание термина
           [?] подумать над реализацией в JS или HTML/CSS? -->
 				<dd class="visually-hidden"></dd>
-				<dt class="shipping-options-listitem">Кредит</dt>
+				<dt class="shipping-options-list-item">Кредит</dt>
 				<dd class="visually-hidden"></dd>
 			</dl>
 		</div>
 	</section>
-	<!-- SHIPPING MODAL BUTTON -->
+	<!-- [?] wtf is this class-->
 	<div class="shipping-modal-button">
 		<ul class="shipping-modal-button-list">
-			<li class="shipping-modal-button-listitem"><img src="#" alt="Картинка грузовичка"></li>
-			<li class="shipping-modal-button-listitem">
+			<li class="shipping-modal-button-list-item">
+				<img src="#" alt="Картинка грузовичка" />
+			</li>
+			<li class="shipping-modal-button-list-item">
 				<p>Доставим редкий товар под заказ</p>
 			</li>
-			<li class="shipping-modal-button-listitem"><img src="#" alt="Информация"></li>
+			<li class="shipping-modal-button-list-item">
+				<img src="#" alt="Информация" />
+			</li>
 		</ul>
 	</div>
 
@@ -180,8 +188,14 @@
 		<div class="about-item">
 			<h2 class="visually-hidden">О нашем магазине</h2>
 			<span class="pseudo-title">О нас</span>
-			<p>Огромный выбор гаджетов не оставит равнодушным<br> гика, который есть в каждом из нас.</p>
-			<p>Мы можем доставить ваш товар в самые отдалённые<br> уголки России транспортными компаниями:</p>
+			<p>
+				Огромный выбор гаджетов не оставит равнодушным<br />
+				гика, который есть в каждом из нас.
+			</p>
+			<p>
+				Мы можем доставить ваш товар в самые отдалённые<br />
+				уголки России транспортными компаниями:
+			</p>
 			<ul class="transport-companies">
 				<li>
 					<strong>Меловые линии</strong>
@@ -200,16 +214,18 @@
 			<h2 class="visually-hidden">Контактная информация</h2>
 			<span class="pseudo-title">Контакты</span>
 			<p>
-				Вы можете забрать товар сами, заехав в наш офис.<br>
+				Вы можете забрать товар сами, заехав в наш офис.<br />
 				Заодно сможете проверить работоспособность покупки.
 			</p>
 			<address>
 				<span class="about-item-subtitle"><strong>Интернет-магазин «Девайс»</strong></span>
-				<p class="about-adress">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+				<p class="about-adress">
+					Санкт-Петербург, набережная реки Карповки, 5, литера П.
+				</p>
 				<a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
 			</address>
 			<span class="about-item-subtitle"><strong>Время работы</strong></span>
-			<p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+			<p>пн—пт: с 10:00 до 22:00<br />сб—вс: с 10:00 до 19:00</p>
 			<a href="#" class="button-main-link"><span>Напишите нам</span></a>
 		</div>
 	</section>
@@ -218,12 +234,12 @@
 	<section class="subscribe-block">
 		<div class="subscribe-desc">
 			<h2 class="pseudo-title">
-				Подпишитесь<br>
+				Подпишитесь<br />
 				на рассылку
 			</h2>
 			<p>
-				Еженедельный дайджест с обзорами новинок,
-				длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.
+				Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+				распаковками, а также акции, спецпредложения и вот это вот всё.
 			</p>
 		</div>
 
@@ -236,30 +252,36 @@
 		</div>
 	</section>
 
-
 	<!--  FOOTER -->
 
 	<footer>
-
 		<a href="#top" class="logo-footer"><img src="#" width="175" height="50"
 				alt="Логотип Device, прокрутить вверх" /></a>
 		<ul class="footer-nav">
 			<li>
 				<address class="footer-address">
 					<p>
-						Санкт-Петербург, набережная<br>
+						Санкт-Петербург, набережная<br />
 						реки Карповки, 5, литера П.
 					</p>
 				</address>
 			</li>
 			<li>
 				<ul class="footer-nav-list">
-					<li class="footer-nav-list-item"><a href="#shipping">Доставка</a></li>
-					<li class="footer-nav-list-item"><a href="#warranty">Гарантия</a></li>
-					<li class="footer-nav-list-item"><a href="#contacts">Контакты</a></li>
+					<li class="footer-nav-list-item">
+						<a href="#shipping">Доставка</a>
+					</li>
+					<li class="footer-nav-list-item">
+						<a href="#warranty">Гарантия</a>
+					</li>
+					<li class="footer-nav-list-item">
+						<a href="#contacts">Контакты</a>
+					</li>
 				</ul>
 			</li>
-			<li><a href="tel:+78128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a></li>
+			<li>
+				<a href="tel:+78128121212" class="footer-tel">Тел.: +7 (812) 812-12-12</a>
+			</li>
 		</ul>
 
 		<ul class="footer-bottom-list">
@@ -268,26 +290,25 @@
 				<ul class="socials-list">
 					<li class="socials-list-item">
 						<a href="https://www.facebook.com/htmlacademy" class="socials-list-item-link"><img src="#"
-								alt="Иконка соцсети Фейсбук"></a>
+								alt="Иконка соцсети Фейсбук" /></a>
 					</li>
 					<li class="socials-list-item">
 						<a href="https://www.instagram.com/htmlacademy/" class="socials-list-item-link"><img src="#"
-								alt="Иконка соцсети Инстаграм"></a>
+								alt="Иконка соцсети Инстаграм" /></a>
 					</li>
 					<li class="socials-list-item">
 						<a href="https://twitter.com/htmlacademy_ru" class="socials-list-item-link"><img src="#"
-								alt="Иконка соцсети Твиттер"></a>
+								alt="Иконка соцсети Твиттер" /></a>
 					</li>
 				</ul>
 			</li>
-			<li class="icon-htmlacademy"><a href="https://htmlacademy.ru/">
-					<p>.html<br>&nbsp&nbsp&nbspacademy</p>
-				</a></li>
+			<li class="icon-htmlacademy">
+				<a href="https://htmlacademy.ru/">
+					<p>.html<br />&nbsp&nbsp&nbspacademy</p>
+				</a>
+			</li>
 		</ul>
 	</footer>
-
-
 </body>
-
 
 </html>
