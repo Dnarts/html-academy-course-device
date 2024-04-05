@@ -78,7 +78,7 @@ TODO: СТРАНИЦА КАТАЛОГА У любого товара в ката
 			</li>
 		</ol>
 	</header>
-	<form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
+	<form class="catalog-filter" id="catalog-filter" action="https://echo.htmlacademy.ru/" method="post">
 		<label for="catalog-filter">Фильтр</label>
 
 		<fieldset class="catalog-filter-group">
@@ -118,8 +118,7 @@ TODO: СТРАНИЦА КАТАЛОГА У любого товара в ката
 				</li>
 				<li class="catalog-filter-item">
 					<label class="control">
-						<input class="control-input visually-hidden" name="blue" type="checkbox"
-							aria-label="Выбрать цвет: Синий" />
+						<input class="control-input visually-hidden" name="blue" type="checkbox" aria-label="Выбрать цвет: Синий" />
 						<span class="control-mark"></span>
 						<span class="control-label">Синий</span>
 					</label>
@@ -135,13 +134,13 @@ TODO: СТРАНИЦА КАТАЛОГА У любого товара в ката
 				</li>
 				<li class="catalog-filter-item">
 					<!-- label example 2 -->
-					<input class="control-input visually-hidden" name="pink" type="checkbox"
-						aria-label="Выбрать цвет: Розовый" />
+					<input class="control-input visually-hidden" name="pink" type="checkbox" aria-label="Выбрать цвет: Розовый" />
 					<span class="control-mark"></span>
 					<label for="pink">Розовый</label>
 				</li>
 			</ul>
 		</fieldset>
+
 		<fieldset class="catalog-filter-group">
 			<legend class="catalog-filter-title">Bluetooth</legend>
 			<ul class="catalog-filter-list">
@@ -159,13 +158,63 @@ TODO: СТРАНИЦА КАТАЛОГА У любого товара в ката
 						<span class="control-mark"></span>
 						<span class="control-label">Нет</span>
 					</label>
-
 				</li>
-
 			</ul>
 		</fieldset>
 		<button type="submit" class="button">ПОКАЗАТЬ</button>
 	</form>
+	<form class="catalog-sorting" id="catalog-sorting" action="https://echo.htmlacademy.ru" method="post">
+		<label for="sorting"></label>
+		<select class="select-control" name="sort-by" id="sort-by">
+			<option value="popularity" selected>Популярные</option>
+			<option value="rate">По-рейтингу</option>
+			<option value="price">По-цене</option>
+		</select>
+		<button class="visually-hidden" type="submit">Отсортировать</button>
+	</form>
+	<a href="#" class="sort-item button" title="По возрастанию цены" aria-label="По возрастанию цены">
+		<img src="./images/sort-triangle.svg" width="22" alt="">
+	</a>
+	<a href="#" class="sort-item button" title="По убыванию цены" aria-label="По убыванию цены">
+		<img class="reversed" src="./images/sort-triangle.svg" width="22" alt="">
+	</a>
+
+	<ul class="product-list">
+		<li class="product-card">
+			<img class="product-card-new hidden" src="./images/new.svg" width="30" alt="Новинка"><img>
+			<a class="product-card-link" href="#">
+				<img class="product-card-img" src="#" width="175" height="175" alt=""><img>
+				<h3 class="product-card-title">Любительская
+					селфи-палка</h3>
+			</a>
+			<span class="product-card-price">500 &#x20BD</span>
+		</li>
+		<li class="product-card">
+			<a class="product-card-link" href="#">
+				<img src="#" width="175" height="175" alt=""><img>
+				<h3 class="product-card-title">Профессиональная селфи-палка </h3>
+			</a>
+				<span class="product-card-price">1500 &#x20BD</span>
+		</li>
+		<li class="product-card">
+			<a class="product-card-link" href="#">
+				<img src="#" width="175" height="175" alt=""><img>
+				<h3 class="product-card-title">Непотопляемая
+					селфи-палка</h3>
+			</a>
+				<span class="product-card-price">2500 &#x20BD</span>
+		</li>
+		<li class="product-card">
+			<a class="product-card-link" href="#">
+				<img src="#" width="175" height="175" alt=""><img>
+				<h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+			</a>
+				<span class="product-card-price">1500 &#x20BD</span>
+		</li>
+	</ul>
+
+
+
 </body>
 
 </html>
