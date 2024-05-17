@@ -8,7 +8,10 @@ device/.gitignore	f	2022-03-25T00:09:46Z
 device/.stylelintrc.json	f	2022-03-25T00:09:46Z
 device/Contributing.md	f	2022-03-25T00:09:46Z
 device/catalog.html	f	2024-04-05T11:04:08Z
-device/fonts	d	2023-12-09T12:08:36Z
+device/fonts	d	2024-05-17T08:20:30Z
+device/fonts/comfortaa	d	2024-05-17T08:23:24Z
+device/fonts/comfortaa/Comfortaa-Regular.woff	f	2024-05-17T08:22:48Z
+device/fonts/comfortaa/Comfortaa-Regular.woff2	f	2024-05-17T08:22:48Z
 device/fonts/raleway	d	2023-12-09T12:08:36Z
 device/fonts/raleway/raleway-800.woff2	f	2022-03-25T00:09:46Z
 device/fonts/rubik	d	2023-12-09T12:08:36Z
@@ -17,9 +20,9 @@ device/fonts/rubik/rubik-700.woff2	f	2022-03-25T00:09:46Z
 device/images	d	2024-04-05T08:40:09Z
 device/images/new.svg	f	2024-04-05T08:40:33Z
 device/images/sort-triangle.svg	f	2024-04-05T05:58:31Z
-device/index.html	f	2024-04-05T05:34:33Z
+device/index.html	f	2024-05-17T08:48:38Z
 device/styles	d	2024-01-05T13:39:58Z
 device/styles/catalog-styles.css	f	2024-04-05T06:09:40Z
 device/styles/slider.css	f	2023-12-10T05:51:00Z
-device/styles/styles.css	f	2024-02-24T17:14:25Z
+device/styles/styles.css	f	2024-05-17T08:48:39Z
 git-store-meta.pl	f	2023-08-02T12:33:53Z
