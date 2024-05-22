@@ -19,11 +19,9 @@ device/fonts/rubik/rubik-400.woff2	f	2022-03-25T00:09:46Z
 device/fonts/rubik/rubik-700.woff2	f	2022-03-25T00:09:46Z
 device/images	d	2024-05-22T16:07:20Z
 device/images/arrow.svg	f	2024-05-22T13:52:20Z
-device/images/cart.svg	f	2024-05-22T13:32:45Z
 device/images/catalog-ellipse.svg	f	2024-05-22T13:30:50Z
 device/images/catalog-minus.svg	f	2024-05-22T13:32:21Z
 device/images/catalog-plus.svg	f	2024-05-22T13:30:10Z
-device/images/compare.svg	f	2024-05-22T13:32:53Z
 device/images/content	d	2024-05-22T14:20:15Z
 device/images/content/slider-1.png	f	2024-05-22T13:49:29Z
 device/images/content/slider-2.png	f	2024-05-22T13:48:21Z
@@ -32,6 +30,9 @@ device/images/credit.svg	f	2024-05-22T14:17:17Z
 device/images/delivery.svg	f	2024-05-22T14:01:48Z
 device/images/facebook-logo.svg	f	2024-05-22T14:02:49Z
 device/images/html-academy-logo.svg	f	2024-05-22T14:02:20Z
+device/images/icon-cart.svg	f	2024-05-22T13:32:45Z
+device/images/icon-compare.svg	f	2024-05-22T13:32:53Z
+device/images/icon-profile.svg	f	2024-05-22T13:33:00Z
 device/images/index-catalog-images-1.svg	f	2024-05-22T14:01:02Z
 device/images/index-catalog-images-2.svg	f	2024-05-22T14:01:13Z
 device/images/index-catalog-images-3.svg	f	2024-05-22T14:01:21Z
@@ -44,10 +45,10 @@ device/images/instagram-logo.svg	f	2024-05-22T14:02:57Z
 device/images/logo.svg	f	2024-05-22T13:33:37Z
 device/images/nav-arrow.svg	f	2024-05-22T14:17:50Z
 device/images/new.svg	f	2024-05-22T13:33:52Z
-device/images/profile-icon.svg	f	2024-05-22T13:33:00Z
 device/images/repair.svg	f	2024-05-22T14:17:05Z
 device/images/search.svg	f	2024-05-22T13:33:09Z
 device/images/sort-triangle.svg	f	2024-05-22T13:34:00Z
+device/images/sort-up.svg	f	2024-05-22T16:00:14Z
 device/images/truck.svg	f	2024-05-22T14:02:12Z
 device/images/twitter-logo.svg	f	2024-05-22T14:03:05Z
 device/index.html	f	2024-05-22T17:02:50Z

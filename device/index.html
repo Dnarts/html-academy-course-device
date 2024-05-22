@@ -22,10 +22,11 @@
 	<header class="main-header">
 		<nav class="main-header-nav">
 			<a class="logo" id="top" href="#">
-				<img src="#" width="175" height="50" alt="Логотип интернет-магазина Device" />
+				<img src="./images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device" />
 			</a>
 			<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
 			<!--  NAV-SEARCH -->
+			<div class="usermenu-wrap">
 			<form class="search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
 				<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
 				<input type="submit" value="Найти" />
@@ -33,24 +34,24 @@
 
 			<ul class="usermenu">
 				<li class="usermenu-item">
-					<span class="icon-profile">icon-profile</span>
+					<img src="./images/icon-profile.svg" class="icon-profile " alt="" aria-hidden="true"/>
 					<a class="usermenu-link" href="#">Войти</a>
 				</li>
 
-				<li class="usermenu-item">
-					<span class="icon-profile">icon-profile</span>
+				<li class="usermenu-item hidden">
 					<a class="usermenu-link" href="#">Выйти</a>
 				</li>
 				<li class="usermenu-item">
-					<span class="icon-analyze">icon-analyze</span>
+					<img src="./images/icon-compare.svg" class="icon-compare " alt="" aria-hidden="true"/>
 					<a class="usermenu-link" href="#">Сравнить</a>
 				</li>
-				<li class="usermenu-item">
+				<li class="usermenu-item wrapper">
 					<span class="amount-purchased">2</span>
-					<span class="icon-bucket ">icon-bucket</span>
+					<img src="./images/icon-cart.svg" class="icon-cart " alt="" aria-hidden="true"/>
 					<a class="usermenu-link" href="#">Корзина</a>
 				</li>
 			</ul>
+		</div>
 
 			<div class="mainmenu">
 				<button class="mainmenu-button" type="button" id="mainmenu-button" name="mainmenu-button">
