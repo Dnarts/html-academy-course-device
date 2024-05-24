@@ -8,16 +8,7 @@ TODO:  При нехватке контента страницы подвал п
         дублирования и упрощения CSS.--> */
 /*  [?] определить скрытие заголовков и иконок от поиска и скринридеров
 и обычных посетителей - определить разницу visually-hidden и hidden*/
-/* TODO:
-button#nav-menu-submenu-button.nav-submenu-button {
-  span.nav-submenu-title.nav-submenu-side-item {
 
-  }
-
-  span.nav-submenu-icon {
-
-  }
-} */
 
 @font-face {
   font-family: "Comfortaa";
@@ -30,7 +21,17 @@ button#nav-menu-submenu-button.nav-submenu-button {
 
 body {
 	background-color: rgb(157, 157, 157);
-	margin-left: 1rem;
+	padding-left: 140px;
+	padding-right: 140px;
+}
+
+header, section {
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+body li {
+	list-style: none;
 }
 
 strong {
@@ -70,11 +71,14 @@ h1, h2 {
 	overflow: hidden;
 }
 
-.usermenu-wrap,
+.usermenu-search-wrap,
 .usermenu {
 	display:flex;
 	align-items:center;
+}
 
+.usermenu li{
+	margin-left: 0.8em;
 }
 
 .amount-purchased {
@@ -92,8 +96,8 @@ flex: 0 0 auto;
 }
 
 .usermenu-item.wrapper {
-    display: flex;    /* Создает горизонтальный ряд элементов */
-    align-items: last baseline; /* Вертикальное выравнивание элементов по центру */
+    display: flex;
+    align-items: last baseline;
 
 }
 
@@ -102,3 +106,41 @@ flex: 0 0 auto;
 	z-index: 1;
 }
 
+.mainmenu-button-container {
+	height: 50px;
+	width: 293px;
+	}
+
+	.mainmenu-button {
+	border-style: none;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	}
+
+.mainmenu-button-icon{
+	height: 50px;
+	width: 50px;
+	display: block;
+	background:
+	url('../images/catalog-ellipse.svg') no-repeat center center,
+	url('../images/catalog-plus.svg') no-repeat center center;
+	background-size: cover, 16px;
+}
+
+/* TODO:желтое относится к шапке, а 01 это номер слайда, слайды будут меняться и номер будет меняться
+https://discord.com/channels/874632952691191838/1197514562392567858
+https://discord.com/channels/874632952691191838/1243500845866287166
+*/
+
+/* TODO: разобраться чтобы не тянулся на всю шириун
+
+
+.usermenu-search-wrap {
+	border: #000000 solid 2px;
+	margin: 0;
+	box-sizing: content-box;
+
+}
+*/

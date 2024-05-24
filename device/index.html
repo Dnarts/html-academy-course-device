@@ -26,11 +26,13 @@
 			</a>
 			<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
 			<!--  NAV-SEARCH -->
-			<div class="usermenu-wrap">
+
+			<div class="usermenu-search-wrap">
 			<form class="search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
 				<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
 				<input type="submit" value="Найти" />
 			</form>
+		</div>
 
 			<ul class="usermenu">
 				<li class="usermenu-item">
@@ -51,13 +53,15 @@
 					<a class="usermenu-link" href="#">Корзина</a>
 				</li>
 			</ul>
-		</div>
+
 
 			<div class="mainmenu">
+				<div class="mainmenu-button-container">
 				<button class="mainmenu-button" type="button" id="mainmenu-button" name="mainmenu-button">
 					<span class="mainmenu-button-title">Каталог товаров</span>
-					<span class="mainmenu-button-icon">+</span>
+					<span class="mainmenu-button-icon"></span>
 				</button>
+				</div>
 
 				<div class="mainmenu-r-container">
 					<ul class="mainmenu-r-list">
@@ -80,9 +84,10 @@
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
 		<dl class="lead-product-slider">
 			<dt class="product-image">
-				<img src="#" alt="Изображение Квадрокоптера, лидера продаж" />
+				<img src="#" alt="Изображение модели лидера продаж среди квадрокоптеров, " />
 			</dt>
 			<dd class="product-info">
+				<span class="product-number">01</span><br>
 				<span class="tagline">Порхает как бабочка,<br />жалит как пчела!</span>
 				<p class="desc">
 					Этот обычный, на первый взгляд, квадрокоптер оснащен<br />мощным
@@ -182,6 +187,7 @@
 			</dl>
 		</div>
 	</section>
+	<section class="shipping">
 	<!-- [?] wtf is this class-->
 	<div class="shipping-modal-button">
 		<ul class="shipping-modal-button-list">
@@ -196,6 +202,7 @@
 			</li>
 		</ul>
 	</div>
+</section>
 
 	<!-- ABOUT -->
 	<section class="about">
