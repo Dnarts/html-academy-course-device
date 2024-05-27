@@ -19,13 +19,17 @@ TODO:  При нехватке контента страницы подвал п
   font-style: normal;
 }
 
-body {
-	background-color: rgb(157, 157, 157);
-	padding-left: 140px;
-	padding-right: 140px;
+:root {
+	--main-bg-color: #FFE17F;;
 }
 
-header, section {
+body,
+section {
+	background-color: rgb(157, 157, 157);
+ margin: 0 0 auto;
+}
+
+section {
 	padding-left: 60px;
 	padding-right: 60px;
 }
@@ -71,14 +75,47 @@ h1, h2 {
 	overflow: hidden;
 }
 
-.usermenu-search-wrap,
-.usermenu {
-	display:flex;
-	align-items:center;
+.main-header,
+.logo {
+	position: relative;
 }
 
-.usermenu li{
-	margin-left: 0.8em;
+.logo {
+	z-index: 2;
+}
+
+.main-header-nav {
+  transform: translateY(-18px);
+	background-color: var(--main-bg-color);
+	padding-top: 26px;
+	width: 100vw;
+}
+
+
+form.search  {
+	border: #000000 solid 2px;
+}
+
+
+.usermenu,
+.mainmenu {
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+
+.usermenu ul,
+.mainmenu ul,
+.main-header-nav li {
+	display: inline-flex;
+	margin-right: 0.8rem;
+}
+
+
+.usermenu-item.cart-wrap {
+	display: flex;
+	align-items: last baseline;
+
 }
 
 .amount-purchased {
@@ -95,11 +132,6 @@ margin-bottom: -5px;
 flex: 0 0 auto;
 }
 
-.usermenu-item.wrapper {
-    display: flex;
-    align-items: last baseline;
-
-}
 
 .icon-cart {
 	margin-left: -5px;
@@ -135,12 +167,4 @@ https://discord.com/channels/874632952691191838/1243500845866287166
 */
 
 /* TODO: разобраться чтобы не тянулся на всю шириун
-
-
-.usermenu-search-wrap {
-	border: #000000 solid 2px;
-	margin: 0;
-	box-sizing: content-box;
-
-}
 */
