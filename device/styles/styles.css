@@ -45,7 +45,26 @@ TODO:  При нехватке контента страницы подвал п
 			url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
+	/* added for ensuring text doesn't wrap */
+}
 
+.hidden {
+	visibility: hidden;
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+}
 
 body,
 section {
@@ -70,7 +89,6 @@ section {
 .mainmenu a,
 .mainmenu span {
 	font-family: "Railway", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
 	font-size: 21px;
@@ -83,38 +101,45 @@ body li {
 	list-style: none;
 }
 
-a {
+a, p {
 	text-decoration: none;
-}
-
-h1, h2 {
-
+	font-size: 18px;
 	font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-.visually-hidden {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	padding: 0;
-	overflow: hidden;
-	clip: rect(0, 0, 0, 0);
-	border: 0;
-	white-space: nowrap;
-	/* added for ensuring text doesn't wrap */
+h1, h2, .tagline {
+  font-size: 50px;
+	font-family: "Railway", sans-serif;
+  font-weight: 800;
+  font-style: normal;
 }
 
-.hidden {
-	visibility: hidden;
-	position: absolute;
-	height: 0;
-	width: 0;
-	overflow: hidden;
+
+
+th {
+	text-decoration: none;
+	font-size: 36px;
+	font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	color: var(--color-bl-primary);
+
 }
+
+td {
+
+	text-decoration: none;
+	font-size: 16px;
+	font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+	color: var(--color-bl-secondary);
+}
+
+
+
 
 .main-header,
 .logo {
@@ -170,8 +195,6 @@ padding-left: 16px;
 color: var(--color-bl-primary);
 }
 
-
-
 .usermenu,
 .mainmenu {
 	display:flex;
@@ -226,7 +249,6 @@ margin-bottom: -5px;
 flex: 0 0 auto;
 }
 
-
 .icon-cart {
 	margin-left: -18px;
 	z-index: 1;
@@ -248,6 +270,66 @@ flex: 0 0 auto;
 	url('../images/catalog-ellipse.svg') no-repeat center center,
 	url('../images/catalog-plus.svg') no-repeat center center;
 	background-size: cover, 16px;
+}
+
+.learnmore-link {
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/210px 8px;
+	font-size: 18px;
+	font-weight: 800;
+	width: 220px;
+height: 40px;
+text-transform: uppercase;
+letter-spacing: 3.6px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider-button.slider-prev {
+	background-image: url('../images/arrow.svg');
+	background-color: transparent;
+	width: 20px;
+	height: 60px;
+	border: none;
+	transform: rotate(180deg);
+}
+
+.slider-button.slider-next {
+	background-image: url('../images/arrow.svg');
+	background-color: transparent;
+	width: 20px;
+	height: 60px;
+	border: none;
+}
+
+.lead-product-slider {
+	display: flex;
+	transform: translateY(-210px);
+	justify-content: space-between;
+
+}
+
+.product-info {
+	display: grid;
+	transform: translateY(95px);
+}
+
+
+.product-number {
+	font-size: 180px;
+	font-family: 'Rubik';
+	font-weight: 700;
+	line-height: 30px;
+	transform: translateY(25px) translateX(310px);
+	z-index: -1;
+	position: absolute;
+	color: var(--color-bg-primary);
+}
+
+.product-data-value {
+	text-align: left;
+
 }
 
 /* TODO:желтое относится к шапке, а 01 это номер слайда, слайды будут меняться и номер будет меняться
