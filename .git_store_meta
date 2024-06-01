@@ -9,9 +9,6 @@ device/.stylelintrc.json	f	2022-03-25T00:09:46Z
 device/Contributing.md	f	2022-03-25T00:09:46Z
 device/catalog.html	f	2024-05-22T14:22:27Z
 device/fonts	d	2024-05-17T08:20:30Z
-device/fonts/comfortaa	d	2024-05-17T08:23:24Z
-device/fonts/comfortaa/Comfortaa-Regular.woff	f	2024-05-17T08:22:48Z
-device/fonts/comfortaa/Comfortaa-Regular.woff2	f	2024-05-17T08:22:48Z
 device/fonts/raleway	d	2023-12-09T12:08:36Z
 device/fonts/raleway/raleway-800.woff2	f	2022-03-25T00:09:46Z
 device/fonts/rubik	d	2023-12-09T12:08:36Z
@@ -54,9 +51,9 @@ device/images/sort-up.svg	f	2024-05-22T16:00:14Z
 device/images/tick-big.svg	f	2024-05-24T06:58:32Z
 device/images/truck.svg	f	2024-05-22T14:02:12Z
 device/images/twitter-logo.svg	f	2024-05-22T14:03:05Z
-device/index.html	f	2024-05-27T16:37:27Z
+device/index.html	f	2024-06-01T07:52:12Z
 device/styles	d	2024-01-05T13:39:58Z
 device/styles/catalog-styles.css	f	2024-04-05T06:09:40Z
 device/styles/slider.css	f	2023-12-10T05:51:00Z
-device/styles/styles.css	f	2024-05-29T10:18:38Z
+device/styles/styles.css	f	2024-05-29T10:21:04Z
 git-store-meta.pl	f	2023-08-02T12:33:53Z

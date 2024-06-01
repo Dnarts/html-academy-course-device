@@ -24,45 +24,49 @@
 			<img src="./images/logo.svg" width="145" height="36" alt="Логотип интернет-магазина Device" />
 		</a>
 		<nav class="main-header-nav">
-			
+
 			<h1 class="visually-hidden">Интернет-магазин электроники Device</h1>
 			<!--  NAV-SEARCH -->
 
 			<div class="usermenu">
-			<form class="search" action="https://echo.htmlacademy.ru/" method="post" target="_blank">
-				<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
-				<input type="submit" value="Найти" />
-			</form>
+				<div class="search">
+					<form action="https://echo.htmlacademy.ru/" method="post" target="_blank">
+						<div class="search-field">
+							<span class="icon-search"></span>
+							<input type="text" id="search-input" name="search-input" placeholder="Текст поиска" />
+						</div>
+						<input class="submit" type="submit" value="Найти" />
+					</form>
+				</div>
 
+				<ul class="usermenu-list">
+					<li class="usermenu-item login">
+						<img src="./images/icon-profile.svg" class="icon-profile" height="12px" width="15px"  alt="" aria-hidden="true"/>
+						<a class="usermenu-link " href="#">Войти</a>
+					</li>
 
-<ul class="usermenu-list">
-				<li class="usermenu-item">
-					<img src="./images/icon-profile.svg" class="icon-profile " alt="" aria-hidden="true"/>
-					<a class="usermenu-link" href="#">Войти</a>
-				</li>
-
-				<li class="usermenu-item hidden">
-					<a class="usermenu-link" href="#">Выйти</a>
-				</li>
-				<li class="usermenu-item">
-					<img src="./images/icon-compare.svg" class="icon-compare " alt="" aria-hidden="true"/>
-					<a class="usermenu-link" href="#">Сравнить</a>
-				</li>
-				<li class="usermenu-item cart-wrap">
-					<span class="amount-purchased">2</span>
-					<img src="./images/icon-cart.svg" class="icon-cart " alt="" aria-hidden="true"/>
-					<a class="usermenu-link" href="#">Корзина</a>
-				</li>
-			</ul>
-</div>
+					<li class="usermenu-item hidden logout">
+						<a class="usermenu-link " href="#">Выйти</a>
+					</li>
+					<li class="usermenu-item compare">
+						<img src="./images/icon-compare.svg" class="icon-compare" height="12px" width="10px" alt="" aria-hidden="true"/>
+						<a class="usermenu-link " href="#">Сравнить</a>
+					</li>
+					<li class="usermenu-item cart-wrap">
+							<span class="amount-purchased">2</span>
+							<img src="./images/icon-cart.svg" class="icon-cart " alt="" aria-hidden="true"/>
+						<a class="usermenu-link cart" href="#">Корзина</a>
+					</li>
+				</ul>
+			</div>
 
 			<div class="mainmenu">
 				<div class="mainmenu-button-container">
-				<button class="mainmenu-button" type="button" id="mainmenu-button" name="mainmenu-button">
+				<button id="mainmenu-button" type="button"  name="mainmenu-button">
 					<span class="mainmenu-button-title">Каталог товаров</span>
 					<span class="mainmenu-button-icon"></span>
 				</button>
-				</div>
+			</div>
 
 				<div class="mainmenu-r-container">
 					<ul class="mainmenu-r-list">
@@ -81,37 +85,47 @@
 		</nav>
 	</header>
 
+ <main class="main-content">
 	<section class="lead-product">
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
-		<dl class="lead-product-slider">
-			<dt class="product-image">
-				<img src="#" alt="Изображение модели лидера продаж среди квадрокоптеров, " />
-			</dt>
-			<dd class="product-info">
+		<div class="lead-product-slider">
+			<div class="product-image">
+				<img src="./images/content/slider-1.png" height="560px" width="560px" alt="Изображение модели лидера продаж среди квадрокоптеров" />
+				<div class="slider-button-wrap">
+					<button class="slider-button slider-prev" type="button">
+						<span class="visually-hidden">Предыдущее фото</span>
+					</button>
+					<button class="slider-button slider-next" type="button">
+						<span class="visually-hidden">Следующее фото</span>
+					</button>
+				</div>
+			</div>
+			<div class="product-info">
 				<span class="product-number">01</span><br>
 				<span class="tagline">Порхает как бабочка,<br />жалит как пчела!</span>
 				<p class="desc">
 					Этот обычный, на первый взгляд, квадрокоптер оснащен<br />мощным
 					лазером, замаскированным под стандартную камеру.
 				</p>
-				<a class="learnmore-link" href="#"><span>Подробнее</span></a>
-			</dd>
-		</dl>
-		<ul class="slider-dot-list">
-			<li class="slider-dot-chosen"></li>
-			<li class="slider-dot-empty"></li>
-			<li class="slider-dot-empty"></li>
-		</ul>
-		<table>
-			<tr>
-				<th class="product-data-value">800 м</th>
-				<th class="product-data-value">50 м</th>
-			</tr>
-			<tr>
-				<td class="product-data-desc">Радиус поражения</td>
-				<td class="product-data-desc">Дальность полета</td>
-			</tr>
-		</table>
+				<a class="get-details button-main-link" href="#"><span>Подробнее</span></a>
+
+				<ol class="slider-pagination-list">
+					<li class="slider-pagination-chosen"></li>
+					<li class="slider-pagination-empty"></li>
+					<li class="slider-pagination-empty"></li>
+				</ol>
+				<table>
+					<tr>
+						<th class="product-data-value">800 м</th>
+						<th class="product-data-value">50 м</th>
+					</tr>
+					<tr>
+						<td class="product-data-desc">Радиус поражения</td>
+						<td class="product-data-desc">Дальность полета</td>
+					</tr>
+				</table>
+			</div>
+		</div>
 	</section>
 
 	<!-- TODO проверить классы ниже -->
@@ -268,12 +282,12 @@
 		<div class="subscribe-wrapper">
 			<form action="https://echo.htmlacademy.ru/" class="subscribe-form">
 				<input id="subscribe-input" name="subscribe-input" type="email" placeholder="Ваш e-mail" />
-				<button type="submit" class="subscribe-submit">Подписаться</button>
+				<button type="submit" class="subscribe-submit button">Подписаться</button>
 			</form>
 			<p class="subscribe-free">Это бесплатно</p>
 		</div>
 	</section>
-
+</main>
 	<!--  FOOTER -->
 
 	<footer>
