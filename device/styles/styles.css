@@ -39,9 +39,9 @@ TODO:  При нехватке контента страницы подвал п
 }
 
 @font-face {
-  font-family: "Railway";
+  font-family: "Raleway";
   font-style: normal;
-	src: local("Rubik"),
+	src: local("Raleway"),
 			url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
@@ -136,9 +136,9 @@ li a:link {
 	text-decoration-line: none;
 }
 
-h1, h2, .tagline {
+.title {
   font-size: 50px;
-	font-family: "Railway", sans-serif;
+	font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-style: normal;
 }
@@ -416,9 +416,19 @@ display: flex;
 	height: 12px;
 }
 
+.catalog-categories,
+.shipping,
+.about-us {
+	margin-top: 70px;
+}
+
+.about-us {
+ margin-bottom: 70px;
+}
+
+
 .catalog-categories ul {
 display: flex;
-margin: 70px 0px 70px 0px;
 gap: 40px;
 }
 
@@ -431,9 +441,64 @@ gap: 40px;
 	background-color: var(--color-bg-accent);
 }
 
+.shipping-options,
+.shipping-modal-button {
+	background-color: var(--color-bg-secondary);
+}
 
+.shipping-options {
+	height: 391px;
+	transform: translateY(60px);
+}
 
+.shipping-options-list {
+  transform: translateY(-60px);
+}
 
+.shipping-modal-button {
+	display: flex;
+	justify-content: center;
+	height: 100px;
+	width: 1160px;
+}
+
+.shipping-options-block {
+	flex-direction: column;
+	gap: 34px;
+	height: 195px;
+	width: 694px;
+	background-repeat: no-repeat;
+	background-position: 100%;
+}
+
+.shipping-modal-button {
+	margin-left: 60px;
+}
+
+.shipping-options-list-item {
+ height: 40px;
+ width: 160px;
+ text-align: center;
+ font-family: Raleway;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 800;
+ line-height: normal;
+ letter-spacing: 3.6px;
+ text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.item--rest {
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/210px 8px;
+}
+
+.item--chosen {
+background-color: var(--color-bl-primary);
+color: var(--color-bg-accent);
+}
 /* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
 TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
 */
