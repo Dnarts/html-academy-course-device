@@ -452,7 +452,9 @@ gap: 40px;
 }
 
 .shipping-options-list {
-  transform: translateY(-60px);
+  transform: translateY(-30px);
+	display: flex;
+justify-content: center;
 }
 
 .shipping-modal-button {
@@ -463,20 +465,25 @@ gap: 40px;
 }
 
 .shipping-options-block {
-	flex-direction: column;
+	justify-content: center;
 	gap: 34px;
 	height: 195px;
 	width: 694px;
+	padding-left: 116px;
 	background-repeat: no-repeat;
 	background-position: 100%;
+
+	border-left: var(--color-bl-primary) solid 7px;
+	height: 319px;
 }
 
 .shipping-modal-button {
 	margin-left: 60px;
 }
 
+
 .shipping-options-list-item {
- height: 40px;
+ height: 20px;
  width: 160px;
  text-align: center;
  font-family: Raleway;
@@ -499,6 +506,15 @@ align-items: center;
 background-color: var(--color-bl-primary);
 color: var(--color-bg-accent);
 }
+
+.shipping-options-list li {
+	margin-bottom: 35px;
+	width: 280px;
+  height: 40px;
+}
+
+
+
 /* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
 TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
 */
