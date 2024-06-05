@@ -204,6 +204,7 @@ background-color: transparent;
 
 
 .search input[type="text"] {
+	display: flex;
 border-radius: 50px 0px 0px 50px;
 width: 357px;
 padding-left: 46px;
@@ -441,51 +442,53 @@ gap: 40px;
 	background-color: var(--color-bg-accent);
 }
 
-.shipping-options,
-.shipping-modal-button {
-	background-color: var(--color-bg-secondary);
-}
-
-.shipping-options {
-	height: 391px;
-	transform: translateY(60px);
-}
 
 .shipping-options-list {
   transform: translateY(-30px);
 	display: flex;
 justify-content: center;
+height: 319px;
 }
+
+.shipping-options-list-menu {
+	border-right: var(--color-bl-primary) solid 7px;
+}
+
+.shipping-options-list::after {
+	content: "";
+  position: absolute;
+	z-index: -1;
+  width: 100%;
+  height: 289px;
+	background-color: var(--color-bg-secondary);
+	transform: translateY(42%);
+	}
+
 
 .shipping-modal-button {
 	display: flex;
 	justify-content: center;
 	height: 100px;
 	width: 1160px;
+	background-color: var(--color-bg-secondary);
 }
 
 .shipping-options-block {
 	justify-content: center;
 	gap: 34px;
-	height: 195px;
 	width: 694px;
 	padding-left: 116px;
 	background-repeat: no-repeat;
-	background-position: 100%;
-
-	border-left: var(--color-bl-primary) solid 7px;
-	height: 319px;
+	background-position: 100% 7px;
+	transform: translateY(90px);
 }
+
 
 .shipping-modal-button {
 	margin-left: 60px;
 }
 
-
 .shipping-options-list-item {
- height: 20px;
- width: 160px;
- text-align: center;
  font-family: Raleway;
  font-size: 18px;
  font-style: normal;
@@ -498,19 +501,30 @@ justify-content: center;
 align-items: center;
 }
 
-.item--rest {
-	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/210px 8px;
+.shipping-options-list li,
+.item--rest,
+.item--chosen {
+	justify-content: left;
+	text-align: center;
+}
+
+.item--rest span{
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/160px 8px;
+ width: 160px;
 }
 
 .item--chosen {
 background-color: var(--color-bl-primary);
 color: var(--color-bg-accent);
+width: 280px;
+height: 40px;
+margin-top: 70px;
+padding-left: 20px;
 }
 
 .shipping-options-list li {
 	margin-bottom: 35px;
-	width: 280px;
-  height: 40px;
+	height: 40px;
 }
 
 
