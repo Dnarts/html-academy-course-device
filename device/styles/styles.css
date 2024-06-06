@@ -115,6 +115,11 @@ a, p {
   font-style: normal;
 }
 
+
+ul {
+	padding-left: 0px;
+	}
+
 a:link,
 a:visited,
 a:active,
@@ -127,9 +132,6 @@ a:hover {
 	color: var(--color-focus);
 }
 
-a.button-main-link {
-	text-decoration-line: none;
-}
 
 .main-header-nav a,
 li a:link {
@@ -193,7 +195,7 @@ td {
 .search input[type="text"],
 .search input[type="submit"] {
 	border: var(--color-bl-primary) solid 2px;
-font-family: Rubik;
+font-family: "Rubik";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -322,17 +324,22 @@ flex: 0 0 auto;
 	background-size: cover, 16px;
 }
 
-.get-details {
-	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/210px 8px;
+a.button-main-link {
+	text-decoration: none;
+
+}
+
+.highlight--yellow {
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/100% 8px;
 	font-size: 18px;
 	font-weight: 800;
-	width: 220px;
-height: 40px;
 text-transform: uppercase;
 letter-spacing: 3.6px;
-display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+	line-height: 40px;
 }
 
 .slider-button.slider-prev {
@@ -390,7 +397,7 @@ display: flex;
 	transform: translateY(-60px) translateX(30px);
 }
 
-.get-details-wrap {
+.slider-pagination-wrap {
 	justify-content: space-between;
 	display: flex;
 	margin-bottom: 49px;
@@ -465,13 +472,7 @@ height: 319px;
 	}
 
 
-.shipping-modal-button {
-	display: flex;
-	justify-content: center;
-	height: 100px;
-	width: 1160px;
-	background-color: var(--color-bg-secondary);
-}
+
 
 .shipping-options-block {
 	justify-content: center;
@@ -489,7 +490,7 @@ height: 319px;
 }
 
 .shipping-options-list-item {
- font-family: Raleway;
+ font-family: "Raleway";
  font-size: 18px;
  font-style: normal;
  font-weight: 800;
@@ -528,7 +529,44 @@ padding-left: 20px;
 }
 
 
+.shipping-modal-button ul {
+	display: flex;
+	justify-content: space-between;
+	width: 1160px;
+	background-color: var(--color-bg-secondary);
+	margin-top: 70px;
+align-items: center;
 
+}
+
+
+.shipping-modal-button-list li:nth-child(2n+1) {
+	height: 100px;
+	width: 125px;
+	display: flex;
+}
+
+.shipping-modal-button-list li:nth-child(1) {
+	background-color: var(--color-bg-accent);
+}
+
+.shipping-modal-button p {
+	font-family: "Raleway";
+font-size: 20px;
+letter-spacing: 4px;
+text-transform: uppercase;
+text-align: center;
+}
+
+.shipping-modal-button-list .shipping-modal-icon-truck  {
+	background: no-repeat center/ 47px 31px url('../images/truck.svg') ;
+}
+
+
+.shipping-modal-button-list .shipping-modal-icon-info  {
+	background: no-repeat center/ 41px 40px url('../images/info.svg');
+
+}
 /* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
 TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
 */
