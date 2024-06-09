@@ -9,7 +9,11 @@ TODO:  При нехватке контента страницы подвал п
 /*  [?] определить скрытие заголовков и иконок от поиска и скринридеров
 и обычных посетителей - определить разницу visually-hidden и hidden*/
 
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 :root {
 
@@ -97,7 +101,7 @@ section {
 letter-spacing: 3.6px;
 }
 
-body li {
+body {
 	list-style: none;
 }
 
@@ -113,6 +117,7 @@ a, p {
 	font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-style: normal;
+  line-height: 30px;
 }
 
 
@@ -143,6 +148,7 @@ li a:link {
 	font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-style: normal;
+	line-height: 50px;
 }
 
 th {
@@ -529,16 +535,14 @@ padding-left: 20px;
 }
 
 
-.shipping-modal-button ul {
+.shipping-modal-button-list {
 	display: flex;
 	justify-content: space-between;
 	width: 1160px;
 	background-color: var(--color-bg-secondary);
 	margin-top: 70px;
 align-items: center;
-
 }
-
 
 .shipping-modal-button-list li:nth-child(2n+1) {
 	height: 100px;
@@ -567,6 +571,131 @@ text-align: center;
 	background: no-repeat center/ 41px 40px url('../images/info.svg');
 
 }
+
+.about-us {
+	display: flex;
+ gap: 108px;
+}
+
+.about-us-column {
+	flex-direction: column;
+	display: inherit;
+	gap: 30px;
+}
+
+.transport-companies {
+	display: flex;
+	flex-direction: column;
+	gap: 19px;
+
+	list-style-position: inside;
+
+ font-family: "Rubik";
+ font-size: 18px;
+ line-height: 20px;
+ font-weight: 700;
+ letter-spacing: -0.36px;
+}
+
+
+li::marker {
+	color: var(--color-bg-accent);
+	font-size: 1.3em;
+	vertical-align: middle;
+}
+
+.about-us-column .title {
+	padding-bottom: 18px;
+  padding-top: 40px;
+}
+
+.about-us-column::before {
+	position: absolute;
+	content: "";
+	border-top: var(--color-bl-primary) solid 7px;
+  width: 84px;
+}
+
+
+.title-3 {
+font-family: "Rubik";
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 30px
+}
+
+.subscribe-block {
+	background-color: var(--color-bg-secondary);
+	height: 421px;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.subscribe-desc {
+	display: inline-flex;
+ gap: 252px;
+}
+
+.subscribe-wrap {
+	display: inherit;
+	width: 1158px;
+	height: 57px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
+
+.subscribe-wrap form {
+	display: flex;
+}
+
+.subscribe-free {
+	background: no-repeat left center / 16px 17px url('../images/tick-big.svg');
+ padding-left: 30px;
+ align-items: baseline;
+}
+
+#subscribe-input {
+	width: 557px;
+	height: 55px;
+	border: none;
+	background: transparent;
+	padding-left: 20px;
+	border-bottom: #c4c4c4 3px solid;
+}
+
+.subscribe-submit {
+	height: 55px;
+	border: none;
+	background: transparent;
+	border: #c4c4c4 3px solid;
+}
+
+.subscribe-submit span {
+	font-family: "Raleway";
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 800;
+	line-height: normal;
+	letter-spacing: 3.6px;
+	text-transform: uppercase;
+	padding: 18px 39px;
+}
+
+footer {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.logo-footer-word,
+.logo-footer-mark {
+fill: var(--color-bg-accent);
+}
+
 /* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
 TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
 */
