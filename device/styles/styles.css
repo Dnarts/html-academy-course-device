@@ -1,13 +1,3 @@
-/* TODO: Фоны, которые упираются в края макета, должны тянуться на всю страницу.
-TODO:  Модальные окна должны позиционироваться относительно видимой части экрана.
-TODO:  При нехватке контента страницы подвал прижат к низу страницы.
-/* TODO: О нас, Контакты about-item.в два столбца --> */
-/*   [?] Добавить желтую полосу через CSS или svg элемент в icon-divider  --> */
-/*   TODO:CSS обьединить стили nav-submenu-item/link и nav-submenu-side-item/link
-        Это указывает на потенциальную необходимость рефакторинга классов для уменьшения
-        дублирования и упрощения CSS.--> */
-/*  [?] определить скрытие заголовков и иконок от поиска и скринридеров
-и обычных посетителей - определить разницу visually-hidden и hidden*/
 
 * {
     margin: 0;
@@ -24,6 +14,7 @@ TODO:  При нехватке контента страницы подвал п
 	--color-bg-secondary: #f0f0f0;
 	--color-bg-primary: #FFFFFF;
 	--color-bg-accent: #FFE17F;
+	--color-bg-special: #FFC700;
 
 	--color-filter: #EBEBEB;
 
@@ -139,7 +130,7 @@ a:link,
 a:visited,
 a:active,
 a:focus {
-	text-decoration-line: underline;
+	text-decoration: underline ;
 	color: var(--color-bl-primary);
 }
 
@@ -177,6 +168,25 @@ li a:link {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 30px
+	}
+
+	.text-small {
+		font-family: "Rubik";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: -0.36px;
+		color: var(--color-bg-primary);
+
+	}
+
+	.link-small {
+		font-family: "Rubik";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		color: var(--color-bg-primary);
+		text-decoration: underline !important;
 	}
 
 
@@ -705,6 +715,9 @@ footer {
 	padding-right: 50px;
 	height: 321px;
 	background-color: var(--color-bl-secondary);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 footer ul {
@@ -713,7 +726,7 @@ footer ul {
 
 .logo-footer-word,
 .logo-footer-mark {
-fill: var(--color-bg-accent);
+fill: var(--color-bg-special);
 }
 
 .footer-nav {
@@ -734,15 +747,6 @@ fill: var(--color-bg-accent);
 
 }
 
-.footer-address p,
-a.footer-tel {
-	font-family: "Rubik";
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: -0.36px;
-	color: var(--color-bg-primary);
-}
 
 .footer-bottom-list {
 	justify-content: space-between;
@@ -750,7 +754,18 @@ a.footer-tel {
 	align-items: center;
 }
 
+a.footer-tel {
+ color: var(--color-bg-primary);
+}
 
-/* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
-TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
-*/
+.icon-frame::before {
+	position: absolute;
+	content: "";
+	border-bottom: var(--color-bg-special) solid 7px;
+  width: 80px;
+}
+
+.socials-list {
+	display: flex;
+	gap: 15px;
+}
