@@ -161,6 +161,25 @@ li a:link {
 	line-height: 50px;
 }
 
+.title-2 {
+	font-family: "Raleway";
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 800;
+ line-height: normal;
+ letter-spacing: 3.6px;
+ text-transform: uppercase;
+}
+
+.title-3 {
+	font-family: "Rubik Bold";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px
+	}
+
+
 th {
 	text-decoration: none;
 	font-size: 36px;
@@ -506,13 +525,6 @@ height: 319px;
 }
 
 .shipping-options-list-item {
- font-family: "Raleway";
- font-size: 18px;
- font-style: normal;
- font-weight: 800;
- line-height: normal;
- letter-spacing: 3.6px;
- text-transform: uppercase;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -626,13 +638,6 @@ li::marker {
 }
 
 
-.title-3 {
-font-family: "Rubik Bold";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px
-}
 
 .subscribe-block {
 	background-color: var(--color-bg-secondary);
@@ -725,6 +730,8 @@ fill: var(--color-bg-accent);
 
 .footer-nav-list span{
 		color: var(--color-bg-primary);
+		font-weight: 800;
+
 }
 
 .footer-address p,
@@ -742,6 +749,8 @@ a.footer-tel {
 	display: flex;
 	align-items: center;
 }
+
+
 /* TODO: ДОБАВИТЬ ВСЕ ИКОНКИ
 TODO: ИДТИ ДАЛЬШЕ ПО КУРСУ, И НЕ ЗАНИМАТЬСЯ ХУЙНЕЙ
 */
