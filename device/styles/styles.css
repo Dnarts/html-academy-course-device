@@ -237,6 +237,10 @@ td {
 }
 
 
+.search form {
+	display: inline-flex;
+}
+
 .search input[type="text"],
 .search input[type="submit"] {
 	border: var(--color-bl-primary) solid 2px;
@@ -257,11 +261,7 @@ width: 357px;
 padding-left: 46px;
 }
 
-.search {
-	display: flex;
-	align-items: center;
-	width: 100%; /* Установка ширины контейнера */
-}
+
 
 .search-field {
 	display:flex;
@@ -281,8 +281,8 @@ justify-content: space-between;
 
 .search input[type="submit"] {
 	border-radius: 0px 50px 50px 0px;
+	border-left: none;
 	width: 158px;
-	margin-left: -7px;
 }
 
 .search input::placeholder {
@@ -769,3 +769,4 @@ a.footer-tel {
 	display: flex;
 	gap: 15px;
 }
+
