@@ -33,7 +33,7 @@
   font-family: "Rubik Bold";
   font-style: normal;
 	font-display: swap;
-  font-weight: 400;
+  font-weight: 700;
 	src: local("Rubik Bold"),
 			url("../fonts/rubik/rubik-700.woff2") format("woff2"),
 }
@@ -203,6 +203,7 @@ td {
 .main-header,
 .logo {
 	position: relative;
+
 }
 
 .logo {
@@ -214,7 +215,6 @@ td {
 	background-color: var(--color-bg-accent);
 	width: 100vw;
 	min-height: 300px;
-	z-index: -1;
 }
 
 .usermenu,
@@ -394,13 +394,17 @@ letter-spacing: 3.6px;
 
 .lead-product-slider {
 	display: none;
-	transform: translateY(-160px);
-	/* Убрать маржу на что-то не ломающее верстку и скринридеры*/
+	transform: translateY(-138px);
 	margin-bottom: -230px;
 }
 
 .lead-product-slider.active {
 	display: flex;
+
+}
+
+.product-image {
+	transform: translateY(-34px);
 }
 
 .product-info {
@@ -415,14 +419,13 @@ letter-spacing: 3.6px;
 
 .product-number {
 	font-size: 180px;
-	font-family: 'Rubik';
+	font-family: "Rubik Bold";
 	font-weight: 700;
-	height: 135px;
-	line-height: 30px;
-	transform: translateY(0px) translateX(310px);
+	transform: translateY(-110px) translateX(310px);
 	z-index: -2;
 	position: absolute;
 	color: var(--color-bg-primary);
+	border: 1px solid red;
 }
 
 
@@ -634,7 +637,7 @@ text-align: center;
 	vertical-align: middle;
 }
 
-.about-us-column .title {
+.about-us-column .title-1 {
 	padding-bottom: 18px;
   padding-top: 40px;
 }
