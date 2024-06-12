@@ -37,14 +37,24 @@ TODO:  При нехватке контента страницы подвал п
 @font-face {
   font-family: "Rubik";
   font-style: normal;
+  font-weight: 400;
 	src: local("Rubik"),
 			url("../fonts/rubik/rubik-400.woff2") format("woff2"),
-			url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
+
+@font-face {
+  font-family: "Rubik Bold";
+  font-style: normal;
+  font-weight: 400;
+	src: local("Rubik Bold"),
+			url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+}
+
 
 @font-face {
   font-family: "Raleway";
   font-style: normal;
+  font-weight: 800;
 	src: local("Raleway"),
 			url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
@@ -587,14 +597,13 @@ text-align: center;
 	display: flex;
 	flex-direction: column;
 	gap: 19px;
-
 	list-style-position: inside;
 
- font-family: "Rubik";
- font-size: 18px;
- line-height: 20px;
- font-weight: 700;
- letter-spacing: -0.36px;
+ 	font-family: "Rubik Bold";
+ 	font-size: 18px;
+ 	line-height: 20px;
+ 	font-weight: 700;
+ 	letter-spacing: -0.36px;
 }
 
 
@@ -618,7 +627,7 @@ li::marker {
 
 
 .title-3 {
-font-family: "Rubik";
+font-family: "Rubik Bold";
 font-size: 24px;
 font-style: normal;
 font-weight: 700;
