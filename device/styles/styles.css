@@ -69,33 +69,12 @@
 	overflow: hidden;
 }
 
-
-
-.usermenu a {
-	font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-	font-size: 18px;
-	line-height: 30px;
-}
-
-.mainmenu a,
-.mainmenu span {
-	font-family: "Railway", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-	font-size: 21px;
-	line-height: 21px;
-	text-transform:uppercase;
-letter-spacing: 3.6px;
-}
-
 ul, ol {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
+
 
 h3 {
 	font-family: "Raleway", sans-serif;
@@ -110,26 +89,6 @@ a, p {
   font-weight: 400;
   font-style: normal;
   line-height: 30px;
-}
-
-
-
-a:link,
-a:visited,
-a:active,
-a:focus {
-	text-decoration: underline ;
-	color: var(--color-bl-primary);
-}
-
-a:hover {
-	color: var(--color-focus);
-}
-
-
-.main-header-nav a,
-li a:link {
-	text-decoration-line: none;
 }
 
 .title-1 {
@@ -176,6 +135,36 @@ li a:link {
 		color: var(--color-bg-primary);
 		text-decoration: underline !important;
 	}
+
+
+.usermenu a {
+	font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+a:link,
+a:visited,
+a:active,
+a:focus {
+	text-decoration: underline ;
+	color: var(--color-bl-primary);
+}
+
+a:hover {
+	color: var(--color-focus);
+}
+
+
+.main-header-nav a,
+li a:link {
+	text-decoration-line: none;
+}
+
+
 
 
 th {
@@ -425,7 +414,6 @@ letter-spacing: 3.6px;
 	z-index: -2;
 	position: absolute;
 	color: var(--color-bg-primary);
-	border: 1px solid red;
 }
 
 
@@ -622,13 +610,15 @@ text-align: center;
 	display: flex;
 	flex-direction: column;
 	gap: 19px;
-	list-style-position: inside;
  	font-family: "Rubik Bold";
  	font-size: 18px;
  	line-height: 20px;
  	font-weight: 700;
  	letter-spacing: -0.36px;
+  list-style-type: disc;
+	list-style-position: inside;
 }
+
 
 
 .transport-companies li::marker {
@@ -695,7 +685,6 @@ text-align: center;
 }
 
 .subscribe-submit {
-	height: 55px;
 	border: none;
 	background: transparent;
 	border: #c4c4c4 3px solid;
@@ -741,10 +730,8 @@ fill: var(--color-bg-special);
 	gap: 35px;
 }
 
-.footer-nav-list span{
+.footer-nav-list a{
 		color: var(--color-bg-primary);
-		font-weight: 800;
-
 }
 
 
