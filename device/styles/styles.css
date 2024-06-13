@@ -410,7 +410,7 @@ letter-spacing: 3.6px;
 	font-size: 180px;
 	font-family: "Rubik Bold";
 	font-weight: 700;
-	transform: translateY(-110px) translateX(310px);
+	transform: translateY(-135px) translateX(295px);
 	z-index: -2;
 	position: absolute;
 	color: var(--color-bg-primary);
