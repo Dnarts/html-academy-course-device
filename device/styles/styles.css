@@ -125,7 +125,7 @@ a, p {
 		letter-spacing: -0.36px;
 	}
 
-	.link-small {
+	.link-small:link {
 		font-family: "Rubik";
 		font-size: 16px;
 		font-weight: 400;
