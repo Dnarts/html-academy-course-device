@@ -347,15 +347,6 @@ a.button-main-link {
 
 .highlight--yellow {
 	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/100% 8px;
-	font-size: 18px;
-	font-weight: 800;
-text-transform: uppercase;
-letter-spacing: 3.6px;
-  text-align: center;
-	display: flex;
-	align-items: center;
-  justify-content: center;
-	line-height: 40px;
 }
 
 .slider-button.slider-prev {
