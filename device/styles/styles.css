@@ -165,10 +165,7 @@ li a:link {
 }
 
 
-
-
 th {
-	text-decoration: none;
 	font-size: 36px;
 	font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -178,7 +175,6 @@ th {
 }
 
 td {
-	text-decoration: none;
 	font-size: 16px;
 	font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -310,6 +306,8 @@ color: var(--color-bl-primary);
 }
 
 .amount-purchased {
+	font-family: "Rubik";
+	size: 14px;
 width:21px;
 height:21px;
 padding:0;
