@@ -130,7 +130,7 @@ a, p {
 		font-size: 16px;
 		font-weight: 400;
 		line-height: 20px;
-		text-decoration: underline !important;
+		text-decoration-line: underline;
 	}
 
 
@@ -142,11 +142,8 @@ a, p {
 	line-height: 30px;
 }
 
-a:link,
-a:visited,
-a:active,
-a:focus {
-	text-decoration: underline ;
+a {
+	text-decoration-line: none ;
 	color: var(--color-bl-primary);
 }
 
