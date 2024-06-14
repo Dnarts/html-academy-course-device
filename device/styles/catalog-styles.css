@@ -1,20 +1,71 @@
+
+:root {
+
+	--color-bl-primary: #000000;
+	--color-bl-secondary: #444444;
+	--color-main-grey: #dcdcdc;
+	--color-main-light-grey: #ebebeb;
+	--color-bg-secondary: #f0f0f0;
+	--color-bg-primary: #FFFFFF;
+	--color-bg-accent: #FFE17F;
+	--color-bg-special: #FFC700;
+
+	--color-filter: #EBEBEB;
+
+	--color-focus: #af4fff;
+	--color-error: #ff3d3d;
+	--color-success: #08af00;
+	--color-warning:  #fd912e;
+	}
+
+
+	@font-face {
+		font-family: "Rubik";
+		font-style: normal;
+		font-display: swap;
+		font-weight: 400;
+		src: local("Rubik"),
+				url("../fonts/rubik/rubik-400.woff2") format("woff2"),
+	}
+
+	@font-face {
+		font-family: "Rubik Bold";
+		font-style: normal;
+		font-display: swap;
+		font-weight: 700;
+		src: local("Rubik Bold"),
+				url("../fonts/rubik/rubik-700.woff2") format("woff2"),
+	}
+
+
+	@font-face {
+		font-family: "Raleway";
+		font-style: normal;
+		font-display: swap;
+		font-weight: 800;
+		src: local("Raleway"),
+				url("../fonts/raleway/raleway-800.woff2") format("woff2");
+	}
+
+
 body {
-	background-color: rgb(157, 157, 157);
+	background-color: rgb(238, 238, 238);
 
 }
 
-/* .visually-hidden { */
-	/* position: absolute; */
-	/* width: 1px; */
-	/* height: 1px; */
-	/* margin: -1px; */
-	/* padding: 0; */
-	/* overflow: hidden; */
-	/* clip: rect(0, 0, 0, 0); */
-	/* border: 0; */
-	/* white-space: nowrap; */
-	/* added for ensuring text doesn't wrap */
-/* } */
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
+
+}
 
 .hidden {
 	visibility: hidden;
@@ -26,4 +77,80 @@ body {
 
 .reversed {
 	transform: scaleY(-1);
+}
+
+
+
+ul, ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+
+h3 {
+	font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+	line-height: 24px;
+}
+
+a, p {
+	font-size: 18px;
+	font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 30px;
+}
+
+.title-1 {
+  font-size: 50px;
+	font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+	line-height: 50px;
+}
+
+.title-2 {
+	font-family: "Raleway";
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 800;
+ line-height: normal;
+ letter-spacing: 3.6px;
+ text-transform: uppercase;
+}
+
+.title-3 {
+	font-family: "Rubik Bold";
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 30px
+	}
+
+	.text-small {
+		font-family: "Rubik";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		letter-spacing: -0.36px;
+	}
+
+	.link-small {
+		font-family: "Rubik";
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 20px;
+		text-decoration: underline !important;
+	}
+
+.breadcrumb-header-title {
+	font-family: "Raleway";
+	font-size: 50px;
+}
+
+.breadcrumbs-item a{
+	color: var(--color-bl-primary);
+	text-decoration-line: none;
 }
