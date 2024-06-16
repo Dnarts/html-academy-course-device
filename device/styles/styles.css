@@ -325,6 +325,7 @@ a.button-main-link {
 
 .highlight--yellow {
 	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/100% 8px;
+	text-align: center;
 }
 
 /* SLIDER */
@@ -399,7 +400,7 @@ td {
 	padding-right: 20px;
 	padding-top: 12px;
 }
-
+g
 .product-data-value,
 .product-data-desc {
 	text-align: left;
