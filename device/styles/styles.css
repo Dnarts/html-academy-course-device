@@ -332,6 +332,8 @@ a.button-main-link {
 	text-align: center;
 }
 
+/* INDEX PAGE */
+
 /* SLIDER */
 
 .slider-button.slider-prev {
@@ -707,6 +709,7 @@ fill: var(--color-bg-special);
 .footer-nav-list a,
 a.footer-tel {
 	color: var(--color-bg-primary);
+	font-style: normal;
 }
 
 
@@ -740,3 +743,26 @@ a.footer-tel {
 	gap: 15px;
 }
 
+/* CATALOG PAGE */
+
+/* BREADCRUMBS */
+.breadcrumbs {
+	display: flex;
+	gap: 16px;
+}
+
+.breadcrumb-header-title {
+	font-family: "Raleway";
+	font-size: 50px;
+}
+
+.breadcrumbs-item a{
+	color: var(--color-bl-primary);
+	text-decoration-line: none;
+}
+
+/* FILTER */
+
+.range-toggle {
+
+}
