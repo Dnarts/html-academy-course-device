@@ -449,9 +449,9 @@ g
 	height: 12px;
 }
 
-/* CATALOG */
+/* CATALOG-CATEGORIES */
 
-.catalog-categories,
+.index-categories,
 .shipping,
 .about-us {
 	margin-top: 70px;
@@ -462,12 +462,12 @@ g
 }
 
 
-.catalog-categories ul {
+.index-categories ul {
 display: flex;
 gap: 40px;
 }
 
-.category-item {
+.index-category-item {
 	height: 253px;
 	width: 160px;
 }
