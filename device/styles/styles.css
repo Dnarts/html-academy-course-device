@@ -833,22 +833,54 @@ font-size: 15px;
 
 .product-card {
 	position: relative;
+	display: inline-flex;
+	flex-direction: column;
 }
 
-.product-card:hover {
+.product-card-hover {
+  position: relative;
+}
+
+.product-card-hover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.product-card-hover:hover img {
 	opacity: 0.3;
 }
 
-.product-card:hover::after{
+.product-card-hover:active img {
+	opacity: 0.56;
+}
+
+.product-card-hover:hover::after{
 	content: "";
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	background-image: url('../images/button-details.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	width: 50%;
-	height: 50%;
+	width: 220px;
+	height: 40px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1;
+}
+
+.product-card-desc {
+	display: inline-flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.product-card-title {
+	width: 226px;
 }
 
 /* PAGINATION */
