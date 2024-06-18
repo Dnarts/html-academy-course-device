@@ -788,6 +788,31 @@ margin: 35px 60px;
 
 /* CATALOG FILTER */
 
+
+.catalog-filter {
+	display: inherit;
+	flex-direction: column;
+	gap: 30px;
+	width: 320px;
+	max-width: 320px;
+	padding-left: 60px;
+	padding-right: 60px;
+	gap: 35px;
+	border-style: none;
+}
+
+.catalog-filter-group {
+border: inherit;
+	max-width: inherit;
+padding: 0px 0px;
+}
+
+.catalog-filter-title {
+border-top: var(--color-bl-primary) solid 3px;
+width: 200px;
+padding-top: 12px;
+}
+
 .catalog-filter-name {
 	font-family: "Raleway", sans-serif;
 	font-size: 16px;
@@ -823,9 +848,11 @@ font-size: 15px;
 .select-control {
 	border-style: none;
 	background-color: transparent;
-
 }
 
+ input[type="checkbox"] {
+border-color: var(--color-bg-accent);
+ }
 /* CATALOG SORTING */
 
 .reversed {
@@ -839,26 +866,6 @@ font-size: 15px;
 	background-color: var(--color-bg-secondary);
 }
 
-.catalog-filter {
-	display: inherit;
-	flex-direction: column;
-	gap: 30px;
-	width: 320px;
-	padding-left: 60px;
-	gap: 35px;
-	border-style: none;
-}
-
-.catalog-filter-group {
-border: inherit;
-padding: 0px 0px;
-}
-
-.catalog-filter-title {
-border-top: var(--color-bl-primary) solid 3px;
-width: 200px;
-padding-top: 12px;
-}
 
 /* CATALOG SORTING */
 
