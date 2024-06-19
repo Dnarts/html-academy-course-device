@@ -125,11 +125,11 @@ ul, ol {
 
  /* ELEMENTS OPACITY */
 
- .state-rest {
+ .opacity--state-rest {
 	 opacity: 0.33;
  }
 
- .state-hover:hover {
+ .opacity--state-hover:hover {
 	opacity: 0.66;
 }
 
@@ -1038,3 +1038,4 @@ line-height: 20px;
 .pagination .button {
 padding: 25px;
 }
+
