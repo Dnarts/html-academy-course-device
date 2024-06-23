@@ -67,6 +67,10 @@
 	overflow: hidden;
 }
 
+body {
+	margin: 0;
+}
+
 body, a, p {
   font-family: "Rubik", sans-serif;
 	font-size: 18px;
@@ -78,7 +82,6 @@ ul, ol {
 	padding: 0;
 	margin: 0;
 }
-
 
 
 .title-1 {
@@ -170,22 +173,51 @@ li a:link {
 	text-decoration-line: none;
 }
 
-
 .main-header,
 .logo {
 	position: relative;
-
 }
 
+.main-header {
+	width: 1300px;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+/* TODO: поправить фон навигации через псевдоэлемент на всю ширину экрана */
+
+
 .logo {
+	transform: translateX(-515px);
+	display: flex;
 	z-index: 2;
+	width: 145px;
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.index-categories,
+.shipping-modal-button-list,
+.about-us,
+.subscribe-block,
+.footer-wrap {
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .main-header-nav {
   transform: translateY(-18px);
-	background-color: var(--color-bg-accent);
-	width: 100vw;
 	min-height: 300px;
+}
+
+.main-header::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: var(--color-bg-accent);
+	z-index: -1;
 }
 
 .usermenu,
@@ -214,13 +246,11 @@ background-color: transparent;
 
 
 .search input[type="text"] {
-	display: flex;
 border-radius: 50px 0px 0px 50px;
 width: 357px;
+box-sizing: border-box;
 padding-left: 46px;
 }
-
-
 
 .search-field {
 	display:flex;
@@ -365,6 +395,9 @@ a.button-main-link {
 	display: none;
 	transform: translateY(-138px);
 	margin-bottom: -230px;
+	width: 1160px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .lead-product-slider.active {
@@ -459,6 +492,8 @@ g
 
 /* CATALOG-CATEGORIES */
 
+
+
 .index-categories,
 .shipping,
 .about-us {
@@ -502,6 +537,11 @@ height: 319px;
 	border-right: var(--color-bl-primary) solid 7px;
 }
 
+/* TODO: поправить фон через псевдоэлемент
+ на всю ширину экрана, в соответствии
+ с лучшими практиками, и вообще вспомнить что
+ я тут нагородил*/
+
 .shipping-options-list::after {
 	content: "";
   position: absolute;
@@ -522,9 +562,6 @@ height: 319px;
 	transform: translateY(90px);
 }
 
-.shipping-modal-button {
-	margin-left: 60px;
-}
 
 .shipping-options-list-item {
 display: flex;
@@ -561,7 +598,6 @@ padding-left: 20px;
 .shipping-modal-button-list {
 	display: flex;
 	justify-content: space-between;
-	width: 1160px;
 	background-color: var(--color-bg-secondary);
 	margin-top: 70px;
 align-items: center;
@@ -599,7 +635,6 @@ text-align: center;
 .about-us {
 	display: flex;
  gap: 108px;
- margin: 60px 60px;
 }
 
 .about-us-column {
@@ -642,13 +677,21 @@ text-align: center;
 /* SUBSCRIBE */
 
 .subscribe-block {
-	background-color: var(--color-bg-secondary);
 	height: 421px;
 	display: flex;
 	flex-direction: column;
 	align-content: stretch;
 	justify-content: space-evenly;
 	align-items: flex-start;
+
+}
+
+/* TODO: поправить фон навигации через
+псевдоэлемент на всю ширину экрана */
+
+.subscribe-background {
+	background-color: var(--color-bg-secondary);
+	width: 100%;
 }
 
 .subscribe-desc {
@@ -703,15 +746,23 @@ text-align: center;
 
 /* FOOTER */
 
-.footer {
+/* TODO: поправить фон навигации через
+псевдоэлемент на всю ширину экрана */
+.footer-background {
+	background-color: var(--color-bl-secondary);
+}
+
+.footer-wrap {
 	padding-left: 50px;
 	padding-right: 50px;
 	height: 321px;
-	background-color: var(--color-bl-secondary);
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
+	z-index: 1;
+	position: relative;
 }
+
 
 .logo-footer-word,
 .logo-footer-mark {
