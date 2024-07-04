@@ -67,9 +67,20 @@
 	overflow: hidden;
 }
 
+html {
+	height: 100%;
+}
+
 body {
 	margin: 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
 }
+
+/* .main-container { */
+	/* flex-grow: 1; */
+/* } */
 
 body, a, p {
   font-family: "Rubik", sans-serif;
@@ -179,9 +190,8 @@ li a:link {
 }
 
 .main-header {
-	width: 1300px;
-	margin-left: auto;
-  margin-right: auto;
+	width: 1160px;
+	margin: 0 auto;
 }
 
 /* TODO: поправить фон навигации через псевдоэлемент на всю ширину экрана */
@@ -192,18 +202,13 @@ li a:link {
 	display: flex;
 	z-index: 2;
 	width: 145px;
-	margin-left: auto;
-  margin-right: auto;
+	margin: 0 auto;
 }
 
-.index-categories,
-.shipping-modal-button-list,
-.about-us,
-.subscribe-block,
-.footer-wrap {
+.main-index,
+.footer {
 	width: 1160px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .main-header-nav {
@@ -281,10 +286,10 @@ color: var(--color-bl-primary);
 .usermenu,
 .mainmenu {
 	display:flex;
-	align-items:center;
+	align-items: baseline;
 	justify-content: space-between;
 	padding-top: 30px;
-	width: 1300px;
+
 }
 
 
@@ -304,21 +309,36 @@ color: var(--color-bl-primary);
  margin-right: 5px;
 }
 
-.usermenu-item {
-	gap: 12px;
+.usermenu {
 	display: flex;
-	align-items: center;
-	margin-left: 22px;
+	gap: 30px;
 }
 
-.login,
-.logout {
-		width: 230px;
+.usermenu-list {
+	display: flex;
+	gap: 22px;
+}
+
+.usermenu-item {
+	gap: 12px;
+	align-items: center;
+}
+
+/* TODO: flex-grow чтобы уместить имя с фамилией ? */
+
+.usermenu-list--login {
+	/* flex-grow: 1; */
+	margin-right: auto;
+}
+
+.usermenu-list--cart {
+	flex-grow: 0;
+	margin-left: auto;
 }
 
 .usermenu-item.cart-wrap  {
 	display: flex;
-	align-items: last baseline;
+	align-items: baseline;
 }
 
 .amount-purchased {
@@ -748,7 +768,7 @@ text-align: center;
 
 /* TODO: поправить фон навигации через
 псевдоэлемент на всю ширину экрана */
-.footer-background {
+.footer {
 	background-color: var(--color-bl-secondary);
 }
 

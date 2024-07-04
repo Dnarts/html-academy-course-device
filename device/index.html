@@ -3,7 +3,7 @@
 
 <head>
 	<link rel="stylesheet" href="./styles/styles.css" type="text/css" />
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+		<!-- <link rel="stylesheet" href="./styles/normalize.css" type="text/css" /> -->
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no" />
 	<title>Интернет-магазин электроники. Device</title>
@@ -33,16 +33,18 @@
 					</form>
 				</div>
 
-				<ul class="usermenu-list">
+				<ul class="usermenu-list usermenu-list--login">
 					<li class="usermenu-item login">
 						<img src="./images/icon-profile.svg" class="icon-profile" height="12" width="15"  alt="" aria-hidden="true"/>
-						<a class="usermenu-link " href="#">Войти</a>
-						<a class="usermenu-link account hidden" href="#">Коля Петухов</a>
+						<a class="usermenu-link hidden" href="#">Войти</a>
+						<a class="usermenu-link account " href="#">Коля Петухов</a>
 					</li>
-
 					<li class="usermenu-item  logout">
-						<a class="usermenu-link hidden" href="#">Выйти</a>
+						<a class="usermenu-link " href="#">Выйти</a>
 					</li>
+				</ul>
+
+				<ul class="usermenu-list usermenu-list--cart">
 					<li class="usermenu-item compare">
 						<img src="./images/icon-compare.svg" class="icon-compare" height="12" width="10" alt="" aria-hidden="true"/>
 						<a class="usermenu-link " href="#">Сравнить</a>
@@ -80,7 +82,7 @@
 		</nav>
 	</header>
 
- <main class="main-index">
+ <main class="main-index main-container">
 	<section class="lead-product">
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
 
@@ -365,7 +367,7 @@
 </main>
 	<!--  FOOTER -->
 
-	<footer class="footer-background">
+	<footer class="footer">
 		<div class="footer-wrap">
 			<a href="#top" aria-label="Логотип Device, прокрутить вверх">
 					<svg width="145" height="37" xmlns="http://www.w3.org/2000/svg">
