@@ -324,10 +324,8 @@ color: var(--color-bl-primary);
 	align-items: center;
 }
 
-/* TODO: flex-grow чтобы уместить имя с фамилией ? */
-
 .usermenu-list--login {
-	/* flex-grow: 1; */
+	white-space: nowrap;
 	margin-right: auto;
 }
 
