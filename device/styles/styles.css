@@ -189,21 +189,13 @@ li a:link {
 	position: relative;
 }
 
-.main-header {
-	width: 1160px;
-	margin: 0 auto;
-}
-
-/* TODO: поправить фон навигации через псевдоэлемент на всю ширину экрана */
-
 
 .logo {
-	transform: translateX(-515px);
-	display: flex;
-	z-index: 2;
+	display: block;
 	width: 145px;
-	margin: 0 auto;
+	margin-right: auto;
 }
+
 
 .main-index,
 .footer {
@@ -211,26 +203,30 @@ li a:link {
 	margin: 0 auto;
 }
 
+.main-header {
+	width: 1040px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+}
+
+
 .main-header-nav {
-  transform: translateY(-18px);
 	min-height: 300px;
 }
 
 .main-header::before {
 	content: "";
 	position: absolute;
-	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
 	height: 100%;
 	background-color: var(--color-bg-accent);
 	z-index: -1;
 }
 
-.usermenu,
-.mainmenu,
-.logo {
-	padding-left: 60px;
-	padding-right: 60px;
-}
+
 
 
 .search form {
@@ -270,7 +266,7 @@ justify-content: space-between;
   background-size: cover;
 	height: 16px;
 	width: 16px;
-	left: 75px;
+	left: 15px;
 }
 
 .search input[type="submit"] {
@@ -412,7 +408,6 @@ a.button-main-link {
 	display: none;
 	transform: translateY(-138px);
 	margin-bottom: -230px;
-	width: 1160px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -426,8 +421,9 @@ a.button-main-link {
 }
 
 .product-info {
-	transform: translateY(91px);
+	transform: translateY(110px);
 	margin: 0px 0px 0px 40px;
+	position: relative;
 }
 
 .product-info .desc{
@@ -436,12 +432,12 @@ a.button-main-link {
 }
 
 .product-number {
+	position: absolute;
+	z-index: -1;
 	font-size: 180px;
 	font-family: "Rubik Bold";
 	line-height: 180px;
-	transform: translateY(-120px) translateX(295px);
-	z-index: -2;
-	position: absolute;
+	transform: translateY(-120px) translateX(300px);
 	color: var(--color-bg-primary);
 }
 
@@ -525,6 +521,7 @@ g
 .index-category-item-title {
 	font-family: "Raleway", sans-serif;
 	line-height: 24px;
+	letter-spacing: -0.36px;
 }
 
 .index-categories ul {
@@ -563,7 +560,7 @@ height: 319px;
 	content: "";
   position: absolute;
 	z-index: -1;
-  width: 100%;
+  width: 100vw;
   height: 289px;
 	background-color: var(--color-bg-secondary);
 	transform: translateY(42%);
@@ -703,12 +700,22 @@ text-align: center;
 
 }
 
+.subscribe {
+	position: relative;
+}
+
 /* TODO: поправить фон навигации через
 псевдоэлемент на всю ширину экрана */
 
-.subscribe-background {
+.subscribe::before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 100vw;
+	height: 100%;
+	left: 50%;
+	transform: translateX(-50%);
 	background-color: var(--color-bg-secondary);
-	width: 100%;
 }
 
 .subscribe-desc {
@@ -763,9 +770,18 @@ text-align: center;
 
 /* FOOTER */
 
-/* TODO: поправить фон навигации через
-псевдоэлемент на всю ширину экрана */
 .footer {
+position: relative;
+}
+
+.footer::before {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	left: 50%;
+	transform: translate(-50%);
+	width: 100vw;
+	height: 100%;
 	background-color: var(--color-bl-secondary);
 }
 
