@@ -570,7 +570,7 @@ gap: 18px;
 }
 
 .shipping-options-list {
-  transform: translateY(-30px);
+  transform: translateY(-50px);
 	display: flex;
 justify-content: center;
 height: 319px;
@@ -578,6 +578,9 @@ height: 319px;
 
 .shipping-options-list-menu {
 	border-right: var(--color-bl-primary) solid 7px;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
 }
 
 /* TODO: поправить фон через псевдоэлемент
@@ -592,7 +595,7 @@ height: 319px;
   width: 100vw;
   height: 289px;
 	background-color: var(--color-bg-secondary);
-	transform: translateY(42%);
+	transform: translateY(38%);
 	}
 
 .shipping-options-block {
@@ -602,7 +605,7 @@ height: 319px;
 	padding-left: 116px;
 	background-repeat: no-repeat;
 	background-position: 100% 7px;
-	transform: translateY(90px);
+	transform: translateY(80px);
 }
 
 
@@ -627,14 +630,14 @@ align-items: center;
 .item--chosen {
 background-color: var(--color-bl-primary);
 color: var(--color-bg-accent);
-width: 280px;
+width: 260px;
 height: 40px;
 margin-top: 70px;
 padding-left: 20px;
 }
 
 .shipping-options-list li {
-	margin-bottom: 35px;
+
 	height: 40px;
 }
 
@@ -744,7 +747,8 @@ margin-bottom: 1em;
 /* SUBSCRIBE */
 
 /* TODO: разобраться почему блоки подписки сьехали с выравнивания, */
-/* они должны быть на одной линии с футером */
+/* они должны быть на одной линии с футером
+видимо я забыл выровнить по центру блок контактов и понему выравнивал все*/
 
 .subscribe-block {
 	height: 421px;
