@@ -87,8 +87,7 @@
 		<h2 class="visually-hidden">Самый популярный продукт</h2>
 
 		<div class="lead-product-slider slider-1 active">
-			<div class="product-image">
-				<img src="./images/content/slider-1.png" height="560" width="560" alt="Изображение модели лидера продаж среди квадрокоптеров" />
+				<img class="product-image" src="./images/content/slider-1.png" height="560" width="560" alt="Изображение модели лидера продаж среди квадрокоптеров" />
 				<div class="slider-button-wrap">
 					<button class="slider-button slider-prev" type="button">
 						<span class="visually-hidden">Предыдущее фото</span>
@@ -97,7 +96,7 @@
 						<span class="visually-hidden">Следующее фото</span>
 					</button>
 				</div>
-			</div>
+
 			<div class="product-info">
 				<span class="product-number">01</span>
 				<span class="product-title title-1">Порхает как бабочка,<br />жалит как пчела!</span>
@@ -126,9 +125,8 @@
 			</div>
 		</div>
 
-		<div class="lead-product-slider slider-2 ">
-			<div class="product-image">
-				<img src="./images/content/slider-2.png" height="560" width="560" alt="Изображение модели лидера продаж среди фитнес браслетов" />
+		<div class="lead-product-slider slider-2  ">
+				<img class="product-image" src="./images/content/slider-2.png" height="560" width="560" alt="Изображение модели лидера продаж среди фитнес браслетов" />
 				<div class="slider-button-wrap">
 					<button class="slider-button slider-prev" type="button">
 						<span class="visually-hidden">Предыдущее фото</span>
@@ -137,7 +135,7 @@
 						<span class="visually-hidden">Следующее фото</span>
 					</button>
 				</div>
-			</div>
+
 			<div class="product-info">
 				<span class="product-number">02</span>
 				<span class="product-title title-1">Худеем<br> правильно!</span>
@@ -166,8 +164,8 @@
 		</div>
 
 		<div class="lead-product-slider slider-3 ">
-			<div class="product-image">
-				<img src="./images/content/slider-3.png" height="560" width="560" alt="Изображение модели лидера продаж среди квадрокоптеров" />
+
+				<img class="product-image" src="./images/content/slider-3.png" height="560" width="560" alt="Изображение модели лидера продаж среди квадрокоптеров" />
 				<div class="slider-button-wrap">
 					<button class="slider-button slider-prev" type="button">
 						<span class="visually-hidden">Предыдущее фото</span>
@@ -176,7 +174,7 @@
 						<span class="visually-hidden">Следующее фото</span>
 					</button>
 				</div>
-			</div>
+
 			<div class="product-info">
 				<span class="product-number">03</span>
 				<span class="product-title title-1">Делай селфи,<br>
@@ -210,7 +208,7 @@
 
 	<section class="index-categories" role="navigation">
 		<h2 class="visually-hidden">Каталог товаров</h2>
-		<ul>
+		<ul class="index-categories-list">
 			<li class="index-category-item">
 				<a href="./catalog.html">
 					<img src="./images/index-category-images-1.svg" width="160px" height="160" class="index-category-img" aria-hidden="true" alt="Изображение очков для виртуальной реальности" />
@@ -260,7 +258,7 @@
 					<li class="shipping-options-list-item item--rest"><span>Кредит</span></li>
 				</ol>
 				<div class="shipping-options-block" style="background-image: url(./images/delivery.svg); background-size: 136px 164px;">
-					<span class="title-1 shipping-option-chosen">Доставка</span>
+					<span class="title-1 shipping-options-chosen">Доставка</span>
 					<p>
 						Мы с удовольствием доставим ваш товар прямо<br/>
 						к вашему подъезду совершенно бесплатно! Ведь<br/>
@@ -299,7 +297,7 @@
 	<section class="about-us">
 		<div class="about-us-column">
 			<h2 class="visually-hidden">О нашем магазине</h2>
-			<span class="title-1">О нас</span>
+			<h3 class="title-1">О нас</h3>
 			<p>
 				Огромный выбор гаджетов не оставит равнодушным<br />
 				гика, который есть в каждом из нас.
@@ -324,21 +322,24 @@
 
 		<div class="about-us-column" id="contacts">
 			<h2 class="visually-hidden">Контактная информация</h2>
-			<span class="title-1">Контакты</span>
+			<h3 class="title-1">Контакты</h3>
 			<p>
 				Вы можете забрать товар сами, заехав в наш офис.<br />
 				Заодно сможете проверить работоспособность покупки.
 			</p>
-			<address>
-				<span class="title-3"><strong>Интернет-магазин «Девайс»</strong></span>
-				<p class="about-address">
-					Санкт-Петербург, набережная реки Карповки, 5, литера П.
-				</p>
-				<a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
-			</address>
-			<span class="title-3"><strong>Время работы</strong></span>
-			<p>пн—пт: с 10:00 до 22:00<br />сб—вс: с 10:00 до 19:00</p>
-			<a href="#" class="highlight--yellow title-2" style="width: 259px;">Напишите нам</a>
+
+				<address class="contact-address">
+					<h3 class="title-3">Интернет-магазин «Девайс»</h3>
+					<p>
+						Санкт-Петербург, набережная реки Карповки, 5, литера П.
+					</p>
+					<a href="tel:+78128121212" class="about-address-tel">+7 (812) 812-12-12</a>
+				</address>
+				<div class="work-hours">
+					<h3 class="title-3">Время работы</h3>
+					<p>пн—пт: с 10:00 до 22:00<br />сб—вс: с 10:00 до 19:00</p>
+				</div>
+				<a href="#" class="highlight--yellow title-2" style="width: 259px;">Напишите нам</a>
 		</div>
 	</section>
 
@@ -355,7 +356,7 @@
 					распаковками, а также акции,<br> спецпредложения и вот это вот всё.
 				</p>
 			</div>
-			<div class="subscribe-wrap">
+			<div class="subscribe-button-wrap">
 				<form action="https://echo.htmlacademy.ru/" class="subscribe-form">
 					<input id="subscribe-input" name="subscribe-input" type="email" placeholder="Ваш e-mail" />
 					<button type="submit" class="subscribe-submit button"><span>Подписаться</span></button>
