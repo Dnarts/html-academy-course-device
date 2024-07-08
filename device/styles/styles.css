@@ -105,6 +105,7 @@ ul, ol {
   font-weight: 800;
   font-style: normal;
 	line-height: 50px;
+	width: fit-content;
 }
 
 .title-2 {
@@ -200,7 +201,8 @@ li a:link {
 	margin-right: auto;
 }
 
-.main-index {
+.main-index,
+.shipping {
 	display: flex;
 	flex-direction: column;
 	gap: 70px;
@@ -528,18 +530,6 @@ g
 
 /* CATALOG-CATEGORIES */
 
-
-
-
-.shipping,
-.about-us,
-.subscribe {
-	/* margin-top: 70px; */
-}
-
-
-
-
 .index-category-item-title {
 	font-family: "Raleway", sans-serif;
 	line-height: 24px;
@@ -562,57 +552,54 @@ gap: 40px;
 
 /* SHIPPING */
 
-.shipping-options-block {
-	display: flex;
-	flex-direction: column;
-	align-self: flex-start;
-gap: 18px;
+
+.shipping-options {
+	height: 391px;
 }
 
 .shipping-options-list {
-  transform: translateY(-50px);
 	display: flex;
-justify-content: center;
-height: 319px;
+justify-content: space-between;
+gap: 34px;
 }
+
+.shipping-options-desc {
+	display: flex;
+	flex-direction: column;
+	align-self: flex-start;
+	height: 195px;
+	gap: 34px;
+	width: 694px;
+	margin: auto;
+}
+
 
 .shipping-options-list-menu {
 	border-right: var(--color-bl-primary) solid 7px;
 	display: flex;
+  width: 289px;
+	height: 319px;
 	flex-direction: column;
 	gap: 35px;
 }
 
-/* TODO: поправить фон через псевдоэлемент
- на всю ширину экрана, в соответствии
- с лучшими практиками, и вообще вспомнить что
- я тут нагородил*/
-
-.shipping-options-list::after {
+.shipping-options::before {
 	content: "";
-  position: absolute;
+	position: absolute;
 	z-index: -1;
-  width: 100vw;
-  height: 289px;
+	width: 100vw;
+	height: 289px;
+	left: 50%;
+	transform: translateX(-50%) translateY(102px);
 	background-color: var(--color-bg-secondary);
-	transform: translateY(38%);
 	}
-
-.shipping-options-block {
-	justify-content: center;
-	gap: 34px;
-	width: 694px;
-	padding-left: 116px;
-	background-repeat: no-repeat;
-	background-position: 100% 7px;
-	transform: translateY(80px);
-}
 
 
 .shipping-options-list-item {
 display: flex;
 justify-content: center;
 align-items: center;
+transform: translateY(70px);
 }
 
 .shipping-options-list li,
@@ -630,14 +617,15 @@ align-items: center;
 .item--chosen {
 background-color: var(--color-bl-primary);
 color: var(--color-bg-accent);
-width: 260px;
+width: 289px;
 height: 40px;
-margin-top: 70px;
-padding-left: 20px;
+}
+
+.item--chosen span {
+	padding-left: 20px;
 }
 
 .shipping-options-list li {
-
 	height: 40px;
 }
 
@@ -645,7 +633,6 @@ padding-left: 20px;
 	display: flex;
 	justify-content: space-between;
 	background-color: var(--color-bg-secondary);
-	margin-top: 70px;
 align-items: center;
 }
 
@@ -726,10 +713,6 @@ margin-bottom: 1em;
 	color: var(--color-bg-accent);
 	font-size: 1.3em;
 	vertical-align: middle;
-}
-
-.about-us-column .title-1 {
-	width: fit-content;
 }
 
 .about-us-column::before {
