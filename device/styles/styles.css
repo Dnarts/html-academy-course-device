@@ -622,12 +622,24 @@ height: 40px;
 	cursor: pointer;
 }
 
-#delivery-radio:checked ~ .shipping-options .item--warranty label,
-#delivery-radio:checked ~ .shipping-options .item--credit label
+.shipping-options-list-item {
+	width: 289px;
+	height: 40px;
+}
+.shipping-options-list-item:hover {
+	background-color: var(--color-bl-secondary);
+	color: var(--color-bg-special);
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-out;
+}
+
+
+
+#delivery-radio:checked ~ .shipping-options-list .item--warranty:not(:hover),
+#delivery-radio:checked ~ .shipping-options-list .item--credit:not(:hover)
 {
-	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/160px 8px;
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat left/160px 8px;
 }
-#delivery-radio:checked ~ .shipping-options .item--delivery {
+#delivery-radio:checked ~ .shipping-options-list .item--delivery {
 	background-color: var(--color-bl-primary);
 	color: var(--color-bg-accent);
 	width: 289px;
@@ -635,53 +647,53 @@ height: 40px;
 }
 
 
-#warranty-radio:checked ~ .shipping-options .item--warranty {
-	background-color: var(--color-bl-primary);
-	color: var(--color-bg-accent);
-	width: 289px;
-	height: 40px;
-	}
-#warranty-radio:checked ~ .shipping-options .item--delivery label,
-#warranty-radio:checked ~ .shipping-options .item--credit label {
-	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/160px 8px;
-}
-
-#credit-radio:checked ~ .shipping-options .item--credit {
+#warranty-radio:checked ~ .shipping-options-list .item--warranty {
 	background-color: var(--color-bl-primary);
 	color: var(--color-bg-accent);
 	width: 289px;
 	height: 40px;
 	}
-#credit-radio:checked ~ .shipping-options .item--delivery label,
-#credit-radio:checked ~ .shipping-options .item--warranty label {
-	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat center/160px 8px;
+#warranty-radio:checked ~ .shipping-options-list .item--delivery:not(:hover),
+#warranty-radio:checked ~ .shipping-options-list .item--credit:not(:hover) {
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat left/160px 8px;
 }
 
-/* TODO: анимация загорания пункта меню при наведении */
-
-
-#delivery-radio:checked ~ .shipping-options .delivery-radio--checked {
-	display: flex;
-}
-#delivery-radio:checked ~ .shipping-options .warranty-radio--checked, .shipping-options .credit-radio--checked {
-	display: none;
-}
-
-#warranty-radio:checked ~ .shipping-options .warranty-radio--checked {
-	display: flex;
-}
-#warranty-radio:checked ~ .shipping-options .delivery-radio--checked, .shipping-options .credit-radio--checked {
-	display: none;
-}
-
-#credit-radio:checked ~ .shipping-options .credit-radio--checked {
-	display: flex;
-}
-#credit-radio:checked ~ .shipping-options .delivery-radio--checked, .shipping-options .warranty-radio--checked {
-	display: none;
+#credit-radio:checked ~ .shipping-options-list .item--credit {
+	background-color: var(--color-bl-primary);
+	color: var(--color-bg-accent);
+	width: 289px;
+	height: 40px;
+	}
+#credit-radio:checked ~ .shipping-options-list .item--delivery:not(:hover),
+#credit-radio:checked ~ .shipping-options-list .item--warranty:not(:hover) {
+	background: linear-gradient(var(--color-bg-accent), var(--color-bg-accent)) no-repeat left/160px 8px;
 }
 
 
+#delivery-radio:checked ~ .delivery-radio--checked {
+  display: flex;
+
+}
+#delivery-radio:checked ~ .warranty-radio--checked,
+#delivery-radio:checked ~ .credit-radio--checked {
+  display: none;
+}
+
+#warranty-radio:checked ~ .warranty-radio--checked {
+  display: flex;
+}
+#warranty-radio:checked ~ .delivery-radio--checked,
+#warranty-radio:checked ~ .credit-radio--checked {
+  display: none;
+}
+
+#credit-radio:checked ~ .credit-radio--checked {
+  display: flex;
+}
+#credit-radio:checked ~ .delivery-radio--checked,
+#credit-radio:checked ~ .warranty-radio--checked {
+  display: none;
+}
 
 .shipping-modal-button-list {
 	display: flex;
