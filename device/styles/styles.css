@@ -84,13 +84,16 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 100%;
 }
 
 .main-container {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+}
+
+.main-inner {
+	width: 1160px;
 }
 
 body, a, p {
@@ -232,9 +235,7 @@ li a:link {
 	margin: auto 0;
 }
 
-.main-header-nav {
-	min-height: 300px;
-}
+
 
 /* TODO: Можно не накладывать слайдер на желтый фон,
  а сделать у слайдера часть фона желтым цветом. Оставаясь в нормальном потоке,
@@ -244,9 +245,9 @@ li a:link {
 	content: "";
 	position: absolute;
 	left: 50%;
-	transform: translateX(-50%);
-	width: 100vw;
-	height: 100%;
+	transform: translateX(-50%) translateY(23px);
+	width: 1160px;
+	height: 186px;
 	background-color: var(--color-bg-accent);
 	z-index: -1;
 }
@@ -1143,7 +1144,6 @@ font-size: 15px;
 	align-items: center;
 	gap: 44px;
 	padding: 0px 40px 0px 40px;
-	background-color: var(--color-bg-primary);
 }
 
 .catalog-sorting {
@@ -1172,11 +1172,12 @@ background-color: var(--color-bg-secondary);
 
 .product-list {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
 		width: 100%;
 	flex-wrap: wrap;
 	padding: 44px 0px 0px 0px;
 	gap: 44px;
+	background-color: var(--color-bg-primary);
 }
 
 
@@ -1200,49 +1201,54 @@ background-color: var(--color-bg-secondary);
 	position: relative;
 	display: inline-flex;
 	flex-direction: column;
+	height: 452px;
+	width: 360px;
 }
 
 .new::before {
+	pointer-events: none;
 	content: "";
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   background-image: url('../images/new.svg');
   background-repeat: no-repeat;
   background-size: auto;
   background-position: right 27px top 27px;
   width: 100%;
-  height: 100%;
+	height: 100%;
 }
 
 .new:hover::before {
+	opacity: 0.7;
+	transition: opacity 0.17s ease-out;
+}
+
+
+.product-card-img {
+	position: relative;
+}
+
+.product-card-img img {
+	width: fit-content;
+	height: auto;
+}
+
+
+.product-card-img:hover img {
 	opacity: 0.3;
 	transition: opacity 0.17s ease-out;
 }
 
-.product-card-hover {
-  position: relative;
-}
-
-.product-card-hover img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.product-card-hover:hover img {
-	opacity: 0.3;
-	transition: opacity 0.17s ease-out;
-}
-
-.product-card-hover:active img {
+.product-card-img:active img {
 	opacity: 0.56;
 	transition:none !important;
 }
 
-.product-card-hover:hover::after{
+.product-card-img:hover::after{
+	pointer-events: none;
 	content: "";
 	position: absolute;
-	z-index: 1;
+	z-index: 3;
 	background-image: url('../images/button-details.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -1302,4 +1308,5 @@ line-height: 20px;
 .pagination .button {
 padding: 25px;
 }
+
 
