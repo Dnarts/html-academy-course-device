@@ -215,12 +215,21 @@ li a:link {
 	margin-right: auto;
 }
 
-.main-index,
+
 .shipping {
 	display: flex;
 	flex-direction: column;
 	gap: 70px;
 }
+
+.shipping-options,
+.about-us,
+.subscribe {
+	margin-top: 70px;
+}
+
+
+
 
 .main-index,
 .footer,
@@ -241,19 +250,23 @@ li a:link {
  а сделать у слайдера часть фона желтым цветом. Оставаясь в нормальном потоке,
  слайдер "склеится" с желтым фоном хедера. */
 
-.main-header::before {
+.main-header::before  {
 	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%) translateY(23px);
 	width: 1160px;
-	height: 186px;
 	background-color: var(--color-bg-accent);
 	z-index: -1;
 }
 
+ .main-header--index::before {
+	height: 300px;
+}
 
-
+.main-header--inner::before {
+	height: 186px;
+}
 
 .search form {
 	display: inline-flex;
@@ -415,12 +428,11 @@ a.button-main-link {
 
 .lead-product {
 	width: inherit;
-  position: absolute;
-	transform: translateY(-122px);
+  position: relative;
 }
 
 .index-categories {
-	margin-top: 477px;
+
 }
 
 .product-image {
@@ -468,9 +480,9 @@ a.button-main-link {
 
 
 .product-info {
-	transform: translateY(100px);
-  height: fit-content;
-  width: 100%;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
 	position: relative;
 }
 
@@ -485,9 +497,17 @@ a.button-main-link {
 	font-size: 180px;
 	font-family: "Rubik Bold";
 	line-height: 180px;
-	transform: translateY(-120px) translateX(300px);
+	transform: translateY(-200px) translateX(300px);
 	color: var(--color-bg-primary);
 }
+
+.product-table {
+	width: fit-content;
+	text-align: left;
+	border-collapse:collapse;
+}
+
+
 
 th {
 	font-size: 36px;
@@ -495,25 +515,21 @@ th {
   font-weight: 400;
   font-style: normal;
 	color: var(--color-bl-primary);
-	line-height: 30px
+	line-height: 30px;
 }
 
 td {
+	padding-right: 20px;
+	padding-top: 12px;
 	font-size: 16px;
 	font-family: "Rubik", sans-serif;
   font-weight: 400;
 	line-height: 30px;
   font-style: normal;
 	color: var(--color-bl-secondary);
-	padding-right: 20px;
-	padding-top: 12px;
 }
-g
-.product-data-value,
-.product-data-desc {
-	text-align: left;
-	padding-right: 35px;
-}
+
+
 
 .slider-pagination-wrap {
 	justify-content: space-between;
@@ -1006,11 +1022,10 @@ a.footer-tel {
 
 .breadcrumb-header {
 	display: flex;
-width: 1079px;
 flex-direction: column;
 align-items: flex-start;
 gap: 16px;
-margin: 35px 60px;
+margin: 35px 0px;
 }
 
 .breadcrumbs {
@@ -1030,7 +1045,7 @@ margin: 35px 60px;
 	text-decoration-line: none;
 }
 
-/* CATALOG FILTER */
+/* CATALOG */
 
 .catalog-wrap {
 	display: flex;
@@ -1048,9 +1063,13 @@ margin: 35px 60px;
 	background-color: var(--color-bg-secondary);
 }
 
-.filter-container {
+/* CATALOG FILTER */
+
+
+.catalog-col-filter {
 	display: flex;
 	flex-direction: column;
+	flex-grow: 1;
 	gap: 30px;
 	width: 320px;
 	max-width: 320px;
@@ -1064,7 +1083,6 @@ margin: 35px 60px;
 	flex-direction: column;
 	gap: 30px;
 
-	padding-left: 60px;
 	padding-right: 60px;
 	gap: 35px;
 	border-style: none;
@@ -1137,19 +1155,17 @@ font-size: 15px;
 
 /* CATALOG SORTING */
 
-.catalog-products-container {
+.catalog-col-products {
 	display: flex;
-	width: 840px;
+	flex-grow: 1;
 	flex-direction: column;
-	align-items: center;
-	gap: 44px;
-	padding: 0px 40px 0px 40px;
+	/* padding: 0px 40px 0px 40px; */
 }
 
 .catalog-sorting {
 	display: flex;
 	width: inherit;
-padding: 20px 40px;
+padding: 20px 0;
 justify-content: space-between;
 align-items: center;
 background-color: var(--color-bg-secondary);
@@ -1164,20 +1180,19 @@ background-color: var(--color-bg-secondary);
 	flex-direction: column;
 	align-items: center;
 	background-color: transparent;
-	width: 840px;
-	padding: 0px 0px 40px 0px;
+	width: inherit;
+	padding: 70px 0px 70px 0px;
 	gap: 44px;
+	background-color: var(--color-bg-primary);
 }
 
 
 .product-list {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-		width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
 	flex-wrap: wrap;
-	padding: 44px 0px 0px 0px;
 	gap: 44px;
-	background-color: var(--color-bg-primary);
 }
 
 
@@ -1219,7 +1234,7 @@ background-color: var(--color-bg-secondary);
 }
 
 .new:hover::before {
-	opacity: 0.7;
+	opacity: 0.3;
 	transition: opacity 0.17s ease-out;
 }
 
