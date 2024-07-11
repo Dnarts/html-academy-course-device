@@ -484,6 +484,7 @@ a.button-main-link {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+	transform: translateY(15px);
 }
 
 .product-info .desc{
