@@ -1,5 +1,4 @@
 
-
 :root {
 
 	--color-bl-primary: #000000;
@@ -46,6 +45,9 @@
 	src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
+
+
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -84,12 +86,13 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 100%;
 }
 
 .main-container {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
+	flex-grow: 1 0 auto;
 }
 
 .main-inner {
@@ -250,22 +253,28 @@ li a:link {
  а сделать у слайдера часть фона желтым цветом. Оставаясь в нормальном потоке,
  слайдер "склеится" с желтым фоном хедера. */
 
-.main-header::before  {
-	content: "";
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%) translateY(23px);
-	width: 1160px;
-	background-color: var(--color-bg-accent);
-	z-index: -1;
+
+
+ .main-header::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+	transform: translateX(-50%);
+  right: 0;
+  top: 23px;
+  min-width: 1160px;
+  width: 100%;
+  background-color: var(--color-bg-accent);
+  z-index: -1;
 }
 
- .main-header--index::before {
-	height: 300px;
+.main-header--index::before {
+  height: calc(186px + 61%);
 }
 
 .main-header--inner::before {
-	height: 186px;
+  min-height: 186px;
+  height: 100%;
 }
 
 .search form {
@@ -350,6 +359,7 @@ color: var(--color-bl-primary);
 
 .usermenu-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 22px;
 }
 
