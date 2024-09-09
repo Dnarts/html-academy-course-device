@@ -381,7 +381,7 @@ color: var(--color-bl-primary);
 }
 
 .usermenu-item {
-	gap: 12px;
+	gap: 11px;
 	align-items: center;
 }
 
