@@ -1003,9 +1003,6 @@ flex: 1;
 	gap: 32px;
 }
 
-.logo-footer-word {
-}
-
 .logo-footer-word,
 .logo-footer-mark {
 fill: var(--color-bg-special);
@@ -1023,8 +1020,6 @@ a.footer-tel {
 	font-style: normal;
 }
 
-
-
 .footer-nav {
 	white-space: nowrap;
 	gap: 100px;
@@ -1033,22 +1028,20 @@ a.footer-tel {
 	align-items: center;
 }
 
+
 .footer-nav-list {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	gap: 35px;
 }
 
-ul.footer-nav-list {
-	display: flex;
-	align-items: center;
-	height: 60px;
-}
-
 .footer-nav-list li,
-.footer-nav-list a {
-	display: flex;
-	align-items: center;
-	height: inherit;
+.footer-nav-list a,
+a.footer-tel {
+	height: 60px;
+	display: block;
+	align-content: center;
 }
 
 
