@@ -1014,20 +1014,43 @@ flex: 1;
 }
 
 .footer-wrap {
-		margin-top: 62px;
-	display: flex;
-	flex-direction: column;
+
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	grid-template-rows: auto minmax(min-content, auto) auto;
+	grid-template-areas:
+	"logo logo logo"
+	"address nav tel"
+	"svg-line socials link";
 	gap: 32px;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.logo-bottom {
+	grid-area: logo;
+	margin-right: auto;
+	display: block;
 }
 
 .logo-footer-word,
 .logo-footer-mark {
 fill: var(--color-bg-special);
+display: block;
 }
 
 
 .footer-address {
 	white-space: normal;
+	grid-area: address;
+	margin-right: auto;
+	align-self: center;
+}
+
+.footer-tel {
+	grid-area: tel;
+	margin-left: auto;
+    align-self: center;
 }
 
 .footer-address,
@@ -1037,21 +1060,18 @@ a.footer-tel {
 	font-style: normal;
 }
 
-.footer-nav {
-	white-space: nowrap;
-	gap: 100px;
-	justify-content: space-between;
-	display: flex;
-	align-items: center;
-}
-
 
 .footer-nav-list {
+	grid-area: nav;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+flex-direction: row;
+align-self: center;
+max-width: 465px;
 	gap: 35px;
 }
+
 
 
 .footer-nav-list a,
@@ -1063,17 +1083,12 @@ a.footer-tel {
 }
 
 
-.footer-bottom-list {
-	justify-content: space-between;
-	display: flex;
-	align-items: center;
-	align-content: center;
-	margin-bottom: 77px;
-}
-
 .icon-frame {
+  grid-area: svg-line;
 	width: 80px;
 	height: 7px;
+	margin-right: auto;
+	align-self: center;
 }
 
 .icon-frame::before {
@@ -1085,17 +1100,20 @@ a.footer-tel {
 
 
 
-.socials {
-
-	margin-left: 100px;
-}
-
 .socials-list {
-
-	display: flex;
-	gap: 15px;
+grid-area: socials;
+display: flex;
+align-self: center;
+margin: 0 auto;
+gap: 15px;
 }
 
+
+.icon-htmlacademy {
+	grid-area: link;
+	margin-left: auto;
+	align-self: center;
+}
 .socials-list-item-link,
 .icon-htmlacademy,
 .icon-htmlacademy img {
