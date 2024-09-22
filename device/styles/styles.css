@@ -1067,6 +1067,7 @@ a.footer-tel {
 	justify-content: space-between;
 	display: flex;
 	align-items: center;
+	align-content: center;
 	margin-bottom: 77px;
 }
 
@@ -1085,6 +1086,7 @@ a.footer-tel {
 
 
 .socials {
+
 	margin-left: 100px;
 }
 
@@ -1092,6 +1094,19 @@ a.footer-tel {
 
 	display: flex;
 	gap: 15px;
+}
+
+.socials-list-item-link,
+.icon-htmlacademy,
+.icon-htmlacademy img {
+	display: block;
+	line-height: 0;
+}
+
+.socials-list-item-link img {
+  display: block;
+  width: 40px;
+  height: 40px;
 }
 
 /* CATALOG PAGE */
