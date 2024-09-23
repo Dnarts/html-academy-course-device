@@ -288,7 +288,7 @@ li a:link {
 
 .search input[type="text"],
 .search input[type="submit"] {
-	border: #6e61ff solid 2px;
+	border: var(--color-bl-primary) solid 2px;
 font-family: "Rubik";
 font-size: 16px;
 font-style: normal;
@@ -1080,6 +1080,8 @@ a.footer-tel {
 	padding-bottom: 20px;
 	display: block;
 	align-content: center;
+	min-width: 16px;
+  min-height: 22px;
 }
 
 
@@ -1139,11 +1141,6 @@ gap: 16px;
 margin: 35px 0px;
 }
 
-.breadcrumbs {
-	display: flex;
-	gap: 16px;
-}
-
 .breadcrumb-header-title {
 	font-family: "Raleway";
 	font-size: 50px;
@@ -1151,9 +1148,30 @@ margin: 35px 0px;
 	margin: 0px 0px;
 }
 
-.breadcrumbs-item a{
-	color: var(--color-bl-primary);
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+}
+
+
+.breadcrumbs-item {
 	text-decoration-line: none;
+}
+
+.breadcrumbs-item a,
+.breadcrumbs-item span{
+	color: var(--color-bl-primary);
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+.breadcrumbs-item:not(:first-of-type)::before {
+	content: url("data:image/svg+xml,%3Csvg width='4' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m3.8 3.1-3-3a.5.5 0 0 0-.7 0C0 .3 0 .7.1.9l2.6 2.6L.1 6.1v.7l.4.2.4-.1 3-3 .1-.4-.2-.4Z' fill='%23000'/%3E%3C/svg%3E");
+	color: var(--color-bl-primary);
+	width: 4px;
+	height: 7px;
+	margin-right: 8px;
+	margin-left: 12px;
 }
 
 /* CATALOG */
