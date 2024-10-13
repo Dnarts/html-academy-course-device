@@ -271,6 +271,7 @@ a {
 	align-self: center;
 	position: relative;
 	box-sizing: border-box;
+	width: 500px;
 }
 
 .search input[type="text"],
@@ -288,7 +289,7 @@ background-color: transparent;
 
 .search input[type="text"] {
 border-radius: 50px 0px 0px 50px;
-width: 357px;
+width: 100%;
 box-sizing: border-box;
 padding-left: 46px;
 }
@@ -298,7 +299,7 @@ padding-left: 46px;
 	cursor: pointer;
 	border-radius: 0px 50px 50px 0px;
 	border-left: none;
-	width: 158px;
+	min-width: 150px;
 }
 
 .icon-search::after {
