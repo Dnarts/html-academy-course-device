@@ -1338,6 +1338,7 @@ align-items: center;
 .product-list {
 	display: grid;
 	grid-template-columns: 360px 360px;
+	grid-auto-rows: minmax(452px, auto);
 	gap: 44px;
 	margin: 0 auto;
 }
