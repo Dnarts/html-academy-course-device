@@ -1362,8 +1362,8 @@ align-items: center;
 .product-card-price {
 	color: var(--color-bl-secondary);
 	text-align: right;
-	align-self: flex-start;
 	line-height: normal;
+	min-width: fit-content;
 }
 
 
@@ -1433,11 +1433,13 @@ align-items: center;
 	flex-direction:row;
 	align-items: center;
 	justify-content: space-between;
-	width: 100%;
+	align-items: flex-start;
+	gap: 60px;
 }
 
 .product-card-title {
-	width: 226px;
+
+	white-space: pre-line;
 }
 
 /* PAGINATION */
