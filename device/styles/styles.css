@@ -139,7 +139,13 @@ ul, ol {
 	font-style: normal;
 	font-weight: 700;
 	line-height: 30px;
+	}
 
+
+	h1,
+	h2,
+	h3 {
+		margin: 0;
 	}
 
 	.text-small {
@@ -1339,6 +1345,12 @@ align-items: center;
 
 
 /* CATALOG PRODUCTS */
+.product-card {
+	position: relative;
+	display: inline-flex;
+	flex-direction: column;
+	gap: 32px;
+}
 
 .product-card-title {
 	font-family: "Rubik Bold", sans-serif;
@@ -1350,16 +1362,13 @@ align-items: center;
 .product-card-price {
 	color: var(--color-bl-secondary);
 	text-align: right;
+	align-self: flex-start;
 	line-height: normal;
 }
 
-.product-card {
-	position: relative;
-	display: inline-flex;
-	flex-direction: column;
-	height: 452px;
-	width: 360px;
-}
+
+
+
 
 .new::before {
 	pointer-events: none;
@@ -1382,10 +1391,12 @@ align-items: center;
 
 .product-card-img {
 	position: relative;
+
 }
 
 .product-card-img img {
-	width: fit-content;
+	display: block;
+	max-width: 100%;
 	height: auto;
 }
 
