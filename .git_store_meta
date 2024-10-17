@@ -7,7 +7,7 @@ device/.gitattributes	f	2022-03-25T00:09:46Z
 device/.gitignore	f	2022-03-25T00:09:46Z
 device/.stylelintrc.json	f	2022-03-25T00:09:46Z
 device/Contributing.md	f	2022-03-25T00:09:46Z
-device/catalog.html	f	2024-10-15T10:15:13Z
+device/catalog.html	f	2024-10-17T16:17:17Z
 device/fonts	d	2024-05-17T08:20:30Z
 device/fonts/raleway	d	2023-12-09T12:08:36Z
 device/fonts/raleway/raleway-800.woff2	f	2022-03-25T00:09:46Z
@@ -57,8 +57,8 @@ device/images/tick-big.svg	f	2024-05-24T06:58:32Z
 device/images/truck.svg	f	2024-05-22T14:02:12Z
 device/images/twitter-logo.svg	f	2024-05-22T14:03:05Z
 device/images/warranty.svg	f	2024-05-22T14:17:05Z
-device/index.html	f	2024-10-16T17:29:24Z
+device/index.html	f	2024-10-17T18:56:15Z
 device/styles	d	2024-07-04T14:01:25Z
 device/styles/normalize.css	f	2024-07-04T14:01:06Z
-device/styles/styles.css	f	2024-10-16T17:27:20Z
+device/styles/styles.css	f	2024-10-17T18:53:35Z
 git-store-meta.pl	f	2023-08-02T12:33:53Z
