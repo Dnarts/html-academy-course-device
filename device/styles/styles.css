@@ -307,11 +307,13 @@ a {
 
 .search {
 	display: grid;
-	grid-template-columns: auto 350px 150px;
+	grid-template-columns: auto 360px 150px;
 	height: max-content;
 	align-items: center;
 	position: relative;
 	min-width: 517px;
+	max-width: 517px;
+	height: 40px;
 }
 
 .search input[type="text"],
@@ -339,19 +341,20 @@ button[type="submit"]:active {
 .search input[type="text"] {
 padding-left: 46px;
 border-radius: 50px 0px 0px 50px;
+width: 360px;
+height: inherit;
 }
 
 
 .search button[type="submit"] {
 	border-radius: 0px 50px 50px 0px;
 	border-left: none;
+	width: 160px;
+	height: inherit;
 }
 
-.search {
-	position: relative;
-}
 
-#search-input::before {
+.search::before {
 	content: '';
 	position: absolute;
 	z-index: 100;
@@ -361,7 +364,6 @@ border-radius: 50px 0px 0px 50px;
   top: 50%;
 	left: 24px;
 	transform: translate(-50%, -50%);
-
 }
 
 
@@ -385,12 +387,20 @@ color: var(--color-bl-primary);
 	flex-wrap: wrap;
 }
 
-span.mainmenu-button-title,
-.mainmenu a {
-	padding-top: 14px;
-	padding-bottom: 14px;
+.usermenu-list:nth-of-type(1) {
+	width: 231px;
 }
 
+.usermenu-list:nth-of-type(2) {
+	width: 242px;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.usermenu-item.compare {
+
+}
 .mainmenu ul {
 	gap: 45px;
 }
@@ -406,35 +416,52 @@ span.mainmenu-button-title,
     justify-content: center;
 }
 
-.mainmenu-button-title {
- display: flex;
- width: 260px;
- margin-right: 5px;
+.mainmenu-button-catalog {
+	display: flex;
+	width: fit-content;
+  align-items: center;
+	justify-content: space-between;
+	width: 293px;
+	gap: 7px;
+}
+
+
+.mainmenu-button-catalog::after {
+	content: '';
+	height: 50px;
+	width: 50px;
+	display: block;
+	background:
+	url('../images/catalog-ellipse.svg') no-repeat center center,
+	url('../images/catalog-plus.svg') no-repeat center center;
+	background-size: cover, 16px;
 }
 
 .usermenu {
-	display: flex;
-	flex-direction: row;
-	align-content: center;
+	display: grid;
+grid-template-columns: 517px 231px 241px;
+align-content: center;
 	margin-top: 30px;
-	gap: 30px;
+	gap: 25px;
 }
 
 .usermenu-list {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 22px;
 }
 
+
 .usermenu-item {
+	display: flex;
 	gap: 11px;
 	align-items: center;
+	height: 30px;
 }
 
 .usermenu-link {
-	margin-left: 12px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+
 }
 
 .usermenu-link span {
@@ -442,7 +469,7 @@ span.mainmenu-button-title,
 	padding-bottom: 5px;
 }
 
-.usermenu-list--login {
+.usermenu-list .login {
 	white-space: nowrap;
 	margin-right: auto;
 }
@@ -454,6 +481,8 @@ span.mainmenu-button-title,
 .usermenu-item.cart-wrap  {
 	display: flex;
 	align-items: baseline;
+
+	min-width: 113px;
 }
 
 .amount-purchased {
@@ -481,30 +510,31 @@ flex: 0 0 auto;
 	z-index: 1;
 }
 
-	#mainmenu-button {
-	border-style: none;
-	background: transparent;
-	display: flex;
-	align-items: center;
-	gap: 7px;
-	z-index: 10;
-	position: relative;
+	.mainmenu-button-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 7px;
+		width: 293px;
 	}
+
+		#mainmenu-button {
+		border-style: none;
+		background: transparent;
+		align-items: center;
+		z-index: 10;
+		position: relative;
+		display: grid;
+		width: 100%;
+		height: 50px;
+		gap: 7px;
+		}
 
 	#mainmenu-button:hover,
 	#mainmenu-button:focus-within:hover{
 	cursor: pointer;
 	}
 
-.mainmenu-button-icon{
-	height: 50px;
-	width: 50px;
-	display: block;
-	background:
-	url('../images/catalog-ellipse.svg') no-repeat center center,
-	url('../images/catalog-plus.svg') no-repeat center center;
-	background-size: cover, 16px;
-}
 
 a.button-main-link {
 	text-decoration: none;
