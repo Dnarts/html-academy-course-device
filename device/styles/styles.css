@@ -124,13 +124,13 @@ a:focus,
 input:focus,
 label:focus,
 button:focus,
-.usermenu-item.cart-wrap:focus-within,
-.usermenu-item.cart-wrap a:focus-visible,
+.usermenu-item.cart-link:focus-within,
+.usermenu-item.cart-link a:focus-visible,
 .usermenu-list--login:focus-within,
 .usermenu-list--login a:focus-visible {
 	outline: var(--color-focus) 2px solid;
 }
-.usermenu-item.cart-wrap a:focus,
+.usermenu-item.cart-link a:focus,
 .usermenu-list--login a:focus {
 	outline: none;
 }
@@ -398,9 +398,7 @@ color: var(--color-bl-primary);
 	justify-content: space-between;
 }
 
-.usermenu-item.compare {
 
-}
 .mainmenu ul {
 	gap: 45px;
 }
@@ -455,18 +453,33 @@ align-content: center;
 	display: flex;
 	gap: 11px;
 	align-items: center;
-	height: 30px;
+	height: 40px;
 }
 
-.usermenu-link {
-	padding-top: 5px;
-	padding-bottom: 5px;
 
+.usermenu-item.compare {
+	min-width: 107px;
+}
+
+.compare > a:nth-child(1) {
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+
+.usermenu-link img {
+	padding-right: auto;
 }
 
 .usermenu-link span {
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-left: auto;
+}
+
+[class^="icon"] {
+display: inline;
+align-self: center;
+  width: auto;
+  height: auto;
 }
 
 .usermenu-list .login {
@@ -474,15 +487,26 @@ align-content: center;
 	margin-right: auto;
 }
 
-.usermenu-list--cart {
-	margin-left: auto;
+/*  bug: при увеличении маржена, корзина и иконка разьезжаются по вертикали на след.строку*/
+
+.cart {
+	margin-left: 14px;
 }
 
-.usermenu-item.cart-wrap  {
+.cart-link {
 	display: flex;
 	align-items: baseline;
-
+  width: 121px;
 	min-width: 113px;
+position: relative;}
+
+.cart span {
+	margin-left: auto;
+}
+.icon-cart {
+	transform: translate(15px, 0);
+	z-index: 2;
+	position: relative;
 }
 
 .amount-purchased {
@@ -494,21 +518,17 @@ align-content: center;
 	font-size: 14px;
 width:21px;
 height:21px;
-padding:0;
 border-radius:50%;
 background-color: var(--color-bg-primary);
 display:flex;
 align-items:center;
 justify-content:center;
-z-index: 2;
+z-index: 3;
 margin-bottom: -5px;
-flex: 0 0 auto;
+position: absolute;
+transform: translate(0, 5px);
 }
 
-.icon-cart {
-	margin-left: -18px;
-	z-index: 1;
-}
 
 	.mainmenu-button-container {
 		display: flex;
@@ -535,6 +555,10 @@ flex: 0 0 auto;
 	cursor: pointer;
 	}
 
+.mainmenu-r-list a {
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
 
 a.button-main-link {
 	text-decoration: none;
