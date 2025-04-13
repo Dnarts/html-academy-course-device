@@ -127,7 +127,8 @@ button:focus,
 .usermenu-item.cart-link:focus-within,
 .usermenu-item.cart-link a:focus-visible,
 .usermenu-list--login:focus-within,
-.usermenu-list--login a:focus-visible {
+.usermenu-list--login a:focus-visible,
+.mainmenu-button-catalog:focus-visible {
 	outline: var(--color-focus) 2px solid;
 }
 .usermenu-item.cart-link a:focus,
@@ -435,6 +436,100 @@ color: var(--color-bl-primary);
 	background-size: cover, 16px;
 }
 
+
+.mainmenu-button-subcatalog li {
+	font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* TODO: добавить плюсик для кнопки при раскрытии */
+.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index {
+	padding-top: 60px;
+}
+
+.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number {
+	margin-top: -120px;
+}
+
+#mainmenu-button:hover,
+#mainmenu-button:focus-within:hover{
+cursor: pointer;
+}
+
+/* TODO: удалить потом когда закончу */
+#mainmenu-button:focus-within .mainmenu-button-subcatalog {
+	display: grid;
+	grid-template-columns: 240px 220px 220px;
+	grid-template-areas:
+	"one   four  six"
+	"two   five  ."
+	"three .     .";
+	gap: 1em 0;
+	width: 643px	;
+	position: static;
+}
+
+	#mainmenu-button .mainmenu-button-subcatalog {
+  display: none;
+	}
+	.mainmenu-button-subcatalog li:nth-child(1) {
+		grid-area: one;
+	}
+
+	.mainmenu-button-subcatalog li:nth-child(2) {
+		grid-area: two;
+	}
+
+	.mainmenu-button-subcatalog li:nth-child(3) {
+		grid-area: three;
+	}
+
+	.mainmenu-button-subcatalog li:nth-child(4) {
+		grid-area: four;
+	}
+	.mainmenu-button-subcatalog li:nth-child(5) {
+		grid-area: five;
+	}
+	.mainmenu-button-subcatalog li:nth-child(6) {
+		grid-area: six;
+	}
+
+
+		.mainmenu-button-subcatalog li {
+
+			padding: 0;
+			margin: 0;
+		}
+
+		li:focus {
+			outline: var(--color-focus) 2px solid;
+		}
+
+		#mainmenu-button .mainmenu-button-dropdown1 {
+			display: none;
+		}
+		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown1 {
+			display: block;
+			background-color: transparent;
+		}
+
+		#mainmenu-button .mainmenu-button-dropdown2 {
+			display: none;
+		}
+		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown2 {
+			display: block;
+		}
+
+		.mainmenu-button-container li:hover{
+		background-color: #444444;
+		}
+
+		.mainmenu-button-container li:focus-within {
+			background-color: #c4c4c4;
+		}
+
+
 .usermenu {
 	display: grid;
 grid-template-columns: 517px 231px 241px;
@@ -549,12 +644,9 @@ transform: translate(0, 5px);
 		width: 100%;
 		height: 50px;
 		gap: 7px;
+		position: relative;
 		}
 
-	#mainmenu-button:hover,
-	#mainmenu-button:focus-within:hover{
-	cursor: pointer;
-	}
 
 .mainmenu-r-list a {
 	padding-top: 12px;
@@ -1299,93 +1391,6 @@ content: url("data:image/svg+xml,%3Csvg width='4' height='7' fill='none' xmlns='
 	margin-right: 8px;
 	margin-left: 12px;
 }
-
-.mainmenu-button-subcatalog li {
-	font-family: "Rubik", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-}
-
-/* TODO: удалить потом когда закончу */
-#mainmenu-button .mainmenu-button-subcatalog {
-	display: grid;
-	grid-template-columns: 240px 220px 220px;
-	grid-template-areas:
-	"one   four  six"
-	"two   five  ."
-	"three .     .";
-	gap: 1em 0;
-	width: 643px	;
-}
-
-/* #mainmenu-button:focus-within .mainmenu-button-subcatalog { */
-	/* display: grid; */
-		/* grid-template-columns: 222px 221px 221px; */
-		/* grid-template-areas: */
-		/* "one   four  six" */
-		/* "two   five  ." */
-		/* "three .     ."; */
-		/* gap: 1em; */
-	/* } */
-/*  */
-	/* #mainmenu-button .mainmenu-button-subcatalog { */
-  /* display: none; */
-	/* } */
-	.mainmenu-button-subcatalog li:nth-child(1) {
-		grid-area: one;
-	}
-
-	.mainmenu-button-subcatalog li:nth-child(2) {
-		grid-area: two;
-	}
-
-	.mainmenu-button-subcatalog li:nth-child(3) {
-		grid-area: three;
-	}
-
-	.mainmenu-button-subcatalog li:nth-child(4) {
-		grid-area: four;
-	}
-	.mainmenu-button-subcatalog li:nth-child(5) {
-		grid-area: five;
-	}
-	.mainmenu-button-subcatalog li:nth-child(6) {
-		grid-area: six;
-	}
-
-
-		.mainmenu-button-subcatalog li {
-
-			padding: 0;
-			margin: 0;
-		}
-
-		li:focus {
-			outline: var(--color-focus) 2px solid;
-		}
-
-		#mainmenu-button .mainmenu-button-dropdown1 {
-			display: none;
-		}
-		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown1 {
-			display: block;
-			background-color: transparent;
-		}
-
-		#mainmenu-button .mainmenu-button-dropdown2 {
-			display: none;
-		}
-		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown2 {
-			display: block;
-		}
-
-		.mainmenu-button-container li:hover{
-		background-color: #444444;
-		}
-		.
-		.mainmenu-button-container li:focus-within {
-			background-color: #c4c4c4;
-		}
 
 
 /* CATALOG */
