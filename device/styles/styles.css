@@ -157,6 +157,22 @@ opacity: 1;
 opacity: 0.66;
 }
 
+a:hover,
+.mainmenu-button:focus-within:hover,
+.mainmenu-button-subcatalog li:hover,
+.title-2:hover:not(.mainmenu-button-catalog) {
+opacity: 0.33;
+}
+
+a:active {
+opacity: 1;
+}
+
+
+a:hover {
+opacity: 0.66;
+}
+
 .title-1 {
   font-size: 50px;
 	font-family: "Raleway", sans-serif;
@@ -422,6 +438,7 @@ color: var(--color-bl-primary);
 	justify-content: space-between;
 	width: 293px;
 	gap: 7px;
+	user-select: none;
 }
 
 
@@ -434,8 +451,14 @@ color: var(--color-bl-primary);
 	url('../images/catalog-ellipse.svg') no-repeat center center,
 	url('../images/catalog-plus.svg') no-repeat center center;
 	background-size: cover, 16px;
+	opacity: 0.33;
 }
-
+.mainmenu-button-catalog:hover::after {
+	opacity: 1;
+}
+.mainmenu-button-catalog:active::after {
+	opacity: 1;
+}
 
 .mainmenu-button-subcatalog li {
 	font-family: "Rubik", sans-serif;
@@ -443,21 +466,31 @@ color: var(--color-bl-primary);
   line-height: 18px;
 }
 
-/* TODO: добавить плюсик для кнопки при раскрытии */
-.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index {
-	padding-top: 60px;
+	.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index {
+		padding-top: 60px;
+	}
+
+
+	.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number {
+		margin-top: -120px;
+	}
+
+	/* TODO: логика скрытия меню при клике - на JS */
+.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .mainmenu-button-catalog::after {
+	content: '';
+	background:
+	url('../images/catalog-minus.svg') no-repeat center center;
+	transform: translateY(-0.5px);
+	transition:none !important;
 }
 
-.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number {
-	margin-top: -120px;
-}
+
 
 #mainmenu-button:hover,
 #mainmenu-button:focus-within:hover{
 cursor: pointer;
 }
 
-/* TODO: удалить потом когда закончу */
 #mainmenu-button:focus-within .mainmenu-button-subcatalog {
 	display: grid;
 	grid-template-columns: 240px 220px 220px;
@@ -467,7 +500,28 @@ cursor: pointer;
 	"three .     .";
 	gap: 1em 0;
 	width: 643px	;
-	position: static;
+	position: relative;
+}
+
+#mainmenu-button:focus-within .mainmenu-button-subcatalog li:focus-within,
+#mainmenu-button:focus-within .mainmenu-button-subcatalog li:active {
+	opacity: 1;
+}
+/* BUG: при клике на моноподы, виртуалаьная рельность при ховере вся затемняется.
+решение вроде как
+.mainmenu-button-subcatalog li {
+	filter: brightness(0.5);
+	transition: filter 0.2s ease;
+}
+
+.mainmenu-button-subcatalog li:focus-within,
+.mainmenu-button-subcatalog li:active,
+.mainmenu-button-subcatalog li:hover {
+	filter: brightness(1);
+} */
+.mainmenu-button-subcatalog li:focus-within > ul,
+.mainmenu-button-subcatalog li:active > ul {
+	opacity: 1 !important;
 }
 
 	#mainmenu-button .mainmenu-button-subcatalog {
@@ -510,25 +564,22 @@ cursor: pointer;
 			display: none;
 		}
 		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown1 {
-			display: block;
-			background-color: transparent;
+			display: flex;
 		}
 
 		#mainmenu-button .mainmenu-button-dropdown2 {
 			display: none;
 		}
 		#mainmenu-button .mainmenu-button-subcatalog:focus-within .mainmenu-button-dropdown2 {
-			display: block;
+			display: flex;
 		}
 
-		.mainmenu-button-container li:hover{
-		background-color: #444444;
+		#mainmenu-button .mainmenu-button-subcatalog .mainmenu-button-dropdown1:focus-within,
+		#mainmenu-button .mainmenu-button-subcatalog .mainmenu-button-dropdown1:hover,
+		#mainmenu-button .mainmenu-button-subcatalog .mainmenu-button-dropdown2:focus-within,
+		#mainmenu-button .mainmenu-button-subcatalog .mainmenu-button-dropdown2:hover		{
+			opacity: 1;
 		}
-
-		.mainmenu-button-container li:focus-within {
-			background-color: #c4c4c4;
-		}
-
 
 .usermenu {
 	display: grid;
