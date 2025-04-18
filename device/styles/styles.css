@@ -482,17 +482,28 @@ color: var(--color-bl-primary);
 .mainmenu-button-subcatalog li {
 	font-family: "Rubik", sans-serif;
   font-size: 16px;
-  line-height: 18px;
 }
 
-	.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index {
-		padding-top: 60px;
-	}
+ul.mainmenu-button-dropdown-list {
+	display: flex;
+	justify-content: flex-start;
+}
 
-
-	.site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number {
-		margin-top: -120px;
-	}
+[class*=dropdown],
+.mainmenu-button-dropdown-list a,
+.mainmenu-button-dropdown-list li {
+	font-family: "Rubik", sans-serif;
+  font-size: 16px;
+justify-self: start;
+}
+	/* .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index { */
+		/* padding-top: 60px; */
+	/* } */
+/*  */
+/*  */
+	/* .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number { */
+		/* margin-top: -120px; */
+	/* } */
 
 	/* TODO: логика скрытия меню при клике - без JS */
 .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .mainmenu-button-catalog::after {
@@ -516,7 +527,7 @@ color: var(--color-bl-primary);
   z-index: -2;
 	}
 
-	.main-header--index:has(#mainmenu-button:focus-within) .mainmenu-button-subcatalog::after {
+	.main-header--index:has(#mainmenu-button:focus-within) .mainmenu-button::after {
 		height: 140%;
 		opacity: 1;
 		content: "";
@@ -529,7 +540,7 @@ color: var(--color-bl-primary);
 		z-index: -2;
 		}
 
-		.main-header--inner:has(#mainmenu-button:focus-within) .mainmenu-button-subcatalog::after {
+		.main-header--inner:has(#mainmenu-button:focus-within) .mainmenu-button::after {
 			height: 120%;
 			opacity: 1;
 			content: "";
@@ -537,6 +548,7 @@ color: var(--color-bl-primary);
 			top: 0;
 			left: 50;
 			min-width: 116.5vh;
+			width: 100%;
 			left: -9.3%;
 			background-color: var(--color-bg-accent);
 			z-index: -2;
@@ -564,6 +576,14 @@ cursor: pointer;
   opacity: 1;
 }
 
+
+
+.site_body:has(.mainmenu-button-dropdown-list:hover) .mainmenu-button-subcatalog-item {
+opacity: 0.5;
+}
+.site_body:has(.mainmenu-button-dropdown-list:hover) .dropdown-title {
+	opacity: 0.2;
+}
 
 	#mainmenu-button .mainmenu-button-subcatalog {
 		visibility: hidden;
@@ -623,16 +643,27 @@ cursor: pointer;
 
 
 		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover li {
-		display: flex;
+		display: grid;
 		opacity: 1;
 		visibility: visible;
+		position: relative;
+		display: grid;
+		align-items: start;
+		grid-template-areas:
+	"one   two"
+	"three   four"
+	"five .";
+		grid-template-columns: 240px 220px 220px;
+		height: fit-content;
 		}
 
 		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover ul {
 		visibility: visible;
 		max-height: 100%;
-		margin-top: 1em;
 		opacity: 1;
+		}
+		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover ul:nth-of-type(1) {
+		margin-top: 2em;
 		}
 
 
@@ -640,6 +671,7 @@ cursor: pointer;
 #mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:not(:hover) li {
   transition-delay: 0.3s;
 }
+
 
 .usermenu {
 	display: grid;
