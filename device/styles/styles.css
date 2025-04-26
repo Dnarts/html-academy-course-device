@@ -158,11 +158,10 @@ opacity: 0.66;
 }
 
 a:hover {
-
   opacity: 0.5;
 }
 
-li:not([class*=dropdown]):hover {
+li:hover {
 	opacity: 0.5;
 }
 
@@ -444,8 +443,7 @@ color: var(--color-bl-primary);
 }
 
 .mainmenu li > * {
-	height: inherit;
-	display: flex;
+
     align-items: center;
     justify-content: center;
 }
@@ -484,26 +482,6 @@ color: var(--color-bl-primary);
   font-size: 16px;
 }
 
-ul.mainmenu-button-dropdown-list {
-	display: flex;
-	justify-content: flex-start;
-}
-
-[class*=dropdown],
-.mainmenu-button-dropdown-list a,
-.mainmenu-button-dropdown-list li {
-	font-family: "Rubik", sans-serif;
-  font-size: 16px;
-justify-self: start;
-}
-	/* .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .main-index { */
-		/* padding-top: 60px; */
-	/* } */
-/*  */
-/*  */
-	/* .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .slider-product-number { */
-		/* margin-top: -120px; */
-	/* } */
 
 	/* TODO: логика скрытия меню при клике - без JS */
 .site_body:has(#mainmenu-button:focus-within .mainmenu-button-subcatalog) .mainmenu-button-catalog::after {
@@ -514,45 +492,18 @@ justify-self: start;
 	transition:none !important;
 }
 
-.site_body:has(#mainmenu-button:focus-within) .mainmenu-button-subcatalog::after {
-	height: 140%;
+#mainmenu-button:focus-within .mainmenu-button-subcatalog::after {
+	height: 126%;
 	opacity: 1;
 	content: "";
   position: absolute;
   top: 0;
 	left: 50;
-  min-width: 116.5vh;
-	left: -9.3%;
+  min-width: 1160px;
+	left: -60px;
   background-color: var(--color-bg-accent);
   z-index: -2;
 	}
-
-	.main-header--index:has(#mainmenu-button:focus-within) .mainmenu-button::after {
-		height: 140%;
-		opacity: 1;
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 50;
-		min-width: 116.5vh;
-		left: -9.3%;
-		background-color: var(--color-bg-accent);
-		z-index: -2;
-		}
-
-		.main-header--inner:has(#mainmenu-button:focus-within) .mainmenu-button::after {
-			height: 120%;
-			opacity: 1;
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 50;
-			min-width: 116.5vh;
-			width: 100%;
-			left: -9.3%;
-			background-color: var(--color-bg-accent);
-			z-index: -2;
-			}
 
 #mainmenu-button:hover,
 #mainmenu-button:focus-within:hover{
@@ -567,7 +518,8 @@ cursor: pointer;
 	grid-template-areas:
 	"one   four  six"
 	"two   five  ."
-	"three .     .";
+	"three .     ."
+	"bottom . .";
 	gap: 1em 0;
 	width: 643px	;
 	position: relative;
@@ -578,21 +530,13 @@ cursor: pointer;
 
 
 
-.site_body:has(.mainmenu-button-dropdown-list:hover) .mainmenu-button-subcatalog-item {
-opacity: 0.5;
-}
-.site_body:has(.mainmenu-button-dropdown-list:hover) .dropdown-title {
-	opacity: 0.2;
-}
-
 	#mainmenu-button .mainmenu-button-subcatalog {
 		visibility: hidden;
 		opacity: 0;
 		transition:
     opacity 0.3s ease,
-    visibility 0.3s ease;
+    visibility 0.5s ease-in;
 	}
-
 
 	.mainmenu-button-subcatalog li:nth-child(1) {
 		grid-area: one;
@@ -605,6 +549,7 @@ opacity: 0.5;
 	.mainmenu-button-subcatalog li:nth-child(3) {
 		grid-area: three;
 	}
+
 
 	.mainmenu-button-subcatalog li:nth-child(4) {
 		grid-area: four;
@@ -627,50 +572,6 @@ opacity: 0.5;
 			outline: var(--color-focus) 2px solid;
 		}
 
-
-		#mainmenu-button [class*="dropdown"] li,
-		#mainmenu-button [class*="dropdown"] ul {
-		visibility: hidden;
-		max-height: 0;
-		opacity: 0;
-		transition:
-    opacity 0.175s ease,
-    visibility 1s ease,
-    max-height 0.1s ease,
-		margin 0.3s ease;
-		padding: 0.3s ease;
-		}
-
-
-		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover li {
-		display: grid;
-		opacity: 1;
-		visibility: visible;
-		position: relative;
-		display: grid;
-		align-items: start;
-		grid-template-areas:
-	"one   two"
-	"three   four"
-	"five .";
-		grid-template-columns: 240px 220px 220px;
-		height: fit-content;
-		}
-
-		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover ul {
-		visibility: visible;
-		max-height: 100%;
-		opacity: 1;
-		}
-		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:hover ul:nth-of-type(1) {
-		margin-top: 2em;
-		}
-
-
-		#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:not(:hover) ul,
-#mainmenu-button .mainmenu-button-subcatalog [class*="dropdown"]:not(:hover) li {
-  transition-delay: 0.3s;
-}
 
 
 .usermenu {
